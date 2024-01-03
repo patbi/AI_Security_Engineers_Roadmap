@@ -20,38 +20,49 @@
 
 	 - step4
 
-5. [Module 5: Automation]()
+
+5. [Module 5: Linux]()
 
 	 - step5
 
-6. [Module 6: Testing]()
+
+6. [Module 6: Automation]()
 
 	 - step6
 
-7. [Module 7: Advanced]()
+7. [Module 7: Testing]()
 
 	 - step7
 
-8. [Module 8: Web Frameworks]()
+8. [Module 8: Advanced]()
+
+	 - step8
+
+9. [Module 9: Web Frameworks]()
 
 	 - Django
 	 - Flask
 	 - FastAPI
 
 
-9. [Module 9: Databases]()
+10. [Module 10: Databases]()
 
 	 - NoSQL
 	 - SQL
 	 - ETC
 
+11. [Module 11: Data Modeling]()
 
-10. [Module 10: Data Tools & Best Practices Overview]()
-
-	 - step10
+	 - step11
 
 
-11. [Module 11: Data science]()
+
+12. [Module 12: Data Tools & Best Practices Overview]()
+
+	 - step12
+
+
+13. [Module 13: Data science]()
 
 	 - Numpy
 	 - Pandas
@@ -60,6 +71,6 @@
 	 -
 	 -
 
-12. [Module 12: Personal /Professional Projects]()
+14. [Module 12: Personal /Professional Projects]()
 	
-	- step12
+	- step14
