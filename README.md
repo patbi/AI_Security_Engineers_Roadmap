@@ -39,7 +39,7 @@
 	 - FastAPI
 
 
-9. [Module 9: SGBD]()
+9. [Module 9: Databases]()
 
 	 - NoSQL
 	 - SQL
@@ -48,9 +48,7 @@
 
 10. [Module 10: Data Tools & Best Practices Oerview]()
 
-	 - NoSQL
-	 - SQL
-	 - ETC
+	 - step10
 
 
 11. [Module 11: Data science]()
@@ -63,3 +61,5 @@
 	 -
 
 12. [Module 12: Personal /Professional Projects]()
+	
+	- step12
