@@ -46,7 +46,7 @@
 	 - ETC
 
 
-10. [Module 10: Data Tools & Best Practices Oerview]()
+10. [Module 10: Data Tools & Best Practices Overview]()
 
 	 - step10
 
