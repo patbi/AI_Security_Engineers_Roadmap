@@ -38,7 +38,22 @@
 	 - Flask
 	 - FastAPI
 
-9. [Module 9: Data science]()
+
+9. [Module 9: SGBD]()
+
+	 - NoSQL
+	 - SQL
+	 - ETC
+
+
+10. [Module 10: Data Tools & Best Practices Oerview]()
+
+	 - NoSQL
+	 - SQL
+	 - ETC
+
+
+11. [Module 11: Data science]()
 
 	 - Numpy
 	 - Pandas
@@ -47,3 +62,4 @@
 	 -
 	 -
 
+12. [Module 12: Personal /Professional Projects]()
