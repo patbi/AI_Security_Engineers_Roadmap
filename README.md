@@ -38,23 +38,23 @@
 
 	 - step8
 
-9. [Module 9: Web Frameworks]()
 
-	 - Django
-	 - Flask
-	 - FastAPI
-
-
-10. [Module 10: Databases]()
+9. [Module 9: Databases]()
 
 	 - NoSQL
 	 - SQL
 	 - ETC
 
+
+10. [Module 10: Web Frameworks]()
+
+	 - Django
+	 - Flask
+	 - FastAPI
+
 11. [Module 11: Data Modeling]()
 
 	 - step11
-
 
 
 12. [Module 12: Data Tools & Best Practices Overview]()
