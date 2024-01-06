@@ -80,21 +80,65 @@
 6 - If else statement
 """
 
-ip = 75
+#ip = 75
 
-if(ip < 75):
-    print("You are a member of the IT department")
-else:
-    print("You are a member of the Research department")
+#if(ip < 75):
+#    print("You are a member of the IT department")
+#else:
+#    print("You are a member of the Research department")
 
-a = 6
-b = 4
-c = 7
-d = a*c
+#a = 6
+#b = 4
+#c = 7
+#d = a*c
 
-if(b == 12):
-    print(d)
+#if(b == 12):
+#    print(d)
 
-else:
-    print(c-a)
+#else:
+#    print(c-a)
 
+"""
+7 - elif statement in Python
+"""
+
+#ip = 1000
+
+#if(ip == 75):
+#    print("You are a member of the IT department")
+
+#elif(ip == 100):
+#    print("You are a member of the Research department")
+
+#elif(ip == 200):
+#    print("You are a member of the Communication department")
+
+#elif(ip > 30000):
+#    print("You are a member of the AI department")
+
+#else:
+#    print("You are a member of the ML department")
+
+
+"""
+8 - For loop in Python
+"""
+for i in range(5):
+    print("Welcome to Python")
+    #print(i)
+
+for i in range(5,11):
+    print(i)
+
+for i in range(3,15,3):
+    print(i)
+
+name = 'Hi'
+for i in range(4):
+    print(name)
+
+
+number = 0
+for i in range(5):
+    number = number + i
+    print(number)
