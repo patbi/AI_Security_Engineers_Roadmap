@@ -32,6 +32,8 @@
 2. [Module 2: OOP Concepts]()
 
 	 - Types of variables & methods
+	 - Classes
+	 - Objects
 	 - Inheritance
 	 - Polymorphism
 	 - Encapsulation
