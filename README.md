@@ -31,7 +31,12 @@
 
 2. [Module 2: OOP Concepts]()
 
-	 - stepTwo
+	 - Types of variables & methods
+	 - Inheritance
+	 - Polymorphism
+	 - Encapsulation
+	 - Abstraction
+	 - Interface
 
 3. [Module 3: Package Managers]()
 
