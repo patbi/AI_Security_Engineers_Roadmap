@@ -42,7 +42,8 @@
 
 3. [Module 3: Package Managers]()
 
-	 - step3
+	 - Pip
+	 - Conda
 
 4. [Module 4: DSA]()
 
@@ -96,8 +97,9 @@
 	 - Pandas
 	 - Tensorflow
 	 - Pytorch
-	 -
-	 -
+	 - Matplotlib
+	 - Seaborn
+	 - Scikit-Learn
 
 14. [Module 14: Personal /Professional Projects]()
 	
