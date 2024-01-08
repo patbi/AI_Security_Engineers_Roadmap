@@ -123,22 +123,123 @@
 """
 8 - For loop in Python
 """
-for i in range(5):
-    print("Welcome to Python")
-    #print(i)
 
-for i in range(5,11):
-    print(i)
+#for i in range(5):
+#    print("Welcome to Python")
+#    #print(i)
 
-for i in range(3,15,3):
-    print(i)
+#for i in range(5,11):
+#    print(i)
 
-name = 'Hi'
-for i in range(4):
-    print(name)
+#for i in range(3,15,3):
+#    print(i)
+
+#name = 'Hi'
+#for i in range(4):
+#    print(name)
 
 
-number = 0
-for i in range(5):
-    number = number + i
-    print(number)
+#number = 0
+#for i in range(5):
+#    number = number + i
+#    print(number)
+
+"""
+9 - While loop in Python
+"""
+
+#for i in range(5):
+#    print(i)
+
+#i = 0
+#while(i<5):
+#    print(i)
+#    i = i+1
+
+#i = 0
+#while(i<5):
+#    print("Hello World")
+
+#i = 0
+#while(i<5):
+#    print(i)
+#    i = i+1
+
+"""
+10 - Break Statement in Python
+"""
+
+#i = 1
+#while(i <= 100):
+#    print(i)
+#    if(i == 7):
+#        break
+#    i = i+1
+
+#while 1:
+#    lname = input("Please enter your lname...\t")
+#    if(lname=='pat'):
+#        break
+
+
+#i = 1
+#while (i == 1):
+#    fname = input("Please enter your fname...\t")
+#    if(fname=='thenavigo'):
+#        break
+
+"""
+11 - Continue Statement
+"""
+
+#i = 1
+#while(i < 100):
+#    i = i+1
+#    if(i <= 50):
+#        continue
+#    print(i)
+
+
+"""
+12 - String properties in Python
+"""
+
+#a = 'Hello'
+#b = "World"
+#c = 55
+#d = 'Hello World'
+
+#print(a)
+#print(b)
+#print(a+' '+b)
+#print(a,b)
+#print(a+' '+str(c))
+#print(a.upper())
+#print(b.lower())
+#print(len(a))
+#print(b[1])
+#print(d[5])
+#print(d[:5])
+#print(d[1:5])
+#print(d[3:9])
+#print(d*10)
+
+"""
+13 - List[] in Python
+"""
+
+list1 = [54, 12, 76, 11, 35]
+print(list1[2])
+print(len(list1))
+print(list1[:2])
+print(list1[1:4])
+
+list2 = ['World', 'Hello', 'Hi', 'Pat']
+print(list1,list2)
+print(list2[0])
+print(list2[-2])
+print(list1[-4])
+
+list3 = ['Hello', 'World', 56, 78, 700]
+print(list3)
+print(list3[-1])
