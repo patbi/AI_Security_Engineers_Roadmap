@@ -228,18 +228,80 @@
 13 - List[] in Python
 """
 
-list1 = [54, 12, 76, 11, 35]
-print(list1[2])
-print(len(list1))
-print(list1[:2])
-print(list1[1:4])
+#list1 = [54, 12, 76, 11, 35]
+#print(list1[2])
+#print(len(list1))
+#print(list1[:2])
+#print(list1[1:4])
 
-list2 = ['World', 'Hello', 'Hi', 'Pat']
-print(list1,list2)
-print(list2[0])
-print(list2[-2])
-print(list1[-4])
+#list2 = ['World', 'Hello', 'Hi', 'Pat']
+#print(list1,list2)
+#print(list2[0])
+#print(list2[-2])
+#print(list1[-4])
 
-list3 = ['Hello', 'World', 56, 78, 700]
-print(list3)
-print(list3[-1])
+#list3 = ['Hello', 'World', 56, 78, 700]
+#print(list3)
+#print(list3[-1])
+
+"""
+14 - List [] methods in Python
+"""
+
+#a = ['Hi', 56, 'World', 56, 'Pat', 56, 34, 189]
+#for i in a:
+#    print(i)
+
+#a.append('Hello')
+#a.append(78)
+#a.append(('Thenavigo', 6, 4, 'Store'))
+#print(a)
+#a.remove('Hello')
+#print(a)
+#print(a.index('Hi'))
+#print(a)
+#print(a.reverse())
+#print(a.pop())
+#print(a.pop(1))
+#print(a.count('World'))
+#print(a.count(56))
+#print(dir())
+
+"""
+15 - Tuples in Python
+"""
+
+#b = (77, 'Hi', 'World', 68, 90)
+#print(b.__add__('Hello'))
+#print(b.remove())
+#print(b.count(68))
+#print(b.index(77))
+#print([2])
+
+"""
+16 - Dictionaries in Python
+"""
+
+#d = {'Hi':77, 'Hello':56, 'World':86, 'Thenavigo':64}
+#print(d)
+#print(d['Thenavigo'])
+#d['Pat'] = 450
+#print(d)
+#del d['Hello']
+#print(d)
+
+#x = [1,2,3,4,5,6]
+#y = [0,9,8,7,6,5]
+
+#dict = {'x':[1,2,3,4,5,6], 'y':[0,9,8,7,6,5]}
+#print(dict)
+
+"""
+17 - Functions in Python
+"""
+
+print(max(67,23,98,345,71,87,54))
+print(min(67,23,98,345,71,87,54))
+print(dir(__builtins__))
+print(help(pow))
+print(help(max))
