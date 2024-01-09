@@ -47,7 +47,20 @@
 
 4. [Module 4: DSA]()
 
-	 - step4
+	 - Arrays
+	 - Linked lists
+	 - Stacks
+	 - Queues
+	 - Binary search trees
+	 - Balanced binary trees
+	 - Heaps
+	 - Dictionaries
+	 - Tries
+	 - Graph algorithms
+	 	- Graph traversal algorithms: BFS and DFS
+	 	- Shortest paths
+	 	- Spanning trees
+	 - Sorting algorithms
 
 
 5. [Module 5: Linux]()
