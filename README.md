@@ -60,6 +60,8 @@
 	 	- Graph traversal algorithms: BFS and DFS
 	 	- Shortest paths
 	 	- Spanning trees
+	 - Hash Tables
+	 - Recursion
 	 - Sorting algorithms
 
 
@@ -70,7 +72,10 @@
 
 6. [Module 6: Automation]()
 
-	 - step6
+	 - File Manipulation
+	 - Web Scraping
+	 - GUI Automation
+	 - Network Automation
 
 7. [Module 7: Testing]()
 
