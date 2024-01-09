@@ -300,8 +300,125 @@
 17 - Functions in Python
 """
 
-print(max(67,23,98,345,71,87,54))
-print(min(67,23,98,345,71,87,54))
-print(dir(__builtins__))
-print(help(pow))
-print(help(max))
+#Function defination begins with "def".
+#Function has a name and arguments
+
+#def get_final_answer(filename):
+    #Documentation String
+    #line1
+    #line2
+    #The keyword return indicates the value to be sent back to the caller
+    #return total_counter
+
+#t = "The answer is" #t bound to a string
+#y = 54 #y bound to an integer
+#print (t,y)
+
+#def myfun (x,y,z):
+#    return x * y * z
+#print(myfun(4,5,2))
+
+#def myfun (n, t=7, h="Hi"):
+#    return n + t
+#print(myfun(3,7,'Hello'))
+#print(myfun(8,6))
+#print(myfun(9))
+
+#def square(x): return x*x
+#def applier(q,x): return q(x)
+#print(applier(square, 7))
+
+#print(max(67,23,98,345,71,87,54))
+#print(min(67,23,98,345,71,87,54))
+#print(dir(__builtins__))
+#print(help(pow))
+#print(help(max))
+
+
+"""
+18 - Modules in Python
+"""
+
+#import math
+#print(math.sqrt(7))
+
+#print(help("modules"))
+#print(help(math))
+
+
+
+"""
+19 - User define functions in Python
+"""
+
+#def example():
+#    return "This is our function"
+#print(example())
+
+#def userinput():
+#    user = input("Please, enter your fname...\t")
+#    return user
+#print(userinput())
+
+
+#def addition():
+#    num1 = int(input("Enter first number: \t"))
+#    num2 = int(input("Enter Second number: \t"))
+#    return num1 + num2
+#print(addition())
+
+
+"""
+20 - User define functions with argument
+"""
+
+#def addition(num1, num2):
+#    return num1 + num2
+#print(addition(2,7))
+
+
+"""
+21 - Round of Modules and Functions
+"""
+
+#import Operations
+
+#print(Operations.add(10, 2))
+#print(Operations.subtract(10, 2))
+#print(Operations.mul(10, 2))
+#print(Operations.div(10, 2))
+
+
+
+"""
+22 - Time Module in Python
+"""
+
+#import time
+#print(time.time())
+#print(time.localtime(1704827819.8297575))
+
+
+"""
+23 - Example of Time module in Python
+"""
+
+import time
+
+print(time.time())
+
+login1 = time.time()
+Msg1 = time.time()
+Logout1 = time.time()
+
+Login2 = time.localtime(login1)
+Msg2 = time.localtime(Msg1)
+Logout2 = time.localtime(Logout1)
+
+Login = time.asctime(Login2)
+Msg = time.asctime(Msg2)
+Logout = time.asctime(Logout2)
+
+print(Login)
+print(Msg)
+print(Logout)
