@@ -300,7 +300,7 @@
 17 - Functions in Python
 """
 
-#Function defination begins with "def".
+#Function definition begins with "def".
 #Function has a name and arguments
 
 #def get_final_answer(filename):
