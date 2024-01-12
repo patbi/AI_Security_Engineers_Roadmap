@@ -142,7 +142,7 @@ obj2 = Class_name([args])
 """
 
 #class Employee:
-	"""This is employee class for maintaining employee data"""
+#	"""This is employee class for maintaining employee data"""
 #	def __init__(self,ip,name):
 #		self.addr = ip
 #		self.fname = name
@@ -160,3 +160,134 @@ obj2 = Class_name([args])
 """
 * isInstance() Function in Python
 """
+
+
+#class Isinstance:
+#	pass
+#s1 = Isinstance()
+#class Employee:
+#	"""This is employee class for maintaining employee data"""
+#	def __init__(self,ip,name):
+#		self.addr = ip
+#		self.fname = name
+#	def display(self):
+#		print(f"addr is {self.addr} and fname is {self.fname}")
+
+#e1 = Employee(760000, 'Hi')
+#e2 = Employee(707650, 'Hello')
+
+#print(isinstance(s1,Employee))
+
+
+"""
+* Instance variables & instance methods
+
+1 - Types of variables:
+	- Instance Variables
+		* Variables made for particular instance
+		* Separate copy is created for every object
+		* Values of variables differs from object to object
+		* Modication in one object won't effect other objects
+	
+2 - Class Variables
+
+	Creating instance variables
+		- Using constructor
+		- Using instance method
+		- Outside class
+"""
+
+#class Employee:
+#	def __init__(self, ip, name):
+#		self.addr = ip
+#		self.fname = name
+
+#	def display(self):
+#		print(self.addr,self.fname)
+
+#	def change_data(self):
+		#self.addr = 850000
+#		self.addr = int(input("enter new addr:"))
+		#self.fname = 'Pat'
+#		self.fname = input("enter new fname")
+
+
+#emply1 = Employee(9000, 'Hi')
+#emply2 = Employee(56000, 'Hello')
+#- outside the class
+#- emply2.company= 'Thenavigo'
+#- print(emply2.__dict__)
+#- emply1.display()
+
+#emply2.change_data()
+#print(emply2.__dict__)
+
+"""
+* Class variables:
+
+- Variables made for entire class (All objects)
+- Only one copy is created and distributed to all objects
+- Modification in class variable impact on all objects
+
+& Class methods:
+
+- Method which works on class variables
+- First argument is class reference
+- Made using decorator '@classmethod'
+"""
+
+#class Employee:
+#	company_name = "Thenavigo" #class variable
+#	def __init__(self,ip,name):
+#		self.addr = ip
+#		self.fname = name
+
+#	@classmethod
+#	def get_company_name(cls):
+		#cls.company_name = 'new_name'
+		#print(cls.company_name)
+#		print(f"company name is:", cls.company_name)
+
+#e1 = Employee(657, 'Hello')
+#e2 = Employee(35000, 'Hi')
+
+#print(Employee.company_name) #Thenavigo
+#print(e1.company_name) #Thenavigo
+
+#print(e2.__dict__)
+#e2.company_name = "example"
+#print(e2.__dict__)
+#Employee.get_company_name()
+
+
+"""
+* Stter and Getter Methods
+
+Instance methods:
+
+- setter method:- set values of instance variables
+- getter method:- get values of instance variables
+"""
+
+#class Employee:
+#	def setName(self,name):  #setter
+#		self.fname = name
+
+#	def getName(self):       #getter
+#		print("The fname is", self.fname)
+
+#e1 = Employee()
+#e2 = Employee()
+
+#e1.setName(input("Enter the fname:"))
+#e2.setName(input("Enter the fname:"))
+#print("e1 object is:",e1.__dict__)
+#print("e2 object is:",e2.__dict__)
+#e1.getName()
+#e2.getName()
+
+
+"""
+* Staticmethod in Python
+"""
+
