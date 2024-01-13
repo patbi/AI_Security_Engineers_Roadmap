@@ -356,3 +356,101 @@ m1 = Manager()
 e1.display()
 m1.show()
 print(m1.bonus)
+
+"""
+* Why we use inheritance ?
+
+- For Code-reusability (write once use many times)
+- When you have relations among classes
+
+"""
+
+#(No Inheritance used):
+
+#class Customers:
+#    - SetPersonalDetails()
+#    - GetPersonalDetails()
+#    - SetEducationDetails()
+#    - GetEducationDetails()
+#    - SetBankAccount()
+
+#class Employee:
+#    - SetPersonalDetails()
+#    - GetPersonalDetails()
+#    - SetEducationDetails()
+#    - GetEducationDetails()
+#    - SetBankAccount()
+#    - SetSalary()
+#    - SetBonus()
+
+#(Inheritance used):
+
+#class Customers:
+#    - SetPersonalDetails()
+#    - GetPersonalDetails()
+#    - SetEducationDetails()
+#    - GetEducationDetails()
+#    - SetBankAccount()
+
+
+#class Employee(Customers):
+#    - SetBankAccount()
+#    - SetSalary()
+#    - SetBonus()
+
+
+"""
+* Constructor in Inheritance
+
+How constructor works in inheritance:
+
+- By default, constructor of parent class available to child class
+"""
+
+#class Parent:
+#    def __init__(self):
+#        print("Parent constructor called")
+#        self.vehicule= "Scooter"
+
+#class Child(Parent):
+    #def __init__(self):
+        #pass
+        #print("Child constructor called")
+        #self.vehicule = "BMW"
+
+
+#c = Child()
+#print(c.__dict__)
+
+"""
+* Super() function
+
+- Using super() function, we can access parent class properties
+- This function returns a temporary object which contains reference to parent class
+- It makes inheritance more manageable and extensible
+"""
+
+class Techcompany(object):
+    def __init__(self):
+        self.name = 'Thenavigo'
+        self.size = 100000
+        print("Techcompany class constructor called")
+
+    def display(self):
+        print("Hello world")
+
+
+class NonTechcompany(Techcompany):
+    def __init__(self):
+        #super().display()
+        super().__init__()
+        self.type = 'LLC'
+        print("NonTechcompany class constructor called")
+
+Hi = NonTechcompany()
+print(Hi.__dict__)
+
+
+"""
+* Single and Multi-Level inheritance
+"""
