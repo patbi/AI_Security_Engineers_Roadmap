@@ -462,6 +462,8 @@ How constructor works in inheritance:
 #                One parent and multiple child classes: 
 #                object--> Parent -->(child1, child2)
 #            - Multiple Inheritance
+#                Class is derived from multiple base classes.
+#                Object --> (Parent1, Parent2) ==> Child
 #            - Hybrid Ihneritance
 #            - Cyclic Inheritance
 
@@ -491,24 +493,65 @@ Let's see
 
 # m1 = Managers()
 
-# Hierarchical Inheritance
+#- Hierarchical Inheritance
 
-class Company:
-    def __init__(self, name, ip):
-        self.fname = name
-        self.addr = ip
+#class Company:
+#    def __init__(self, name, ip):
+#        self.fname = name
+#        self.addr = ip
+#    def display(self):
+#        print("This is Company display method")
+
+#class Employee(Company):
+#    def __init__(self, name, ip, sal):
+#        super(Employee, self).__init__(name, ip)
+#        self.salary = sal
+#    def display(self):
+#        print("This is Employee display method")
+
+#class Founder(Company):
+#    def __init__(self, name, ip, s):
+#        super(Founder, self).__init__(name, ip)
+#        self.serial = s
+#    def display(self):
+#        print("This is Founder display method")
+
+#f1 = Founder('Hi', 34, 100)
+#print(f1.__dict__)
+
+#e1 = Employee('Hello', 567, 4000000)
+#print(e1.__dict__)
+
+#c1 = Company('Thenavigo', 87000)
+#print(c1.__dict__)
 
 
-class Employee(Company):
-    def __init__(self, sal):
-        self.salary = sal
+#- Multiple Inheritance syntax -
 
+"""
+#class Parent1(Object):
+#    #parent1 class properties
+class Parent2(Object):
+#    #parent2 class properties
+class Child(Parent1, Parent2):
+#    #child class properties
+"""
 
-class Founder(Company):
-    def __init__(self, name, ip, s):
-        super(Founder, self).__init__(name, ip)
-        self.serial = s
+class Country:
+    def __init__(self):
+        print("Country class constructor")
+        self.Office = 'Thenavigo'
 
+class State:
+    def __init__(self):
+        print("State class constructor")
+        self.Office = 'See-Docs'
 
-f1 = Founder('Hi', 34, 100)
-print(f1.__dict__)
+class District(State,Country):
+    def __init__(self):
+        super(District, self).__init__()
+        print("District class constructor")
+        self.Office = "DC"
+
+d = District()
+print(d.__dict__)
