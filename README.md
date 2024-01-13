@@ -99,7 +99,7 @@
 	 - Flask
 	 - FastAPI
 
-11. [Module 11: Data Modeling]()
+11. [Module 11: Data Modeling & Pipelines]()
 
 	 - step11
 

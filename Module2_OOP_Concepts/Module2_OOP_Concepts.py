@@ -261,7 +261,7 @@ obj2 = Class_name([args])
 
 
 """
-* Stter and Getter Methods
+* Setter and Getter Methods
 
 Instance methods:
 
@@ -288,6 +288,71 @@ Instance methods:
 
 
 """
-* Staticmethod in Python
+* Staticmethod in Python:
+
+- Methods which performs operations on external data
+- It can also perform operations on class data
+- No need to pass object or class reference
+- Create using decorator '@staticmethod'
+
+    - Types of methods:
+    
+        * Instance methods
+        * Class methods
+        * Static methods
 """
 
+#class Bank:
+#    bank_name ='Hi'
+#    rate_of_interest = 12.25
+#    @staticmethod
+#    def simple_interest(amount,n):
+#        result = (amount*n*Bank.rate_of_interest)/100
+#        print(result)
+
+#amount = float(input("Enter principle amount"))
+#n = int(input("Enter number of years:"))
+#Bank.simple_interest(amount,n)
+
+"""
+4 - Inheritance in Python
+
+* Inheritance deriving a new class from an existing class
+so that new class inherits all members(attributes + methods)
+of existing class is called as inheritance
+
+
+Old class: - Parent class, Base class,
+            Existing class, Super class
+
+New class, sub class, derived class
+
+* Object class:-
+    All classes in python are derived from built in 'object' class
+
+* Creating child class:-
+
+    class Parent(object):
+        #attributes+methods
+    
+    class Child(Parent):
+        #attributes+methods
+"""
+
+class Employee:
+    bonus = 2000
+    def display(self):
+        print("This is employee class method")
+
+
+class Manager(Employee):
+    bonus1 = 10000
+    def show(self):
+        print("This is manager class method")
+
+e1 = Employee()
+m1 = Manager()
+
+e1.display()
+m1.show()
+print(m1.bonus)
