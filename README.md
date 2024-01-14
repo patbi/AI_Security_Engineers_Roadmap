@@ -35,8 +35,8 @@
 	 - Classes
 	 - Objects
 	 - Inheritance
-	 - Polymorphism
 	 - Encapsulation
+	 - Polymorphism
 	 - Abstraction
 	 - Interface
 

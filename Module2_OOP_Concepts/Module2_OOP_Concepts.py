@@ -465,6 +465,8 @@ How constructor works in inheritance:
 #                Class is derived from multiple base classes.
 #                Object --> (Parent1, Parent2) ==> Child
 #            - Hybrid Ihneritance
+                It contains multiple type of inheritance.
+                Object-->(Parent1, Parent2) ==> (Child) ==> (Child1, Child2)
 #            - Cyclic Inheritance
 
 Let's see
@@ -537,21 +539,109 @@ class Child(Parent1, Parent2):
 #    #child class properties
 """
 
-class Country:
-    def __init__(self):
-        print("Country class constructor")
-        self.Office = 'Thenavigo'
+#class Country:
+#    def __init__(self):
+#        print("Country class constructor")
+#        self.Office = 'Thenavigo'
 
-class State:
-    def __init__(self):
-        print("State class constructor")
-        self.Office = 'See-Docs'
+#class State:
+#    def __init__(self):
+#        print("State class constructor")
+#        self.Office = 'See-Docs'
 
-class District(State,Country):
-    def __init__(self):
-        super(District, self).__init__()
-        print("District class constructor")
-        self.Office = "DC"
+#class District(State,Country):
+#    def __init__(self):
+#        super(District, self).__init__()
+#        print("District class constructor")
+#        self.Office = "DC"
 
-d = District()
-print(d.__dict__)
+#d = District()
+#print(d.__dict__)
+
+
+"""
+- MRO:- Method Resolution Order
+    MRO represents how properties (attributes+methods) are searched in inheritance.
+    Rule-01:
+        - Python First search in child class and then goes to parent class
+        -  Priority is to child class
+    
+    Rule-02:
+        - MRO Follows 'Depth First Left to Right approach'
+    Rules-03:
+    You can use mro(), method for knowing mro of any class objects
+"""
+
+#class A:
+#    pass
+#class B:
+#    pass
+#class C:
+#    pass
+#class X(A,B,C):
+#    pass
+#class Y(B,C):
+#    pass
+#class P(X,Y):
+#    pass
+
+#print(P.mro())
+
+
+"""
+5 - Encapsulation in Python
+
+- Wrapping up data and methods working on data together in a single unit
+(i.e class) is called as encapsulation
+
+* Access Modifiers in Python:-
+
+    - Generally, we restrict data access outside the class in encapsulation
+    - Encapsulation can be achieved by declaring the data members and methods of a class as private
+    - Three access specifiers:- public, private, protected
+    
+    - Public member:- Accessible anywhere by using oject reference
+    - Private member:- Accessible within the class. Accessible via methods only
+    - Protected member:- Accessible within class and it's subclasses
+
+
+* Advantages :
+
+  - Security
+  - Prevents accidental modifications
+  - Simplicity
+
+"""
+
+class Finance:
+    def __init__(self):
+        self.__revenue = 20000  #private data
+        self._number_of_sales = 224   #protected data
+        #self.__number_of_sales = 224  # private data
+
+    def display(self):
+        #print(f"revenue is: {self.__revenue} and number of sales: {self.__number_of_sales}")
+        #self.__revenue = 40000
+        print(f"revenue is: {self.__revenue} and number of sales: {self.__number_of_sales}")
+
+f1 = Finance()
+#f1.display()
+#print(f1.__dict__)
+
+#print(__revenue)
+#print(revenue)
+
+print(f1.__dict__)
+
+class HR:
+    def __init__(self):
+        self.number_of_empl = 40000000
+        f1.__revenue = 5 # '_HR__revenue': 5 =>> _classname__variable
+
+h1 = HR()
+print(f1.__dict__)
+
+
+"""
+6 - Polymorphism in Python
+"""
