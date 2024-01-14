@@ -643,5 +643,5 @@ print(f1.__dict__)
 
 
 """
-6 - Polymorphism in Python
+6 - Polymorphism in Python.
 """
