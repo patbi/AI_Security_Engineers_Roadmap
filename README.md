@@ -1,4 +1,4 @@
-# WE COVER
+# WE COVER,
 
 *Roadmap To Learn Python Programming*
 
