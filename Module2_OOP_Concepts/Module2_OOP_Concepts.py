@@ -724,50 +724,146 @@ to take many forms.
 #c1 = Cart()
 #print(c1)
 
-class Cart:
-    def __init__(self,programming,data,mlai):
-        self.languages = programming
-        self.datamodeling = data
-        self.artificialintelligence = mlai
+#class Cart:
+#    def __init__(self,programming,data,mlai):
+#        self.languages = programming
+#        self.datamodeling = data
+#        self.artificialintelligence = mlai
 
-    def __len__(self):
-        print("Total number of items in cart:")
-        return len(self.languages)+len(self.datamodeling)+len(self.artificialintelligence)
+#    def __len__(self):
+#        print("Total number of items in cart:")
+#        return len(self.languages)+len(self.datamodeling)+len(self.artificialintelligence)
 
-Thenavigo = Cart(['Python1','Python2','Python3'],['tool1','tool2'],['ai'])
-print(len(Thenavigo))  #6
+#Thenavigo = Cart(['Python1','Python2','Python3'],['tool1','tool2'],['ai'])
+#print(len(Thenavigo))  #6
 
 
 """
 * Polymorphism in Functions and Objects
 """
 
-class BMW:
-    def fuel_type(self):
-        print("Diesel")
+#class BMW:
+#    def fuel_type(self):
+#        print("Diesel")
 
-    def max_speed(self):
-        print("max speed is 500")
+#    def max_speed(self):
+#        print("max speed is 500")
 
-class Ferrari:
-    def fuel_type(self):
-        print("Petrol")
+#class Ferrari:
+#    def fuel_type(self):
+#        print("Petrol")
 
-    def max_speed(self):
-        print("max speed is 780")
+#    def max_speed(self):
+#        print("max speed is 780")
 
-def car_details(obj):
-    obj.fuel_type()
-    obj.max_speed()
+#def car_details(obj):
+#    obj.fuel_type()
+#    obj.max_speed()
 
-bmw = BMW()
-ferrari = Ferrari()
+#bmw = BMW()
+#ferrari = Ferrari()
 
-car_details(bmw)
-print("---------")
-car_details(ferrari)
+#car_details(bmw)
+#print("---------")
+#car_details(ferrari)
 
 
 """
-* Operator Overloading in Python
+* Operator Overloading in Python-01
+
+    - When same operator behaves differently depending on values
+    - You can assign a new meaning to operators also and you can extend
+    functionality of operators.
+    - You can change default behaviour of operator using over-riding.
 """
+#num1 = 34
+#num1 = "hello"
+#num2 = 24
+#num2 = "hi"
+#print(num1+num2)  #58   #hellohi
+#print(num1.__add__(num2))  #58
+#print(num1.__add__(num2))
+#print(int.__add__(num1,num2))
+#print(str.__add__(num1,num2))
+#print(dir(int))
+#print(dir(str))
+
+#step-1:- check datatype of left operand.  #int
+#step2:- go in that class
+#step3:- call __add__() function
+
+
+"""
+* Operator Overloading in Python-02
+"""
+
+#class Book:
+#    def __init__(self,title,pages):
+#        self.title = title
+#        self.pages = pages
+
+#    def __add__(self, other):  #(b1,b2)
+#        total = self.pages+other.pages
+#        return total
+
+
+#b1 = Book('book1', 534)
+#b2 = Book('book2', 876)
+#b3 = Book('book3', 376)
+
+#print("total number of pages:", b1.pages+b2.pages)
+#print("total number of pages:", b1+b2) #b1.__add__(b2)  --> Book.__add__(b1,b2)
+
+
+"""
+* Overloading Comparison Operators in Python
+"""
+
+class Person:
+    def __init__(self, name, addr):
+        self.name = name
+        self.addr = addr
+
+    # overload < operator
+    def __lt__(self, other):
+        return self.addr < other.addr
+
+p1 = Person("Alice", 20)
+p2 = Person("Bob", 30)
+
+print(p1 < p2)  # prints True
+print(p2 < p1)  # prints False
+
+#Operator Overloading in Python
+class Point:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        return "({0},{1})".format(self.x, self.y)
+
+    def __add__(self, other):
+        x = self.x + other.x
+        y = self.y + other.y
+        return Point(x, y)
+
+p1 = Point(1, 2)
+p2 = Point(2, 3)
+
+print(p1+p2)   # Output: (3,5)
+
+
+
+
+class O:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+    def __gt__(self, other):
+        return self.age>other.age
+
+o1 = O('O1', 200000)
+o2 = O('O2', 10000)
+print(o1>o2)
