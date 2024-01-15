@@ -439,9 +439,9 @@ How constructor works in inheritance:
 
 # class NonTechcompany(Techcompany):
 #    def __init__(self):
-# super().display()
-#        super().__init__()
-#        self.type = 'LLC'
+#       super().display()
+#       super().__init__()
+#       self.type = 'LLC'
 #       print("NonTechcompany class constructor called")
 
 # Hi = NonTechcompany()
@@ -613,35 +613,161 @@ class Child(Parent1, Parent2):
 
 """
 
-class Finance:
-    def __init__(self):
-        self.__revenue = 20000  #private data
-        self._number_of_sales = 224   #protected data
-        #self.__number_of_sales = 224  # private data
+#class Finance:
+#    def __init__(self):
+#        self.__revenue = 20000  #private data
+#        self._number_of_sales = 224   #protected data
+#        #self.__number_of_sales = 224  # private data
 
-    def display(self):
-        #print(f"revenue is: {self.__revenue} and number of sales: {self.__number_of_sales}")
-        #self.__revenue = 40000
-        print(f"revenue is: {self.__revenue} and number of sales: {self.__number_of_sales}")
+#    def display(self):
+#        #print(f"revenue is: {self.__revenue} and number of sales: {self.__number_of_sales}")
+#        #self.__revenue = 40000
+#        print(f"revenue is: {self.__revenue} and number of sales: {self.__number_of_sales}")
 
-f1 = Finance()
-#f1.display()
-#print(f1.__dict__)
+#f1 = Finance()
+#-f1.display()
+#-print(f1.__dict__)
 
 #print(__revenue)
 #print(revenue)
 
-print(f1.__dict__)
+#print(f1.__dict__)
 
-class HR:
-    def __init__(self):
-        self.number_of_empl = 40000000
-        f1.__revenue = 5 # '_HR__revenue': 5 =>> _classname__variable
+#class HR:
+#    def __init__(self):
+#        self.number_of_empl = 40000000
+#        f1.__revenue = 5 # '_HR__revenue': 5 =>> _classname__variable
 
-h1 = HR()
-print(f1.__dict__)
+#h1 = HR()
+#print(f1.__dict__)
 
 
 """
 6 - Polymorphism in Python.
+
+    - Polymorphism in python is an ability of python object
+to take many forms.
+    - If a variable, object, method performs different behaviour 
+    according to situation is called as polymorphism.
+"""
+
+#example + :- python object
+#print(10+20)  #30
+#print("Hello"+"Hi")  #HelloHi
+
+#len() function
+
+#print(len("Hello"))   #5 #count number of characters
+#print(len(['Hi','e','l','l','o']))  #5 #count number of items
+
+#reversed() function
+#tab = ["hi",'hello','welcome']
+#company = "infosys"
+
+#print("for tab now:")
+#for i in reversed(company):
+#    print(i)
+
+#print("for list now:")
+#for i in reversed(tab):
+#    print(i)
+
+
+"""
+* Polymorphism with Inheritance
+"""
+
+#class Veh:
+#    def __init__(self,name,ip,price):
+#        self.fname = name
+#        self.addr = ip
+#        self.price = price
+
+#    def get_details(self):
+#        print("fname is:", self.fname)
+#        print("addr is:", self.addr)
+#        print("price is:", self.price)
+
+#    def max_speed(self):
+#        print("maximum speed limit is 100")
+
+#    def gear(self):
+#        print("gear change is 10")
+
+#v1 = Veh("Truck", 675409, 50000000000000)
+#v1.get_details()
+
+
+#class Car(Veh):
+#    def max_speed(self):
+#        print("maximum speed limit is 340")
+
+#    def gear(self):
+#        print("gear change is 56")
+
+#V1 = Veh("Truck", 54629, 50000000)
+#C1 = Car("Car", 982340, 23000000)
+#V1.get_details()
+#C1.get_details()
+#V1.max_speed()
+#C1.max_speed()
+
+
+"""
+* Over-riding Built in Functions
+"""
+
+#class Cart:
+#    def __str__(self):
+#        return "This is cart class object"
+
+#c1 = Cart()
+#print(c1)
+
+class Cart:
+    def __init__(self,programming,data,mlai):
+        self.languages = programming
+        self.datamodeling = data
+        self.artificialintelligence = mlai
+
+    def __len__(self):
+        print("Total number of items in cart:")
+        return len(self.languages)+len(self.datamodeling)+len(self.artificialintelligence)
+
+Thenavigo = Cart(['Python1','Python2','Python3'],['tool1','tool2'],['ai'])
+print(len(Thenavigo))  #6
+
+
+"""
+* Polymorphism in Functions and Objects
+"""
+
+class BMW:
+    def fuel_type(self):
+        print("Diesel")
+
+    def max_speed(self):
+        print("max speed is 500")
+
+class Ferrari:
+    def fuel_type(self):
+        print("Petrol")
+
+    def max_speed(self):
+        print("max speed is 780")
+
+def car_details(obj):
+    obj.fuel_type()
+    obj.max_speed()
+
+bmw = BMW()
+ferrari = Ferrari()
+
+car_details(bmw)
+print("---------")
+car_details(ferrari)
+
+
+"""
+* Operator Overloading in Python
 """
