@@ -853,9 +853,7 @@ p2 = Point(2, 3)
 
 print(p1+p2)   # Output: (3,5)
 
-
-
-
+# overload > operator
 class O:
     def __init__(self,name,age):
         self.name = name
