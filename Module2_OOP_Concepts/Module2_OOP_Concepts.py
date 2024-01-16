@@ -922,47 +922,47 @@ Addition()===> add(n1,n2), add(n1,n2,n3), add(n1,n2,n3,n4)
 """
 
 #Nested class
-class Outer:
-    def __init__(self):
-        print("outer class constructor called")
+#class Outer:
+#    def __init__(self):
+#        print("outer class constructor called")
 
-    def display(self):
-        print("This is display method")
+#    def display(self):
+#        print("This is display method")
 
-    class Inner:
-        def __init__(self):
-            print("Inner constructor called")
-        def show(self):
-            print("This is show method")
+#    class Inner:
+#        def __init__(self):
+#            print("Inner constructor called")
+#        def show(self):
+#            print("This is show method")
 
-obj = Outer()
-in1 = obj.Inner()
-in1.show()
-obj.display()
+#obj = Outer()
+#in1 = obj.Inner()
+#in1.show()
+#obj.display()
 
 
 """
 * Access Members of One Class Inside Another Class
 """
 
-class Employee:
-    def __init__(self,eid,name,sal):
-        self.emp_id = eid
-        self.emp_name = name
-        self.emp_salary = sal
-    def display(self):
-        print("Employee id:", self.emp_id)
-        print("Employee name:", self.emp_name)
-        print("Employee salary:", self.emp_salary)
+#class Employee:
+#    def __init__(self,eid,name,sal):
+#        self.emp_id = eid
+#        self.emp_name = name
+#        self.emp_salary = sal
+#    def display(self):
+#        print("Employee id:", self.emp_id)
+#        print("Employee name:", self.emp_name)
+#        print("Employee salary:", self.emp_salary)
 
-class Changes:
-    @staticmethod
-    def increment(obj):
-        obj.emp_salary = obj.emp_salary+5000
-        obj.display()
+#class Changes:
+#    @staticmethod
+#    def increment(obj):
+#        obj.emp_salary = obj.emp_salary+5000
+#        obj.display()
 
-e1 = Employee(201, 'Thenavigo', 70000)
-Changes.increment(e1)
+#e1 = Employee(201, 'Thenavigo', 70000)
+#Changes.increment(e1)
 
 
 """
@@ -978,24 +978,24 @@ What is Destructor ?
 """
 
 
-class Thenavigo:
-    def __init__(self,name,salary):
-        self.name = name
-        self.salary = salary
+#class Thenavigo:
+#    def __init__(self,name,salary):
+#        self.name = name
+#        self.salary = salary
 
-    def display(self):
-        print(f"name is {self.name}\nsalary is:{self.salary}")
+#    def display(self):
+#        print(f"name is {self.name}\nsalary is:{self.salary}")
 
     #defining destructor
-    def __del__(self):
-        print("Destructor is called")
+#    def __del__(self):
+#        print("Destructor is called")
 
-t1 = Thenavigo("Thenavigo", 1000000000000)
+#t1 = Thenavigo("Thenavigo", 1000000000000)
 #t1.display()
-t2 = t1
-del t1
+#t2 = t1
+#del t1
 
-time.sleep(5)
+#time.sleep(5)
 
 
 """
@@ -1009,22 +1009,95 @@ time.sleep(5)
 """
 
 #Circular Referencing
-class E:
-    def __init__(self,obj2):
-        self.obj2 = obj2
-    def __del__(self):
-        print("Employee class destructor called")
+#class E:
+#    def __init__(self,obj2):
+#        self.obj2 = obj2
+#    def __del__(self):
+#        print("Employee class destructor called")
 
-class Account:
-    def __init__(self,num):
-        self.account_number = num
-        self.obj1 = E(self)
-    def __del__(self):
-        print("Account class destructor called")
+#class Account:
+#    def __init__(self,num):
+#        self.account_number = num
+#        self.obj1 = E(self)
+#    def __del__(self):
+#        print("Account class destructor called")
 
-acc = Account(4321)
-del acc
-time.sleep(5)
+#acc = Account(4321)
+#del acc
+#time.sleep(5)
 
 
 #Exception occurs in__init__()
+#class NegativeAge(Exception):
+#    pass
+
+#class Age:
+#    def __init__(self,age):
+#        if ag < 0;
+#        raise NegativeAge("age cannot be negative")
+
+#    def __del__(self):
+#        print("Destructor is called")
+
+#ag = Age(-10)
+
+"""
+* Storing Objects in List | OOP Example
+"""
+
+class Movie(object):
+    def __init__(self,title,mins,hero):
+        self.title = title
+        self.runtime = mins
+        self.hero = hero
+
+    def printer(self):
+        print(f"Title is: {self.title}\nruntime is: {self.runtime}\nhero is: {self.hero}")
+list_of_movies = []
+while True:
+    title= input("Enter the title of movie:")
+    mins = input("Enter the runtime of movie:")
+    hero = input("Enter the name of hero of movie:")
+    obj = Movie(title,mins,hero)
+    list_of_movies.append(obj)
+    print("Movie added into the list")
+    ans = input("Do you want to add another movie(y/n)")
+    if ans!='y':
+        break
+
+print("All movies information:")
+for obj in list_of_movies:
+    obj.printer()
+
+
+"""
+* Class Decorator in Python
+    -Two types of decorators:
+        - Function Decorators
+        - Class Decorators
+"""
+
+class Decorator(object):
+    def __init__(self,func):
+        self.function = func
+
+    def __call__(self, a, b):
+        result = self.function(a,b)
+        return result**2
+
+@Decorator
+def add(a,b):
+    return a+b
+
+print(add(2,3))
+#print(1,2)
+#add = Decorator(add)
+#print(add(1,2))  #add.__call__(a,b)
+
+
+
+
+
+"""
+ 7&8 - Abstraction - Interface in Python
+"""
