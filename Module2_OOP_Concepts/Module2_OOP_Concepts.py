@@ -1100,4 +1100,42 @@ print(add(2,3))
 
 """
  7&8 - Abstraction - Interface in Python
+ 
+ - What is Abstraction ?
+    - The process by which data and functions are defined in 
+    such a way that only essential details can be seen and
+    unnecessary implementations are hidden is called Data Abstraction
+    - Hiding complex implementation details and showing only signatures to users.
+    
+    Multiple uses of Abstraction:
+        - By using abc module:- ABC class abstractmethod
+        - Inherit your class from ABC class
+        - Create abstract methods in your abstract class
+    
 """
+
+
+#from abc import ABC, abstractmethod
+
+#class Car(ABC):
+#    @abstractmethod
+#    def mileage(self):
+#        pass
+#    def color(self):
+#        print("black")
+
+#class Thenavigo_Suziki(Car):
+#    def mileage(self):
+#        print("mileage is 40kmph")
+
+#class H(Car):
+#    def mileage(self):
+#        print("mileage is 50 kmph")
+
+#class Duster(Car):
+#    def mileage(self):
+#        print("mileage is 35kmph")
+
+#c1 = Car()
+
+
