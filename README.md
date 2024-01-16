@@ -67,7 +67,12 @@
 
 5. [Module 5: Linux]()
 
-	 - step5
+	 - Download Virtualbox or Vmware
+	 - Install Ubuntu
+	 - Refresh Linux commands
+	 - Learn to use Docker
+	 - Learn to use Rancher (Docker alternative)
+	 - Learn Kubernetes
 
 
 6. [Module 6: Automation]()
