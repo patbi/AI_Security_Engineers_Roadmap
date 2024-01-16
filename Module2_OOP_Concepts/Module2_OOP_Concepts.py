@@ -6,6 +6,7 @@ Why OOP ?
 
 To solve real-world problems effectively.
 """
+import time
 
 """
 1 - Creating Class and Object
@@ -819,49 +820,211 @@ to take many forms.
 * Overloading Comparison Operators in Python
 """
 
-class Person:
-    def __init__(self, name, addr):
-        self.name = name
-        self.addr = addr
+#class Person:
+#    def __init__(self, name, addr):
+#        self.name = name
+#        self.addr = addr
 
     # overload < operator
-    def __lt__(self, other):
-        return self.addr < other.addr
+#    def __lt__(self, other):
+#        return self.addr < other.addr
 
-p1 = Person("Alice", 20)
-p2 = Person("Bob", 30)
+#p1 = Person("Alice", 20)
+#p2 = Person("Bob", 30)
 
-print(p1 < p2)  # prints True
-print(p2 < p1)  # prints False
+#print(p1 < p2)  # prints True
+#print(p2 < p1)  # prints False
 
-#Operator Overloading in Python
-class Point:
-    def __init__(self, x=0, y=0):
-        self.x = x
-        self.y = y
 
-    def __str__(self):
-        return "({0},{1})".format(self.x, self.y)
+"""
+* Operator Overloading in Python
+"""
 
-    def __add__(self, other):
-        x = self.x + other.x
-        y = self.y + other.y
-        return Point(x, y)
+#class Point:
+#    def __init__(self, x=0, y=0):
+#        self.x = x
+#        self.y = y
 
-p1 = Point(1, 2)
-p2 = Point(2, 3)
+#    def __str__(self):
+#        return "({0},{1})".format(self.x, self.y)
 
-print(p1+p2)   # Output: (3,5)
+#    def __add__(self, other):
+#        x = self.x + other.x
+#        y = self.y + other.y
+#        return Point(x, y)
+
+#p1 = Point(1, 2)
+#p2 = Point(2, 3)
+
+#print(p1+p2)   # Output: (3,5)
 
 # overload > operator
-class O:
-    def __init__(self,name,age):
+#class O:
+#    def __init__(self,name,age):
+#        self.name = name
+#        self.age = age
+
+#    def __gt__(self, other):
+#        return self.age>other.age
+
+#o1 = O('O1', 200000)
+#o2 = O('O2', 10000)
+#print(o1>o2)
+
+
+"""
+* Method Overloading in Python
+    - Method overloading in OOP
+        When a class contain two or more methods with same name but
+        different behaviour is called as method overloading
+
+Addition()===> add(n1,n2), add(n1,n2,n3), add(n1,n2,n3,n4)
+"""
+
+#class Addition:
+#    def add(self,num1,num2):
+#        print("addition is:",num1+num2)
+
+#    def add(self,num1,num2,num3):
+#        print("addition is:",num1+num2+num3)
+
+#a = Addition()
+#a.add(20,10)
+#a.add(30,20,10)
+
+
+"""
+* Method Overloading in Python - Part2
+    How to achieve method overloading ?
+        To overload class methods, we need to write method's logic
+        so that different code executes inside the method according
+        to parameters provided.
+"""
+
+#class Addition:
+#    def add(self,num1=None,num2=None,num3=None):
+#        if num1!=None and num2!=None and num3!=None:
+#            print("Addition is:", num1+num2+num3)
+#        elif num1!=None and num2!=None:
+#            print("Addition is:", num1+num2)
+#        else:
+#            print("incorrect parameters provided")
+
+#add1 = Addition()
+#add1.add(20,10)
+#add1.add(30,20,10)
+
+"""
+* Nested Class in Python or Inner Class in Python
+    Nested class is the Class which is declared inside another class.
+    Why it is required ?
+        when one class object cannot exist without another class object
+"""
+
+#Nested class
+class Outer:
+    def __init__(self):
+        print("outer class constructor called")
+
+    def display(self):
+        print("This is display method")
+
+    class Inner:
+        def __init__(self):
+            print("Inner constructor called")
+        def show(self):
+            print("This is show method")
+
+obj = Outer()
+in1 = obj.Inner()
+in1.show()
+obj.display()
+
+
+"""
+* Access Members of One Class Inside Another Class
+"""
+
+class Employee:
+    def __init__(self,eid,name,sal):
+        self.emp_id = eid
+        self.emp_name = name
+        self.emp_salary = sal
+    def display(self):
+        print("Employee id:", self.emp_id)
+        print("Employee name:", self.emp_name)
+        print("Employee salary:", self.emp_salary)
+
+class Changes:
+    @staticmethod
+    def increment(obj):
+        obj.emp_salary = obj.emp_salary+5000
+        obj.display()
+
+e1 = Employee(201, 'Thenavigo', 70000)
+Changes.increment(e1)
+
+
+"""
+* Destructor in Python
+In OOP, we have two terms: Constructor, Destructor
+
+What is Destructor ?
+    - A special method which destroys objects and releases resources tied to objects.
+    - Destructor is called automatically when object is destroyed
+    - Object is created using __new__() method
+    - Object is initialized using __init__() method
+    - Destructor invoked using __del__() method
+"""
+
+
+class Thenavigo:
+    def __init__(self,name,salary):
         self.name = name
-        self.age = age
+        self.salary = salary
 
-    def __gt__(self, other):
-        return self.age>other.age
+    def display(self):
+        print(f"name is {self.name}\nsalary is:{self.salary}")
 
-o1 = O('O1', 200000)
-o2 = O('O2', 10000)
-print(o1>o2)
+    #defining destructor
+    def __del__(self):
+        print("Destructor is called")
+
+t1 = Thenavigo("Thenavigo", 1000000000000)
+#t1.display()
+t2 = t1
+del t1
+
+time.sleep(5)
+
+
+"""
+* Disadvantages of Destructor
+    - Circular Referencing
+     (when two objects refer to each other)
+    - Exception occurs in__init__()
+        - Destructor
+        - Object is not initialized and destructor is clearing resources
+        - May lead to another exception
+"""
+
+#Circular Referencing
+class E:
+    def __init__(self,obj2):
+        self.obj2 = obj2
+    def __del__(self):
+        print("Employee class destructor called")
+
+class Account:
+    def __init__(self,num):
+        self.account_number = num
+        self.obj1 = E(self)
+    def __del__(self):
+        print("Account class destructor called")
+
+acc = Account(4321)
+del acc
+time.sleep(5)
+
+
+#Exception occurs in__init__()
