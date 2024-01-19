@@ -59,7 +59,63 @@ url: https://www.python.org/downloads/
 
 
 """
-1 - Arrays in python
+1 - Arrays Getting Started: in python: data structures
+
+A collection of elements / values
+each identified by an array index or key.
+
+	- index starts at zero
+	- because of the indexes: random access is possible
 
 
+* Multidimensional arrays: it can prove to be very important in mathematical related computations (matrixes)
+	- numbers[][] two dimensional array
+	- First parameter: row index, Second parameter: column index
+
+
+* Arrays:
+
+- Arrays are data structures in order to store items of the same type
+- We use indices as keys 
+- Arrays can have as many dimensions as we want: one or two dimensional arrays are quite popular
+- For example:storing a matrix --> two dimensional array
+- Dynamic array: when the size of the array is changing dynamically
+- Applications: looking tables / hashtables, heaps
+
+
+* Advantages:
+- We can use random access because of the keys: getItem(int index)
+		will return the value with the given key very fast // O(1)
+- Very easy to implement and to use 
+- Very fast data struxture
+- We should use arrays in applications when we want to add items over and over again and we want to take items with given indexes~ it will be fast
+
+
+* Disadvantages:
+- We have to now the size of the array at compile-time: so it is not so dynamic data structure
+- If it is full: we have to create a bigger array and have to copy the values one by one // reconstructing an array is 0(N) operation
+- It is not able to store items with different types
+
+"""
+
+
+"""
+* Arrays all operations in python
+
+	- Arrays operation: add
+		We can keep adding values to the array as far the array is not full
+		So: when adding new values to the list, we just have to insert it with the next index --> very fast O(1) operation
+	
+	- Arrays operation: insert item
+		We would like to insert a given value with a given index
+		So: it is a bit more problematic, sometime we have to shift lots of values in order to be able to insert the new one ~ O(N) time complexity
+
+		Add new item: O(1)
+		Insert item to a given index: O(N)
+
+	
+	- Arrays operation: remove items
+		removeLast(): We would like to remove the last item, it is very simple, just remove it // O(1) time complexity
+		
+		remove(1) - Arrays operation
 """
