@@ -117,5 +117,41 @@ each identified by an array index or key.
 	- Arrays operation: remove items
 		removeLast(): We would like to remove the last item, it is very simple, just remove it // O(1) time complexity
 		
-		remove(1) - Arrays operation
+		remove(1) - Arrays operation: remove items with given index we would like to remove a value with a given, it is not that simple, we may have to shift items // O(N) time complexity
+		So: overall complexity will be linear O(N)
+	
+
+		removing last item: O(1)
+		removing first item,middle item: O(N)
 """
+
+
+
+"""
+* Arrays in Python
+"""
+
+numbers = [25.5,20,10,40,30,50,70];
+#random indexing --> O(1) get items if we know the index
+
+#print(numbers[5]);
+#numbers[5] = 100;
+#numbers[5] = 'Thenavigo';
+#print(numbers[5]);
+
+#for num in numbers:
+#    print(num);
+
+#for i in range(len(numbers)):
+#    print(numbers[i]);
+
+#print(numbers[0:2]);
+
+
+#O(N) search running time
+maximum = numbers[0];
+for num in numbers:
+    if num > maximum:
+        maximum = num;
+
+print(maximum);
