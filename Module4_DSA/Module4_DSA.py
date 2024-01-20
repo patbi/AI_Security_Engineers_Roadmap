@@ -131,7 +131,7 @@ each identified by an array index or key.
 * Arrays in Python
 """
 
-numbers = [25.5,20,10,40,30,50,70];
+#numbers = [25.5,20,10,40,30,50,70];
 #random indexing --> O(1) get items if we know the index
 
 #print(numbers[5]);
@@ -149,9 +149,59 @@ numbers = [25.5,20,10,40,30,50,70];
 
 
 #O(N) search running time
-maximum = numbers[0];
-for num in numbers:
-    if num > maximum:
-        maximum = num;
+#maximum = numbers[0];
+#for num in numbers:
+#    if num > maximum:
+#        maximum = num;
 
-print(maximum);
+#print(maximum);
+
+
+
+"""
+2 - Linked list in python
+
+- Linked lists are composed of nodes and references / pointers pointing from one node to the other.
+The last reference is pointing to a NULL
+
+	* A single node:
+		- contains data --> integer, double or custom object 
+		- contains a reference pointing to the next node in the linked list
+
+	class Node {
+		data
+		Node nextNode
+
+
+		...
+	}
+
+
+- Each node is composed of a data and a reference/link to the next node in the sequence
+- Simple and very common data structure
+- They can be used to implement several other common data types: stacks, queues
+- Simple linked lists by themselves do not allow random access to the data // so we can not use indexes ..getItem(int index)
+- Many basic operations such as obtaining the last node of the list or finding a node that
+	contains a given data or locating the place where a new node should be inserted --require sequential scanning of most or all of the list elements
+
+
+	* Advantages:
+	
+	- Linked lists are dynamic data structures (arrays are not)
+	- It can allocate the needed memory in run-time
+	- Very efficient if we want to manipulate the first elements
+	- Easy implementation
+	- Can store items with different sizes: an array assumes every element to be exactly the same
+	- It's easier for a linked list to grow organically. An array's size needs to be known ahead of time, or re-created when it needs to grow
+
+
+
+	* Disadvantages:
+	- Waste memory because of the references
+	Nodes in a linked list must be read in order from the beginning as linked lists have sequential access (array items can reached via indexes in O(1) time)
+	- Difficulties arise in linked lists when it comes to reverse traversing.
+	Singly linked lists are extremely difficult to naigate backwards.
+	- Solution: doubly linked lists --> easier to read, but memory is wasted is allocating space for a back pointer
+"""
+
+
