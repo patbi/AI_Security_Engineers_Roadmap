@@ -250,7 +250,7 @@ linkedList.remove(10)
 	- Solution: doubly linked list --> Node class has two references, one pointing to the next node, one pointing to the previous node.
 
 	12 <-- 4 <-- 123 <-- (-7) <-- 25 
-									--> NULL
+					  --> NULL
 	12 --> 4 --> 123 -->  (-7) --> 25 	
 """
 
@@ -289,7 +289,7 @@ linkedList.remove(10)
 
 
 
-							LinkedList         Arrays
+			   LinkedList         Arrays
 Search                      O(N)               O(1)
 Insert at the start         O(1)               O(N)
 Insert at the end           O(N)               O(1)
