@@ -299,6 +299,6 @@ Waste space                 O(N)               0
 
 
 """
-* Linked list insertion implementation in python.
+* Linked list insertion implementation in python
 
 """
