@@ -243,15 +243,15 @@ linkedList.remove(10)
 
 	- Problems with linked lists:
 	
-	Fo example: 12 --> 4 --> 123 --> -7 --> 25 --> NULL
+	Fo example: 12 --> 4 --> 123 --> (-7) --> 25 --> NULL
 
 	We can get from 4 to 25 because we just have to hop to the next nodes BUT we can not go from 25 to 4 because the references are in the opposite directions
 
 	- Solution: doubly linked list --> Node class has two references, one pointing to the next node, one pointing to the previous node.
 
-	12 <-- 4 <-- 123 <--7 <-- 25 
+	12 <-- 4 <-- 123 <-- (-7) <-- 25 
 										--> NULL
-	12 --> 4 --> 123 --> 7 --> 25 	
+	12 --> 4 --> 123 -->  (-7) --> 25 	
 """
 
 
