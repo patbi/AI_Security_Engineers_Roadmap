@@ -298,3 +298,7 @@ linkedList.remove(10)
 """
 
 
+"""
+* Linked list insertion implementation in python
+
+"""
