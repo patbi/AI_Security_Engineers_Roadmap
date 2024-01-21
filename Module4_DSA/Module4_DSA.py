@@ -205,3 +205,96 @@ The last reference is pointing to a NULL
 """
 
 
+"""
+* Linked list operations: insertion
+
+	- Inserting items at the beginning of the linked list: very simple, we just have to update the references --> O(1) time complexity
+
+	linkedList.insertAtStart(10);
+	linkedList.insertAtStart(4);
+	linkedList.insertAtStart(-5);
+
+	- Inserting items at the end of the linked list: not thatvery simple, we have to traverse the whole linked list to find the last node.
+		How do we find the last node ? We know the last node is pointing to a NULL.
+
+		Plus we have to update the references when we get there O(N) time complexity
+
+			- Insert at the beginning O(1)
+			- Inserting at the end O(N)
+
+* Linked list operations: remove
+
+	- Remove item at the beginning of the list is always very fast: we do not have to search the item, we just have to update the references accordingly O(1) time complexity
+
+linkedList.removeStart()
+
+	- Remove item at a given point of the list is not always very fast: we have to searLinked list operations: insertionh for the given item whiLinked list operations: insertionh may take lot of time
+		if the item is at the end of the list O(N) time complexity
+linkedList.remove(10)
+
+		- Remove items at the beginning: O(1)
+		- Remove items at given positions: O(N) in the main
+
+"""
+
+
+"""
+* Doubly linked list in python
+
+	- Problems with linked lists:
+	
+	Fo example: 12 --> 4 --> 123 --> -7 --> 25 --> NULL
+
+	We can get from 4 to 25 because we just have to hop to the next nodes BUT we can not go from 25 to 4 because the references are in the opposite directions
+
+	- Solution: doubly linked list --> Node class has two references, one pointing to the next node, one pointing to the previous node.
+
+	12 <-- 4 <-- 123 <--7 <-- 25 
+										--> NULL
+	12 --> 4 --> 123 --> 7 --> 25 	
+"""
+
+
+
+"""
+* linked lists vs arrays
+
+	1) Search:
+
+	- Search operation yields the same result for both data structure
+	- ArrayList search operation is pretty fast compared to the LinkedList search operation
+	- We can use random access with arrays: getItem(int index) which is O(1) time complexity
+	- LinkedList performance is O(N) time complexity
+	- So the conclusion: ArrayList is better for this operation
+	- Why ?
+	- ArrayList maintains index based system for its elements as it uses array data structure implicity which makes it faster for searching an element in the list
+	- On the other hand LinkedList requires the traversal through all the items for searching an element
+
+
+	2) Deletion:
+
+	- LinkedList remove operation takes O(1) time if we remove items from the beginning and usually this is the case
+	- ArrayList: removing first element ( so at the beginning ) takes O(N) time, removing the last item takes O(1) times
+	- But on average: we have to reconstruct the array when removing
+	- So the conclusion: LinkedList is better for this operation
+	- Why ?
+	- LinkedList basically operates with pointers: removal only requires change in the pointer location which can be done very fast
+
+
+	3) Memory management:
+
+	- Arrays do not need any extra memory
+	- LinkedLists on the other hand do need extra memory because of the references / pointers
+	- So in this aspect: arrays are better, they are memory friendly 
+
+
+
+								LinkedList         Arrays
+	Search                      O(N)               O(1)
+	Insert at the start         O(1)               O(N)
+	Insert at the end           O(N)               O(1)
+	Waste space                 O(N)               0
+
+"""
+
+
