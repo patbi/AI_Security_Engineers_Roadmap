@@ -72,9 +72,11 @@
 	 - Download & Install Ubuntu
 	 	- [Download & Install Ubuntu](https://cdimage.ubuntu.com/ubuntu-mate/releases/18.04/release/)
 	 - Refresh Linux commands
+	 	- [Refresh Linux commands](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/)
 	 - Learn to use Docker
 	 	- [Learn to use Docker](https://docs.docker.com/compose/gettingstarted/)
 	 	- [Docker-curriculum](https://docker-curriculum.com/)
+	 	- [Download docker-desktop](https://www.docker.com/products/docker-desktop/)
 	 - Learn to use Rancher (Docker alternative)
 	 - Learn Kubernetes
 
