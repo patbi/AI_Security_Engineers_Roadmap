@@ -67,10 +67,10 @@
 
 5. [Module 5: Linux]()
 
-	 - Download Virtualbox or Vmware
-	 - Install Ubuntu
+	 - [Download Virtualbox or Vmware](https://www.virtualbox.org/wiki/Downloads)
+	 - [Download & Install Ubuntu](https://cdimage.ubuntu.com/ubuntu-mate/releases/18.04/release/)
 	 - Refresh Linux commands
-	 - Learn to use Docker
+	 - [Learn to use Docker](https://docs.docker.com/compose/gettingstarted/)
 	 - Learn to use Rancher (Docker alternative)
 	 - Learn Kubernetes
 
@@ -95,6 +95,7 @@
 
 	 - Mastery MongoDB
 	 - Mastery SQL
+	 - Mastery Firebase
 	 - ETC...& Future Databases
 
 
