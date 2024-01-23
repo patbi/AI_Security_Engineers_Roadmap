@@ -93,9 +93,9 @@
 
 9. [Module 9: Databases]()
 
-	 - NoSQL
-	 - SQL
-	 - ETC
+	 - Mastery MongoDB
+	 - Mastery SQL
+	 - ETC...& Future Databases
 
 
 10. [Module 10: Web Frameworks]()
@@ -111,7 +111,9 @@
 
 12. [Module 12: Data Tools & Best Practices Overview]()
 
-	 - step12
+	 - Mastery Airflow
+	 - Mastery Databricks 
+	 - Mastery SNOWFLAKE
 
 
 13. [Module 13: Data science]()
