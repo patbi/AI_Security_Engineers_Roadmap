@@ -360,6 +360,6 @@ class LinkedList(object):
         actualNode = self.head;
 
         while actualNode is not None:
-            print("%d " actualNode.data);
+            print("%d " % actualNode.data);
             actualNode = actualNode.nextNode;
             
