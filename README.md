@@ -78,7 +78,10 @@
 	 	- [Docker-curriculum](https://docker-curriculum.com/)
 	 	- [Download docker-desktop](https://www.docker.com/products/docker-desktop/)
 	 - Learn to use Rancher (Docker alternative)
+	 	- [Learn to use Rancher](https://github.com/rancher/rancher)
+	 	- [Rancher Desktop](https://medium.com/@lahirusammika/rancher-desktop-71f9b3199c7d)
 	 - Learn Kubernetes
+	 	- [Learn Kubernetes](https://kubernetes.io/docs/home/)
 
 
 6. [Module 6: Automation]()
