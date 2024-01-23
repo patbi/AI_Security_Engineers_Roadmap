@@ -94,7 +94,10 @@
 
 7. [Module 7: Testing]()
 
-	 - step7
+	 - Unit Testing
+	 - Integration Testing
+	 - End-to-end testing
+	 - Load Testing
 
 8. [Module 8: Advanced]()
 
