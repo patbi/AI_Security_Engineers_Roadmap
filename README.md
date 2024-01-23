@@ -109,11 +109,12 @@
 	 - step11
 
 
-12. [Module 12: Data Tools & Best Practices Overview]()
+12. [Module 12: Data/ML/AI Tools & Best Practices Overview]()
 
 	 - Mastery Airflow
 	 - Mastery Databricks 
 	 - Mastery SNOWFLAKE
+	 - Iguazio
 
 
 13. [Module 13: Data science]()
