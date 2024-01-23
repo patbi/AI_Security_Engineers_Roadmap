@@ -114,7 +114,7 @@
 	 - Mastery Airflow
 	 - Mastery Databricks 
 	 - Mastery SNOWFLAKE
-	 - Iguazio
+	 - Mastery Iguazio
 
 
 13. [Module 13: Data science]()
