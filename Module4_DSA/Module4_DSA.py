@@ -343,8 +343,23 @@ class LinkedList(object):
 			actualNode = actualNode.nextNode;
 		return size;
 
+#Linked list implementation in python (travese)
 
+    def insertEnd(self, data):
 
-"""
-* Linked list implementation in python (travese)
-"""		
+        self.size = self.size + 1;
+        newNode = Node(data);
+        actualNode = self.head;
+
+        while actualNode.nextNode is not Node:
+            actualNode = actualNode.nextNode;
+
+        actualNode.nextNode = newNode;
+
+    def traverseList(self):
+        actualNode = self.head;
+
+        while actualNode is not None:
+            print("%d " actualNode.data);
+            actualNode = actualNode.nextNode;
+            
