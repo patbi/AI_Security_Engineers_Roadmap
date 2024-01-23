@@ -67,10 +67,14 @@
 
 5. [Module 5: Linux]()
 
-	 - [Download Virtualbox or Vmware](https://www.virtualbox.org/wiki/Downloads)
-	 - [Download & Install Ubuntu](https://cdimage.ubuntu.com/ubuntu-mate/releases/18.04/release/)
+	 - Download Virtualbox or Vmware
+	 	- [Download Virtualbox or Vmware](https://www.virtualbox.org/wiki/Downloads)
+	 - Download & Install Ubuntu
+	 	- [Download & Install Ubuntu](https://cdimage.ubuntu.com/ubuntu-mate/releases/18.04/release/)
 	 - Refresh Linux commands
-	 - [Learn to use Docker](https://docs.docker.com/compose/gettingstarted/)
+	 - Learn to use Docker
+	 	- [Learn to use Docker](https://docs.docker.com/compose/gettingstarted/)
+	 	- [Docker-curriculum](https://docker-curriculum.com/)
 	 - Learn to use Rancher (Docker alternative)
 	 - Learn Kubernetes
 
