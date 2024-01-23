@@ -68,7 +68,8 @@
 5. [Module 5: Linux]()
 
 	 - Download Virtualbox or Vmware
-	 	- [Download Virtualbox or Vmware](https://www.virtualbox.org/wiki/Downloads)
+	 	- [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+	 	- [Download Vmware](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
 	 - Download & Install Ubuntu
 	 	- [Download & Install Ubuntu](https://cdimage.ubuntu.com/ubuntu-mate/releases/18.04/release/)
 	 - Refresh Linux commands
