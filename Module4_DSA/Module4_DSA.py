@@ -304,17 +304,19 @@ Waste space                 O(N)               0
 """
 
 class Node(object):
+
 	def __init__(self, data):
 		self.data = data;
 		self.nextNode = None;
 
 
 class LinkedList(object):
+
 	def __init__(self):
 		self.head = None;
 		self.size = 0;
 
-	
+
 	#O(1)
 	def insertStart(self, data):
 		self.size = self.size + 1;
@@ -325,6 +327,27 @@ class LinkedList(object):
 		else:
 			newNode.nextNode = self.head;
 			self.head = newNode;
+
+	#Linked list implementation in python (remove)
+
+	def remove(self, data):
+		if self.head is None:
+			return;
+
+		self.size = self.size - 1;
+
+		currentNode = self.head;
+		previousNode = None;
+
+		while currentNode.data != data:
+			previousNode = currentNode;
+			currentNode = currentNode.nextNode;
+
+		if previousNode is None:
+			self.head = currentNode.nexNode;
+		else:
+			previousNode.nextNode = currentNode.nextNode;
+
 
 
 	#O(1)
@@ -341,25 +364,37 @@ class LinkedList(object):
 		while actualNode is not None:
 			size+=1;
 			actualNode = actualNode.nextNode;
+
 		return size;
 
-#Linked list implementation in python (travese)
+	#Linked list implementation in python (travese)
 
-    def insertEnd(self, data):
+	def insertEnd(self, data):
 
-        self.size = self.size + 1;
-        newNode = Node(data);
-        actualNode = self.head;
+		self.size = self.size + 1;
+		newNode = Node(data);
+		actualNode = self.head;
 
-        while actualNode.nextNode is not Node:
-            actualNode = actualNode.nextNode;
+		while actualNode.nextNode is not None:
+			actualNode = actualNode.nextNode;
 
-        actualNode.nextNode = newNode;
+		actualNode.nextNode = newNode;
 
-    def traverseList(self):
-        actualNode = self.head;
 
-        while actualNode is not None:
-            print("%d " % actualNode.data);
-            actualNode = actualNode.nextNode;
-            
+	def traverseList(self):
+		actualNode = self.head;
+
+		while actualNode is not None:
+			print("%d " % actualNode.data);
+			actualNode = actualNode.nextNode;
+
+
+#Linked list implementation testing in python
+linkedlist = LinkedList();
+
+linkedlist.insertStart(12);
+linkedlist.insertStart(125);
+linkedlist.insertStart(4);
+linkedlist.insertEnd(48);
+
+linkedlist.traverseList();
