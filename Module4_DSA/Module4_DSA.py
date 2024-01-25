@@ -430,3 +430,218 @@ linkedlist.traverseList();
 """
 * Heap in data structure
 """
+
+
+"""
+* Associated array in python
+"""
+
+
+
+"""
+* Hashtable in data structure
+"""
+
+
+
+"""
+* Hashtable in data structure
+"""
+
+
+"""
+* Hashtable collision
+"""
+
+
+"""
+* Hashtable dynamic resizing
+"""
+
+
+"""
+* Hashfunction linear probing python
+"""
+
+
+
+"""
+* Linear probing insert implementation in python
+"""
+
+
+
+"""
+* Linear probing retrieve implementation in python
+"""
+
+
+"""
+* Dictionary in python
+"""
+
+
+"""
+* Tries-ternary search tree in data structure
+"""
+
+
+
+"""
+* Insertion in tries in data structure-python
+"""
+
+
+"""
+* Searching in tries in data structure-python
+"""
+
+
+
+"""
+* Application in tries in data structure
+"""
+
+
+"""
+* Implementation of tries in python
+"""
+
+
+"""
+* Red black tree rotations-1 in data structure
+"""
+
+
+"""
+* Red black tree rotations-2 in data structure
+"""
+
+
+"""
+* Red black tree rotations-3 in data structure
+"""
+
+
+
+"""
+* Red black tree rotations-4 in data structure
+"""
+
+
+
+
+"""
+* Red black tree example in data structure
+"""
+
+
+"""
+* Red black tree example-2 in data structure
+"""
+
+
+"""
+* Red black tree vs AVL in data structure
+"""
+
+
+
+"""
+* Graph in data structure
+"""
+
+
+
+"""
+* Breadth first search in data structure
+"""
+
+
+
+
+"""
+* Breadth first search implementation in python
+"""
+
+
+
+"""
+* Depth first search in data structure
+"""
+
+
+
+"""
+* Depth first search implementation in python
+"""
+
+
+
+"""
+* BFS vs DFS in data structure
+"""
+
+
+"""
+* Dijkstra algorithms in data structure
+"""
+
+
+"""
+* Dijkstra algorithms logic in data structure
+"""
+
+
+"""
+* Dijkstra algorithms real time example
+"""
+
+
+"""
+* Dijkstra algorithms in python-1
+"""
+
+
+"""
+* Dijkstra algorithms in python-2
+"""
+
+
+"""
+* Dijkstra algorithms in python-3
+"""
+
+
+"""
+* Bellman ford algorithms in data structure
+"""
+
+
+
+"""
+* Bellman ford algorithms in python-1
+"""
+
+
+
+
+"""
+* Bellman ford algorithms in python-2
+"""
+
+
+"""
+* Bellman ford algorithms in python-3
+"""
+
+
+"""
+* Shortest path algorithms
+"""
+
+
+
+"""
+* Union find data structure
+"""
