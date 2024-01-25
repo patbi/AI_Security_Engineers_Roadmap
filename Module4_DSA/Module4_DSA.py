@@ -405,3 +405,28 @@ linkedlist.traverseList();
 """
 * Stack in python
 """
+
+
+"""
+* Queue in python
+"""
+
+
+"""
+* Binary search tree python
+"""
+
+
+"""
+* AVL tree in data structure python
+"""
+
+
+"""
+* Priority queue in data structure
+"""
+
+
+"""
+* Heap in data structure
+"""
