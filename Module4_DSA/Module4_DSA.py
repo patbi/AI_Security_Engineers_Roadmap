@@ -403,5 +403,5 @@ linkedlist.traverseList();
 
 
 """
-- Stack in python
+* Stack in python
 """
