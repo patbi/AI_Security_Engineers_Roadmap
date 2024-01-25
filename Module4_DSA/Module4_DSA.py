@@ -398,3 +398,10 @@ linkedlist.insertStart(4);
 linkedlist.insertEnd(48);
 
 linkedlist.traverseList();
+
+
+
+
+"""
+- Stack in python
+"""
