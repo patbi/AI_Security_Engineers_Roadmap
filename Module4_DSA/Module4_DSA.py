@@ -645,3 +645,164 @@ linkedlist.traverseList();
 """
 * Union find data structure
 """
+
+
+
+"""
+* Spanning tree in data structure
+"""
+
+
+
+"""
+* Kruskal algorithms in python-1
+"""
+
+
+
+"""
+* Kruskal algorithms in python-2
+"""
+
+
+
+"""
+* Kruskal algorithms in python-3
+"""
+
+
+
+"""
+* Kruskal algorithms in python-4
+"""
+
+
+
+"""
+* Prims algorithms in python-2
+"""
+
+
+
+"""
+* Prims algorithms in python-3
+"""
+
+
+
+"""
+* Application of spanning tree
+"""
+
+
+
+"""
+* Sorting algorithms in data structure
+"""
+
+
+
+
+"""
+* Adaptive sorting algorithms
+"""
+
+
+
+
+"""
+* Bubble sort in data structure
+"""
+
+
+
+"""
+* Bubble sort in python
+"""
+
+
+
+"""
+* Selection sort in data structure
+"""
+
+
+
+"""
+* Selection sort in python
+"""
+
+
+
+"""
+* Quicksort introduction-I
+"""
+
+
+
+"""
+* Insertion sort in python
+"""
+
+
+
+
+"""
+* Insertion sort in data structure
+"""
+
+
+
+"""
+* Quicksort introduction-II
+"""
+
+
+
+"""
+* Quicksort in python
+"""
+
+
+
+
+"""
+* Merge sort importance in data structure
+"""
+
+
+
+"""
+* Merge sort in data structure
+"""
+
+
+
+
+"""
+* Merge sort in python
+"""
+
+
+
+"""
+* Hybrid sorting algorithms
+"""
+
+
+
+"""
+* Non comparison sorting
+"""
+
+
+
+
+"""
+* Counting sort in data structure
+"""
+
+
+"""
+* Radix sort in data structure
+"""
