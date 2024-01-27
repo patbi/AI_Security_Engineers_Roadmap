@@ -406,6 +406,37 @@ linkedlist.remove(125);
 linkedlist.remove(4);
 
 print(linkedlist.size1());
+
+
+
+"""
+* Doubly linked list in python
+
+Problems with linked lists:
+
+	12 <-- 4 <-- 123 <-- (-7) <-- 25 
+					  --> NULL
+	12 --> 4 --> 123 -->  (-7) --> 25 
+
+
+
+We can get from 4 to 25 because we just have to hop to the next node BUT we can
+not go from 25 to 4 because the references are in the opposite directions.
+
+Solution: doubly linked list --> Node class has two references, one pointing to the next node, one pointing to the previous node
+
+
+Ok we can get from eveywhere to everywhere BUT it is not so memory friendly,
+we have to store lots of references
+
+BUT there is no need to track the previous node during traversal
+
+"""
+
+
+
+
+
 """
 * Stack in python
 """
