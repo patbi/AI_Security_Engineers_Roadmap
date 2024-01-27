@@ -344,14 +344,14 @@ class LinkedList(object):
 			currentNode = currentNode.nextNode;
 
 		if previousNode is None:
-			self.head = currentNode.nexNode;
+			self.head = currentNode.nextNode;
 		else:
 			previousNode.nextNode = currentNode.nextNode;
 
 
 
 	#O(1)
-	def size(self):
+	def size1(self):
 		return self.size;
 
 
@@ -398,10 +398,14 @@ linkedlist.insertStart(4);
 linkedlist.insertEnd(48);
 
 linkedlist.traverseList();
+print(linkedlist.size1());
 
+linkedlist.remove(48);
+linkedlist.remove(12);
+linkedlist.remove(125);
+linkedlist.remove(4);
 
-
-
+print(linkedlist.size1());
 """
 * Stack in python
 """
