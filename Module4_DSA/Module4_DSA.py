@@ -439,7 +439,68 @@ BUT there is no need to track the previous node during traversal
 
 """
 * Stack in python
+
+	- It is an abstract data type (interface)
+	- Basic operations: pop(), push(), and peek()
+	- LIFO structure: last in first out
+	- In most high level languages, a stack can be easy implemented either with arrays or linked lists
+	- A number of programming languages are stack-oriented, meaning they define most basic operations (adding two numbers, printing a character) as taking their arguments from the stack, and placing any return values back on the stack
+
+
+-- Push operation: put the given item to the top of the stack very simple operation, can be done in O(1)
+stack.push(10000);
+
+-- Pop operation: we take the last item we have inserted to the top of the stack (LIFO) very simple operation, can be done in O(1)
+stack.pop();
+
+-- Peek operation: return the item from the top of the stack without removing it very simple operation, can be done in O(1)
+stack.peek();
+
+
+-- Applications:
+
+	- In stack-oriented programming languages
+	- Graph algorithms: depth-first search can be implemented with stacks (or with recursion)
+	- Finding Euler-cycles in a graph
+	- Finding strongly connected components in a graph
 """
+
+
+"""
+* Stack in memory
+
+	- Most important application of stacks: stack memory
+	- It is a special region of the memory (in the RAM)
+	- A call stack is an abstract data type that stores information about the active subroutines / methods / functions of a computer program
+	- The details are normally hidden and automatic in high-level programming
+	- Why is it good ?
+	- It keeps track of the point to which each active subroutine should return control when it finishes executing
+	- Stores temporary variables created by each function
+	- Every time a function declares a new variable it is pushed onto the stack
+	- Every time a function exits all of the variables - pushed onto the stack by that function - are freed --> all of its variables are popped off of the stack // and lost forever
+	- Local variables: they are on the stack, after function returns they are lost
+	- Stack memory is limited.
+	diff(limited in size, fast access, local variables, space is managed efficiently by CPU, variables cannot be resized)
+
+* Heap memory:
+	- The heap is a region of memory that is not managed automatically for you
+	- This is a large region of memory // unlike stack memory
+	- C: malloc() and calloc() function // with pointers
+	- Java: reference types and objects are on the heap
+	- We have to deallocate these memory chunks: because it is not managed automatically
+	- If not: memory leak
+	- Slower because of the pointers
+	diff(no size limits, slow access, objects, memory may be fragmented, variables can be resized // realloc())
+"""
+
+
+"""
+* Stack and recursion
+
+
+
+"""
+
 
 
 """
