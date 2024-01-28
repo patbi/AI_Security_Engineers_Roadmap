@@ -494,12 +494,96 @@ stack.peek();
 """
 
 
+
 """
 * Stack and recursion
 
+	- There are several situations when recursive methods are quite handy
+	- For example: DFS, traversing a binary search tree, looking for an item in a linked list ...
+	- What's happening in the background ?
+	- All the recursive algorithms can be transformed into a simple method with stacks
+	- IMPORTANT: if we use recursion, the OS will use stacks anyways
+
+-- Depth-first search:
+
+#recursion
+
+public void dfs(Vertex vertex) {
+	vertex.setVisited(true);
+	printf(vertex);
+	for(Vertex v: vertex.neighbours()) {
+		if(!v.isVisited()) {
+			dfs(v);
+		}
+	}
+}	
+
+
+#iterative approach with stack
+
+public void dfs(Vertex vertex) {
+	Stack stack;
+	stack.push(vertex);
+
+	while(!stack.isEmpty()){
+		actual = stack.pop();
+		for(Vertex v: actual.neighbours()) {
+			if(!v.isVisited()) {
+				v.setVisited(true);
+				stack.push(v);
+			}
+		}
+	}
+}
+
+
+-- Factorial: with recursion
+
+public void factorial(int n) {
+	if(n==0)
+		return 1;
+	return n*factorial(n-1);
+}
+
+This is the factorial function with Recursive implementation
+n! = n*(n-1)*...*2*1
+
+For example: 4! = 4*3*2*1 = 24
+"""
 
 
 """
+* Stack implementation in python
+	- It is an abstract data type (interface)
+	- Basic operations: pop(), push() and peek()
+	- LIFO structure: last in first out
+	- In most high level languages, a stack can be easy implemented either with arrays or linked lists
+	- A number of programming languages are stack-oriented, meaning they define most basic operations (adding two numbers, printing a character) as taking their arguments from the stack, and placing any return values back on the stack
+
+
+
+"""
+
+
+class Stack:
+	def __init__(self):
+		self.stack = []
+
+	def isEmpty(self):
+		return self.stack == []
+
+	def push(self, data):
+		self.stack.append(data)
+
+	def pop(self):
+
+
+
+
+
+
+
+
 
 
 
