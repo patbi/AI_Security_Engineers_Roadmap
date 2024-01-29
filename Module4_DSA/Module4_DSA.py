@@ -599,16 +599,60 @@ print(stack.sizeStack())
 
 
 
-
-
-
-
-
-
 """
 * Queue in python
-"""
+	- It is an abstract data type (interface)
+	- Basic operations: enqueue() and dequeue(), peek()
+	- FOFO structure: first in first out
+	- It can be implemented with dynamic arrays as well as with linked lists
+	- Important when implementing BFS algorithm for graphs
 
+Enqueue operation: we just simply add the new item to the end of the queue
+
+queue.enqueue(20);
+
+Dequeue operation: we just simply remove the item starting at the beginning of the queue // FIFO structure	
+queue.dequeue();
+
+
+Applications:
+	- When a resource is shared with several consumers (threads): we store them in a queue
+	- For example: CPU scheduling
+	- When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes
+	- For example: IO buffers
+	- Operationel research applications or stochastic models relies heavily on queues
+
+"""
+class Queue:
+	def __init__(self):
+		self.queue = []
+
+	def isEmpty(self):
+		return self.queue == []
+
+	def enqueue(self, data):
+		self.queue.append(data)
+
+	def dequeue(self):
+		data = self.queue[0]
+		del self.queue[0]
+		return data
+
+	def peek(self):
+		return self.queue[0]
+
+	def sizeQueue(self):
+		return len(self.queue)
+
+queue = Queue()
+queue.enqueue(150)
+queue.enqueue(250)
+queue.enqueue(350)
+print(queue.sizeQueue())
+print("Dequeue: ", queue.dequeue())
+print("Dequeue: ", queue.dequeue())
+print("Dequeue: ", queue.dequeue())
+print(queue.sizeQueue())
 
 """
 * Binary search tree python
