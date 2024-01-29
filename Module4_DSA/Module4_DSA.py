@@ -623,6 +623,8 @@ Applications:
 	- Operationel research applications or stochastic models relies heavily on queues
 
 """
+
+#queue implementation in python
 class Queue:
 	def __init__(self):
 		self.queue = []
@@ -656,7 +658,47 @@ print(queue.sizeQueue())
 
 """
 * Binary search tree python
+
+	- Binary search trees are data structures
+	- Keeps the keys in sorted order: so that lookup and other operations can use the principle of binary search
+	- Each comparison allows the operations to skip over half of the tree, so that each lookup/insertion/deletion takes time proportional to the algorithms of the number of items stored in the tree
+	- This is much better than the linear time O(N) required to find items by key in an unsorted array, but slower than the corresponding operations on hash tables
+
+
+Sorted arrays(Inserting a new item is quite slow // o(N), Searching is quite fast with binary search // O(logN), Removing an item is slow // O(N))
+Inserting a new item is very fast // O(1), Searching is sequential //O(N), Removing an item is fast because of the references // O(1)	
+
+Binary search trees are going to make all of these operations quite fest, with O(log N) time complexity
+
 """
+
+
+
+"""
+* Binary search tree-insert
+
+Insertion: we start at the root node. If the data we want to insert is greater than the root node we go to the right, if it is smaller, we go to the left
+
+	binarySearchTree.insert(10);
+
+Search: we start at the root node. If the data we want to find is greater than the root node we go to the right, if it is smaller, we go to the left until we find.
+
+	binarySearchTree.find(10);
+"""
+
+
+
+"""
+* Binary search tree-delete
+
+Delete: soft delete --> we do not remove the node from the BST we just mark that it has been removed ~ not so efficient solution
+
+In the main three possible cases:
+	1.) The node we want to get rid of is a leaf node
+	2.) The node we want to get rid of has a single child
+	3.) The node we want to get rid of has 2 children
+"""
+
 
 
 """
