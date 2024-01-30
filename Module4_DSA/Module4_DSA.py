@@ -702,6 +702,43 @@ In the main three possible cases:
 
 
 """
+* Binary search tree-traversal in python
+	1.) In-order traversal: we visit the left subtree + the root node + the right subtree recursively
+	2.) Pre-order traversal: we visit the root + left subtree + the right subtree recursively
+	3.) POst-order traversal: we visit the left subtree + right subtree + the root recursively
+"""
+
+
+"""
+* Binary search tree running time
+
+			   Average case         Worst case
+Space           O(n)                   O(n)
+Insert          O(log n)               O(n)
+Delete          O(log n)               O(n)
+Search          O(log n)               O(n)
+	
+
+What about the worst case scenarios ?
+	- if the tree becomes unbalanced: the operations running times can be reduced to O(N) in the worst case
+	- that why it is important to keep a tree as balanced as possible
+"""
+
+
+
+"""
+* Binary search tree in python (BST)
+"""
+class Node(object);
+	def __init__(self, data):
+		self.data = data;
+		self.leftChild = Home;
+		self.rightChild = Home;
+
+
+
+
+"""
 * AVL tree in data structure python
 """
 
