@@ -689,7 +689,7 @@ Search: we start at the root node. If the data we want to find is greater than t
 
 
 """
-* Binary search tree-delete.
+* Binary search tree-delete
 
 Delete: soft delete --> we do not remove the node from the BST we just mark that it has been removed ~ not so efficient solution
 
