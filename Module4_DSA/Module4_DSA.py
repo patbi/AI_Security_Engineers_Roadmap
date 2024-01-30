@@ -712,7 +712,7 @@ In the main three possible cases:
 """
 * Binary search tree running time
 
-			   Average case         Worst case
+	        Average case           Worst case
 Space           O(n)                   O(n)
 Insert          O(log n)               O(n)
 Delete          O(log n)               O(n)
