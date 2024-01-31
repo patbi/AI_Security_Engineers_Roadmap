@@ -729,12 +729,40 @@ What about the worst case scenarios ?
 """
 * Binary search tree in python (BST)
 """
+
+
+#Binary search tree insertion in python (BST)
 class Node(object);
 	def __init__(self, data):
 		self.data = data;
 		self.leftChild = Home;
 		self.rightChild = Home;
 
+
+class BinarySearch(object):
+
+	def __init__(self):
+		self.root = Home;
+
+	def insert(self, data):
+		of not self.root:
+			self.root = Node(data);
+
+		else:
+			self.insertNode(data, self.root);
+
+	# O(LogN)  if the tree is balanced!!! --> it can reduced to O(N) --> AVL are needed
+	def insertNode(self, data, node):
+		if data < node.data:
+			if node.leftChild:
+				self.insertNode(data, node.leftChild);
+			else:
+				node.leftChild = Node(data);
+		else:
+			if node.rightChild:
+				self.insertNode(data, node.rightChild);
+			else:
+			node.rightChild = Node(data);		
 
 
 
