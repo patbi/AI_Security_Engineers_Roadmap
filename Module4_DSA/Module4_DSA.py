@@ -762,7 +762,7 @@ class BinarySearch(object):
 			if node.rightChild:
 				self.insertNode(data, node.rightChild);
 			else:
-			node.rightChild = Node(data);		
+				node.rightChild = Node(data);		
 
 
 
