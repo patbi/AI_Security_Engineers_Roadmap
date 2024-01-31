@@ -745,7 +745,7 @@ class BinarySearch(object):
 		self.root = Home;
 
 	def insert(self, data):
-		of not self.root:
+		if not self.root:
 			self.root = Node(data);
 
 		else:
