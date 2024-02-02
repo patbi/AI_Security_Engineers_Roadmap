@@ -802,6 +802,8 @@ class BinarySearchTree(object):
 		if node.rightChild:
 			self.traverseInOrder(node.rightChild);
 
+
+#Binary search tree testing
 bst = BinarySearchTree();
 bst.insert(10);
 bst.insert(5);
@@ -815,6 +817,62 @@ print(bst.getMinValue());
 * AVL tree in data structure python
 """
 
+
+"""
+* AVL tree rotation case
+"""
+
+
+"""
+* AVL tree illustration
+"""
+
+
+"""
+* AVL tree height balance implementation in python
+"""
+
+
+"""
+* AVL tree violance implementation in python
+"""
+
+
+"""
+* AVL tree introduction
+"""
+
+
+"""
+* AVL tree rotation implementation in python
+"""
+
+
+"""
+* AVL tree application
+"""
+
+
+
+"""
+* AVL tree height introduction
+"""
+
+
+"""
+* AVL tree remove implementation in python
+"""
+
+
+"""
+* AVL tree node implementation in python
+"""
+
+
+
+"""
+* AVL tree insertion implementation in python
+"""
 
 """
 * Priority queue in data structure
