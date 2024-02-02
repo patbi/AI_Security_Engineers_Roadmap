@@ -809,12 +809,24 @@ bst.insert(10);
 bst.insert(5);
 bst.insert(15);
 bst.insert(6);
-print(bst.getMinValue());
+print(bst.getMaxValue());
+bst.traverse();
 
 
 
 """
 * AVL tree in data structure python
+	- Linked lists: quite easy to implement
+		Stores lots of pointers
+			O(N) search operation time complexity
+			
+	- Binary search trees: we came to conclusion that O(N) search complexity
+		can be reduced to O(logN) time complexity
+			But if the tree is unbalanced: these operations will become
+				slower and slower
+	
+	- Balanced binary trees: AVL trees or red-black trees they are guaranteed to be balanced 
+		Why is it good ? O(logN) is guaranteed
 """
 
 
