@@ -827,6 +827,9 @@ bst.traverse();
 	
 	- Balanced binary trees: AVL trees or red-black trees they are guaranteed to be balanced 
 		Why is it good ? O(logN) is guaranteed
+		
+Conclusion: if we construct a binary search tree from a sorted array, we end up with a linkedlist
+	O(logN) reduced to O(N)
 """
 
 
