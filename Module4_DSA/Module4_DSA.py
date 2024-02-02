@@ -732,17 +732,17 @@ What about the worst case scenarios ?
 
 
 #Binary search tree insertion in python (BST)
-class Node(object);
+class Node(object):
 	def __init__(self, data):
 		self.data = data;
-		self.leftChild = Home;
-		self.rightChild = Home;
+		self.leftChild = None;
+		self.rightChild = None;
 
 
-class BinarySearch(object):
+class BinarySearchTree(object):
 
 	def __init__(self):
-		self.root = Home;
+		self.root = None;
 
 	def insert(self, data):
 		if not self.root:
@@ -762,45 +762,55 @@ class BinarySearch(object):
 			if node.rightChild:
 				self.insertNode(data, node.rightChild);
 			else:
-				node.rightChild = Node(data);		
-    
-    #Binary search tree travercing in python
+				node.rightChild = Node(data);
 
-    def getMinValue(self):
-    	if self.root:
-    		return self.getMin(self.root);
+	#Binary search tree travercing in python
 
-    def getMin(self, node):
+	def getMinValue(self):
+		if self.root:
+			return self.getMin(self.root);
 
-    	if node.leftChild:
-    		return self.getMin(node.leftChild);
+	def getMin(self, node):
 
-    	return node.data;
+		if node.leftChild:
+			return self.getMin(node.leftChild);
 
-    def getMaxValue(self):
-    	if self.root:
-    		return self.getMax(self.root);
+		return node.data;
 
-    def getMax(self, node):
+	def getMaxValue(self):
+		if self.root:
+			return self.getMax(self.root);
 
-    	if node.rightChild:
-    		return self.getMax(node.rightChild);
+	def getMax(self, node):
 
-    	return node.data;
+		if node.rightChild:
+			return self.getMax(node.rightChild);
 
-    def traverse(self):
-    	if self.root:
-    		self.traverseInOrder(self.root);
+		return node.data;
 
-    def traverseInOrder(self, node):
+	def traverse(self):
+		if self.root:
+			self.traverseInOrder(self.root);
 
-    	if node.leftChild:
-    		self.traverseInOrder(node.leftChild);
+	def traverseInOrder(self, node):
 
-    	print("%s " % node.data);
+		if node.leftChild:
+			self.traverseInOrder(node.leftChild);
 
-    	if node.rightChild:
-    		self.traverseInOrder(node.rightChild);	
+		print("%s " % node.data);
+
+		if node.rightChild:
+			self.traverseInOrder(node.rightChild);
+
+bst = BinarySearchTree();
+bst.insert(10);
+bst.insert(5);
+bst.insert(15);
+bst.insert(6);
+print(bst.getMinValue());
+
+
+
 """
 * AVL tree in data structure python
 """
