@@ -835,6 +835,46 @@ Conclusion: if we construct a binary search tree from a sorted array, we end up 
 
 """
 * AVL tree rotation case
+	
+	- Case 1: rightRotate
+
+		BEGIN rotateRight(Node node)
+			Node tempLeftNode = node.getLeftNode()
+			Node t = tempLeftNode.getRightNode()
+
+			tempLeftNode.setRightNode(node)
+			node.setLeftNode(t)
+
+			node.updateheight()
+			tempLeftNode.updateHeight()
+		END
+	
+	- Case II leftRotate:
+
+		BEGIN rotateLeft(Node node)
+
+			Node tempRightNode = nodes.getRightNode()
+			Node t = tempRightNode.getLeftNode()
+
+			tempRightNode.setLeftNode(node)
+			node.setRightNode(t)
+
+			node.updateheight()
+			tempRightNode.updateheight()
+		END
+
+	Case III: 
+		- We have to make a left rotation an the node B (D-->B-->C)
+		- We have to make a left rotation on the root node D (D-->C-->B)
+
+
+	Case IV:
+		- We have to make a left rotation on the root node D (D-->E-->F)
+
+
+
+
+
 """
 
 
