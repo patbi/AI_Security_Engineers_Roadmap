@@ -881,9 +881,36 @@ Conclusion: if we construct a binary search tree from a sorted array, we end up 
 """
 
 
-"""
-* AVL tree height balance implementation in python
-"""
+#AVL tree height balance implementation in python
+class Node(object):
+
+	def __init__(self, data):
+		self.data = data;
+		self.height = 0;
+		self.leftChild = None;
+		self.rightChild = None;
+
+class AVL(object):
+	
+	def __init__(self):
+		self.root = None;
+
+	def calcHeight(self, node):
+
+		if not node:
+			return -1;
+		
+		return node.height;
+
+	# if it returns value > 1 it means it is a left heavy tree --> right rotation
+	# ......
+	def calcBalance(self, node):
+
+		if not node:
+			return 0;
+
+		return self.calcHeight(node.leftChild) - self.calcHeight(node.rightChild);
+
 
 
 """
