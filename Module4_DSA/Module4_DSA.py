@@ -871,15 +871,13 @@ Conclusion: if we construct a binary search tree from a sorted array, we end up 
 	Case IV:
 		- We have to make a left rotation on the root node D (D-->E-->F)
 
-
-
-
-
 """
 
 
 """
 * AVL tree illustration
+	- Link: https://www.programiz.com/dsa/avl-tree
+
 """
 
 
