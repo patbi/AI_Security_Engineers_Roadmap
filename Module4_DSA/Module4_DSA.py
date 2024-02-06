@@ -912,8 +912,27 @@ class AVL(object):
 
 		return self.settleViolation(data, node);
 
+	#AVL tree violance implementation in python
 	def settleViolation(self, data, node):
-		
+		balance = self.calcBalance(node);
+
+		if balance > 1 and data < node.leftChild.data:
+			print("Left left heavy situation...");
+			return self.rotateRight(node);
+
+		if balance < -1 and data > node.rightChild.data:
+			print("Right right heavy situation...");
+			return self.rotateLeft(node);
+
+		if balance > 1 and data > node.leftChild.data:
+			print("Left right heavy situation...");
+			node.leftChild = self.rotateLeft(node.leftChild);
+			return self.rightChild(node);
+
+		if balance < -1 and data < node.rightChild.data:
+			print("Right left heavy situation...");
+			node.rightChild = self.rotateRight(node.rightChild);
+			return self.rotateLeft(node);
 
 	def calcHeight(self, node):
 
@@ -943,13 +962,21 @@ class AVL(object):
 
 		node.height = max(self.calcHeight(node.leftChild), self.calcHeight(node.rightChild)) + 1;
 		tempLeftChild.height = max(self.calcHeight(tempLeftChild.leftChild), self.calcHeight(tempLeftChild.rightChild)) + 1;
-
-"""
-* AVL tree violance implementation in python
+		return tempLeftChild;
 
 
-"""
+	def rotateLeft(self, node):
+		print("Rotating to the left on node ", node.data);
 
+		tempRightChild = node.rightChild;
+		t = tempRightChild.leftChild;
+
+		tempRightChild.leftChild = node;
+		node.rightChild = t;
+
+		node.height = max(self.calcHeight(node.leftChild), self.calcHeight(node.rightChild)) + 1;
+		tempRightChild.height = max(self.calcHeight(tempRightChild.leftChild), self.calcHeight(tempRightChild.rightChild)) + 1;
+		return tempRightChild;
 
 """
 * AVL tree introduction
