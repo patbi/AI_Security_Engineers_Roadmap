@@ -980,12 +980,102 @@ class AVL(object):
 
 """
 * AVL tree introduction
+
+	- The running time of BST operations depends on the height of the binary search
+		tree: we should keep the tree balanced in order to get the best performance
+	- Thats why AVL trees came to be
+	- 1962: invented by two russian computer scientist
+	- In an AVL tree, the heights of the two child subtrees of any node differ by at most one
+	- Another solution to the problem is a red-black trees
+	- AVL trees are faster than red-black trees because they are more rigidly balanced BUT needs more work
+	- Operating systems relies heavily on these data structures!!!
+	- Most of the operations are the same as we have seen for binary search trees
+	- Every node can have at most 2 children: the leftChild is smaller, the rightChild is greater than the parent node
+	- The insertion operation is the same BUT on every insertion we have to check whether the tree is unbalanced or not
+	- Delete operation is the same
+	- Maximum / Minimum finding operations are the same as well.
+
+	balancedTree.find(40);
+	findMin();
+
+	* Binary search trees
+
+			   Average case         Worst case
+Space                       O(N)               	   O(n)
+Insert                      O(log n)               O(n)
+Delete                      O(log n)               O(n)
+Search                      O(log n)               O(n)
+
+
+	* Balanced trees
+
+			   Average case         Worst case
+Space                       O(N)               	   O(n)
+Insert                      O(log n)               O(log n)
+Delete                      O(log n)               O(log n)
+Search                      O(log n)               O(log n)
+
 """
 
 
-"""
-* AVL tree rotation implementation in python
-"""
+
+
+# AVL tree rotation implementation in python
+class Node(object):
+
+	def __init__(self, data):
+		self.data = data;
+		self.height = 0;
+		self.leftChild = None;
+		self.rightChild = None;
+
+class AVL(object):
+
+	def __init__(self):
+		self.root = None;
+
+	def calcHeight(self, node):
+		return -1;
+
+		return node.height;
+
+	def calcBalance(self, node):
+
+		if not node:
+			return 0;
+
+		return self.calcHeight(node.leftChild) - self.calcHeight(node.rightChild);
+
+	def rotateRight(self, node):
+
+		print("Rotating to the right on node ", node.data);
+
+		tempLeftChild = node.leftChild;
+		t = tempLeftChild.rightChild;
+
+		tempLeftChild.rightChild = node;
+		node.leftChild = t;
+
+		node.height = max(self.calcHeight(node.leftChild), self.calcHeight(node.rightChild)) + 1;
+		tempLeftChild.height = max(self.calcHeight(tempLeftChild.leftChild), self.calcHeight(tempLeftChild.rightChild)) + 1;
+		return tempLeftChild;
+
+
+	def rotateLeft(self, node):
+		print("Rotating to the left on node ", node.data);
+
+		tempRightChild = node.rightChild;
+		t = tempRightChild.leftChild;
+
+		tempRightChild.leftChild = node;
+		node.rightChild = t;
+
+		node.height = max(self.calcHeight(node.leftChild), self.calcHeight(node.rightChild)) + 1;
+		tempRightChild.height = max(self.calcHeight(tempRightChild.leftChild), self.calcHeight(tempRightChild.rightChild)) + 1;
+		return tempRightChild;
+
+		
+
 
 
 """
