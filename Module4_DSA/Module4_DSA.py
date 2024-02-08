@@ -1074,23 +1074,52 @@ class AVL(object):
 		tempRightChild.height = max(self.calcHeight(tempRightChild.leftChild), self.calcHeight(tempRightChild.rightChild)) + 1;
 		return tempRightChild;
 
-		
+
 
 
 
 """
 * AVL tree application
+	
+	- We can use this data structure to sort items
+	- We just have to insert the N items we want to sort
+	- We have to make an in-order traversal -> it is going to yield the numerical or alphabetical ordering.
+
+		* Insertion: O(N*logN)
+		* In-order traversal: O(N)
+		* Overall complexity: O(N*logN)
+
+	--Applications:
+
+		* Databases when deletions or insertions are not so frequent, but have to make a lot of look-ups
+		* Look-up tables usually implemented with the help of hashtables BUT AVL tress support more operations in the main
+		* We can sort with the help of AVL trees
+		* Red-black trees are a bit more popular because for AVL trees we have to make several rotations ~ a bit slower
+
 """
 
 
 
 """
 * AVL tree height introduction
+
+	- AVL tree requires the heights of left and right child of every node to differ at most +1 or -1
+	- | height(leftSubtree) - height(rightSubtree) < 1
+	- We can maintain this property in O(logN) time which is quite fast
+	- Insertion:
+
+		1.) a simple BST insertion according to the keys
+		2.) fix the AVL property on each insertion from insertion upward
+
+	- There may be several violations of AVL property from the inserted node up to the root
+	- We have to check them all   
 """
 
 
 """
 * AVL tree remove implementation in python
+
+
 """
 
 
