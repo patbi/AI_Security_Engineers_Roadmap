@@ -1104,7 +1104,7 @@ class AVL(object):
 * AVL tree height introduction
 
 	- AVL tree requires the heights of left and right child of every node to differ at most +1 or -1
-	- | height(leftSubtree) - height(rightSubtree) < 1
+	- | height(leftSubtree) - height(rightSubtree) | < = 1
 	- We can maintain this property in O(logN) time which is quite fast
 	- Insertion:
 
@@ -1116,11 +1116,157 @@ class AVL(object):
 """
 
 
-"""
-* AVL tree remove implementation in python
+#AVL tree remove implementation in python
+class Node(object):
+
+	def __init__(self, data):
+		self.data = data;
+		self.height = 0;
+		self.leftChild = None;
+		self.rightChild = None;
+
+class  AVL(object):
+
+	def __init__(self):
+		self.root = None;
+
+	def remove(self, data):
+		if self.root:
+			self.root = self.removeNode(data, self.root);
+
+	def insertNode(self, data, node):
+
+		if not node:
+			return Node(data);
+
+		if data < node.data:
+			node.leftChild = self.insertNode(data, node.leftChild):
+		else:
+			node.rightChild = self.insertNode(data, node.rightChild);
+
+		node.height = max(self.calcHeight(node.leftChild), self.calcHeight(node.rightChild)) + 1;
+
+		return self.settleViolation(data, node);
+
+	def removeNode(self.data, node):
+
+		if not node:
+			return node;
+
+		if data < node.data:
+			node.leftChild = self.removeNode(data, node.leftChild);
+		elif data > node.data:
+			node.rightChild = self.removeNode(data, node.rightChild);
+		else:
+
+			if not node.leftChild and not node.rightChild:
+				print("Removing a left node...");
+				del node;
+				return node;
+
+			if not node.leftChild:
+				print("Removing right child...");
+				tempNode = node.rightChild;
+				del node;
+				return tempNode;
+			elif not node.rightChild:
+				print("Removing left child...");
+				tempNode = node.leftChild;
+				del node;
+				return tempNode;
+
+			print("Removing node with two children...");
+			tempNode = self.getPredecessor(node.leftChild);
+			node.data = tempNode.data;
+			node.leftChild = self.removeNode(tempNode.data, node.leftChild);
+
+		if not node:
+			return node; # if the tree had just a single node
+
+		node.height = max(self.calcHeight(node.leftChild), self.calcHeight(node.rightChild)) + 1;
+
+		balance = self.calcBalance(node);
+
+		# doubly left heavy situation
+		if balance > 1 and self.calcBalance(node.leftChild) >= 0:
+			return self.rotateRight(node);
+
+		# left right case
+		if balance > 1 and self.calcBalance(node.leftChild) < 0:
+			node.leftChild = self.rotateLeft(node.leftChild);
+			return self.rotateRight(node);
+
+		# right right case
+		if balance < -1 and self.calcBalance(node.rightChild) <=0:
+			return self.rotateLeft(node);
+
+		# right left case
+		if balance < -1 and self.calcBalance(node.rightChild) > 0:
+			node.rightChild = self.rotateRight(node.rightChild);
+			return self.rotateLeft(node);
+
+		return node;
+
+	def getPredecessor(self, node):
+
+		if node.rightChild:
+			return self.getPredecessor(node.rightChild);
+
+		return node;
+
+	def settleViolation(self, data, node):
+
+		balance = self.calcBalance(node);
+
+		if balance > 1 and data < node.leftChild.data:
+			print("Left left heavy tree...");
+			return self.rotateRight(node);
+
+		if balance < -1 and data > node.rightChild.data:
+			print("Right right heavy tree...");
+			return self.rotateLeft(node);
+
+		if balance > 1 and data > node.leftChild.data:
+			print("Tree is left right heavy...");
+			node.leftChild = self.rotateLeft(node.leftChild);
+			return self.rotateRight(node);
+
+		if balance < -1 and data < node.rightChild.data:
+			node.rightChild = self.rotateRight(node.rightChild);
+			return self.rotateLeft(node);
+
+		return node;
 
 
-"""
+
+	def settleViolation(self, data, node):
+
+		balance = self.calcBalance(node);
+
+		if balance > 1 and data < node.leftChild.data:
+			print("Left left heavy tree...");
+			return self.rotateRight(node);
+
+		if balance < -1 and data > node.rightChild.data:
+			print("Right right heavy tree...");
+			return self.rotateLeft(node);
+
+		if balance > 1 and data > node.leftChild.data:
+			print("Tree is left right heavy...");
+			node.leftChild = self.rotateLeft(node.leftChild);
+			return self.rotateRight(node);
+
+		if balance < -1 and data < node.rightChild.data:
+			node.rightChild = self.rotateRight(node.rightChild);
+			return self.rotateLeft(node);
+
+		return node;
+
+	def getPredecessor(self, node):
+
+		if node.rightChild:
+			
+
 
 
 """
