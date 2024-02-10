@@ -21,4 +21,4 @@ Lastly, we have spatial databases like PostGIS and Oracle Spatial, designed to h
 Each type of database serves a unique purpose, ensuring we have the right tools for every data challenge.
 
 
-![Preview](https://github.com/patbi/roadmap_to_learn_python_programming/tree/main/Module_9_Databases/Database_Landscape.gif)
+![Preview](https://github.com/patbi/roadmap_to_learn_python_programming/blob/main/Module_9_Databases/Database_Landscape.gif)
