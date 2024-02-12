@@ -1116,7 +1116,7 @@ class AVL(object):
 """
 
 
-#AVL tree remove implementation in python
+#AVL tree node implementation in python
 class Node(object):
 
 	def __init__(self, data):
@@ -1130,9 +1130,14 @@ class  AVL(object):
 	def __init__(self):
 		self.root = None;
 
+	#AVL tree remove implementation in python
 	def remove(self, data):
 		if self.root:
 			self.root = self.removeNode(data, self.root);
+
+	#AVL tree insertion implementation in python
+	def insert(self, data):
+		self.root = self.insertNode(data, self.root);
 
 	def insertNode(self, data, node):
 
@@ -1237,8 +1242,6 @@ class  AVL(object):
 
 		return node;
 
-
-
 	def settleViolation(self, data, node):
 
 		balance = self.calcBalance(node);
@@ -1265,19 +1268,103 @@ class  AVL(object):
 	def getPredecessor(self, node):
 
 		if node.rightChild:
-			
+			return self.getPredecessor(node.rightChild);
+
+		return node;
+
+	def settleViolation(self, data, node):
+
+		balance = self.calcBalance(node);
+
+		if balance > 1 and data < node.leftChild.data:
+			print("Left left heavy tree...");
+			return self.rotateRight(node);
+
+		if balance < -1 and data > node.rightChild.data:
+			print("Right right heavy tree...");
+			return self.rotateLeft(node);
+
+		if balance > 1 and data > node.leftChild.data:
+			print("Tree is left right heavy...");
+			node.leftChild = self.rotateLeft(node.leftChild);
+			return self.rotateRight(node);
+
+		if balance < -1 and data < node.rightChild.data:
+			node.rightChild = self.rotateRight(node.rightChild);
+			return self.rotateLeft(node);
+
+		return node;
+
+	def calcHeight(self, node):
+
+		if not node:
+			return -1;
+
+		return node.height;
+
+	def calcBalance(self, node):
+
+		if not node:
+			return 0;
+
+		return self.calcHeight(node.leftChild) - self.calcHeight(node.rightChild);
+
+	def traverse(self):
+		if self.root:
+			self.traverseInOrder(self.root);
+
+	def traverseInOrder(self, node):
+
+		if node.leftChild:
+			self.traverseInOrder(node.leftChild);
+
+		print("% " % node.data);
+
+		if node.rightChild:
+			self.traverseInOrder(node.rightChild);
+
+	def rotateRight(self, node):
+
+		print("Rotating to the right on node ", node.data);
+
+		tempLeftChild = node.leftChild;
+		t = tempLeftChild.rightChild;
+
+		tempLeftChild.rightChild = node;
+		node.leftChild = t;
+
+		node.height = max(self.calcHeight(node.leftChild), self.calcHeight(node.rightChild)) + 1;
+		tempLeftChild.height = max(self.calcHeight(tempLeftChild.leftChild), self.calcHeight(tempLeftChild.rightChild)) + 1;
+		return tempLeftChild;
+
+	def rotateLeft(self, node):
+		print("Rotating to the left on node ", node.data);
+
+		tempRightChild = node.rightChild;
+		t = tempRightChild.leftChild;
+
+		tempRightChild.leftChild = node;
+		node.rightChild = t;
+
+		node.height = max(self.calcHeight(node.leftChild), self.calcHeight(node.rightChild)) + 1;
+		tempRightChild.height = max(self.calcHeight(tempRightChild.leftChild), self.calcHeight(tempRightChild.rightChild)) + 1;
+		return tempRightChild;
 
 
+#AVL Testing
 
-"""
-* AVL tree node implementation in python
-"""
+av1 = AVL();
+av1.insert(20);
+av1.insert(10);
+av1.insert(5);
+av1.insert(7);
+av1.insert(9);
 
+av1.remove(10);
+av1.remove(7);
 
+av1.traverse();
 
-"""
-* AVL tree insertion implementation in python
-"""
 
 """
 * Priority queue in data structure
