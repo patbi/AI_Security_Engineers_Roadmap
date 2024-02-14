@@ -1368,6 +1368,45 @@ av1.traverse();
 
 """
 * Priority queue in data structure
+
+	- It is an abstract data type such as stack or queue
+	- BUT every item has an additional property: a priority value
+	- In a priority queue, an element with high priority is served before an element with lower priority
+	- Priority queues are usually implemented with heaps, but it can be implemented with self balancing trees as well
+	- Very similar to queues with some modification: when we would like to get the next item --> the highest priority element is retrieved first.
+		- No FIFO structure here
+
+	-- Abstract Data Types: (Specification Interfaces ) < --- >  Data Structures (Concrete implementation)
+
+	-- Operations:
+
+		* insertWithPriority(data, priority) // sometimes we do not specify the priority
+			
+			this method will insert new item into the priority queue. We have to specify the data we want to insert and the priority associated with the given data
+		
+		* getHighestPriorityElement()
+
+			Returns the element with highest priority: we have to reconstruct the heap 
+			Max heap: returns maximum element
+			Min heap: returns minimum element
+
+		peek()
+
+			Returns the element with highest priority: the structure of the heap does not change.
+
+	-- Sorting:
+
+		- The concept of priority queues naturally suggest a sorting algorithm
+		- Insert all the elements to be sorted into a priority queue
+		- Sequentially remove them: it will be the sorted order.
+		- Why is it working ?
+			- We have been discussing that priority queues rely heavily on priorities
+			- We take out itemms --> the one with highest priority will be returned
+			- Result sequency of decreasing priorities
+			- This is the sorted order
+			- For example: tree sort, heapsort
+
+
 """
 
 
