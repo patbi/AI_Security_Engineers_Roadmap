@@ -1412,6 +1412,30 @@ av1.traverse();
 
 """
 * Heap in data structure
+	
+	- It is baiscally a binary tree
+	- Two main binary heap types: min and max heap
+	- In a max heap, the keys of parent nodes are always greater than or equal to those of the children --> the highest key is in the root node
+	- In a min heap, the keys of parent nodes are less than or equal to those of the children --> the lowest key is in the root node
+	- It is complete: it cannot be unbalanced, We insert every new item to the next available place
+	- Applications: Dijstra's algorithm, Prims algorithm
+	- The heap is one maximally efficient implementation of a priority queue abstract data type
+	- It has nothing to do with the pool of memory from which dynamically allocated memory is allocated
+
+--- Heap properties:
+	1.) Complete --> we construct the heap from left to right across each
+		row // of course the last row may not be completely full
+				There is no mising node from left to right in a layer
+
+	2.) In a binary heap every node can have 2 children, left child and right child
+
+	3.) Min heap --> the parent is always smaller than the values of the children
+
+		Max heap --> the parent is always greater
+
+		So: the root node will be the smallest/greatest value in the heap 
+				// O(1) access
+
 """
 
 
