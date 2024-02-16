@@ -1439,16 +1439,59 @@ av1.traverse();
 """
 
 
-"""
-* Associated array in python
-"""
-
-
 
 """
 * Hashtable in data structure
+
+	Arrays are just like that: if we know the index, the insert / retrieve operations can be done in O(1) time
+
+	So arrays are going to solve our problem: the operations running time can be reduced to O(1)
+
+	PROBLEM: we must transform the keys into array indexes, 
+		// this is why hashfunctions came to be
+
+	- Balanced BST --> we can achieve O(logN) time complexity for several operations including search
+	- Can we do better ?
+	- Yes, maybe we can reach O(1)
+		This is why hashtables came to be
+
+	- Array: if we know the index, the insertion and retrieval operations are very fast O(1).. that is what we are after
+
+	Here wa want to search for a given item with a given key We have key-value pairs
+
+		KEY ----------------> slot in set of buckets
+
+	index = h(key) where h() is the hashfunction, it maps keys to indexes in the array.
+
+In general: we have n items to be stored + m buckets in which we can store items
+Problem: keys are not always nonnegative integers. We have to do prehashing in order to map string keys to indexes of an array.
+
+
+How can we map a certain key to a slot in our array ? h(x) hashfunction is needed
+	Hashing: we can map a certain key of any type(!!!) to a random array index.
+
+	- if we have integer keys we just have to use the modulo operator to transform the number into the range [0,m-1] ~ quite easy
+
+	- if the keys are strings: we can have the ASCII values of the character and make some transformation in order to end up with an index to the array
+
+
+Hash function:
+
+- Distribute the keys uniformly into buckets
+- n: number of keys
+- m: number of buckets // size of array
+- h(x) = n % m (modulo operator)
+	
+	-- We should use prime numbers both for the size of the array and in our hash function to make sure the distribution of the generated indexes will be uniform.
+	-- String keys: we could calculate the ASCII value for each character, add them up --> make % modulo
+
 """
 
+
+
+"""
+* Associated array in python
+"""
 
 
 """
