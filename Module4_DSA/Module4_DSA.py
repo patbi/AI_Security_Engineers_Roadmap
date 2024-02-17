@@ -1490,17 +1490,25 @@ Hash function:
 
 
 """
-* Associated array in python
-"""
-
-
-"""
-* Hashtable in data structure
-"""
-
-
-"""
 * Hashtable collision
+
+	- Collision resolution with chaining: we put multiple entries into the same slot with the help of a linked list
+		- If there are many collisions: O(1) complexity gets worse
+		- It has an additional memory cost due to the references
+	- Collision resolution with open addressing: better solution
+	- If collision occurs, we find an empty slot instead
+		- Linear probing: if a collision occures, we try the next slot ...if there is a collision too we keep trying the next slot until we find an empty slot
+		- Quadratic probing: we trying slots 1,2,4,8...units far away
+		- Rehashing: we hash the result again in order to find an empty slot
+
+
+
+			   Average case         Worst case
+Space                       O(n)               	   O(n)
+Search                      O(1)               	   O(n)
+Insert                      O(1)               	   O(n)
+Delete                      O(1)               	   O(n)
+
 """
 
 
@@ -1513,6 +1521,10 @@ Hash function:
 * Hashfunction linear probing python
 """
 
+
+"""
+* Associated array in python
+"""
 
 
 """
