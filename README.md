@@ -143,8 +143,11 @@
 
 14. [Module 14: Personal /Professional Projects]()
 	
-	- step14
+	- Professional Project
 
+		- Build GenAI For See-Docs & Thenavigo, LLC
+
+	- Personal Projects (Repository)
 
 15. [Module 15: Bonus: Robotics ]()
 	
