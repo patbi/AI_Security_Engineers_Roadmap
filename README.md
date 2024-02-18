@@ -123,7 +123,7 @@
 
 11. [Module 11: Data Modeling & Pipelines]()
 
-	 - step11
+	 - Step11
 
 
 12. [Module 12: Data/ML/AI/IoT Tools & Best Practices Overview]()
