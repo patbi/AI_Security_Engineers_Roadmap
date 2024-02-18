@@ -115,8 +115,11 @@
 10. [Module 10: Web Frameworks]()
 
 	 - Django
+	 	- [Getting started with Django](https://www.djangoproject.com/start/)
 	 - Flask
+	 	- [Quickstart](https://flask.palletsprojects.com/en/3.0.x/quickstart/)
 	 - FastAPI
+	 	- [First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/)
 
 11. [Module 11: Data Modeling & Pipelines]()
 
