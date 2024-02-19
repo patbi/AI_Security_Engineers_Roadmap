@@ -1514,6 +1514,34 @@ Delete                      O(1)               	   O(n)
 
 """
 * Hashtable dynamic resizing
+
+	--Load factor: number of entries divided by the number of slots / buckets
+
+	n/m this is the load factor. It is 0 if the hashtable is empty, it is 1 if the hashtable is full.
+
+		- if the load factor is approximately 1 --> it means it is nearly full: the performance will decrease, the operations will be slow
+		- if the load factor is approximately 0 --> it means it is nearly empty: there will be a lot of memory wasted
+
+			SO: dynamic resizing is needed something.
+
+	--Dynamic resizing:
+		- Performance depends on the load factor: what is the number of entries and number of buckets ratio
+		- Space-time tradeoff is important: the solution is to resize table, when its load factor exceeds given threshold
+		- Java: when the load factor is greater than 0.75, the hashmap will be resized automatically
+		- Python: the threashold is 2/3 ~ 0.66
+
+			1.) hash values depend on table's size so hashes of entries are changed when resizing and algorithm can't just copy data from old storage to new one
+			2.) resizing takes O(n) time to complete, where n is a number of entries in the table This fact may make dynamic-sized hash tables inappropriate for real-time applications
+
+
+	-- Applications:
+
+		- Databases: sometimes search trees, sometimes hashing is better
+		- Counting given word occurence in a particular document
+		- Storing data + lookup tables (password checks...)
+		- Lookup tables in huge networks (lookup for IP addresses)
+		- The hashing technique can be used for substring search
+			(Rabin-karp algorithm)
 """
 
 
