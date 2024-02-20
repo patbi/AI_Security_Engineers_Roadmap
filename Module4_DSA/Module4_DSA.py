@@ -1547,7 +1547,75 @@ Delete                      O(1)               	   O(n)
 
 """
 * Hashfunction linear probing python
+	
+	key:apple
+		-- > we can define the hashfunction: what is important that it should return
+			an integer (the index of the arrayslot)
+		-- > we can have the ASCII values for the characters
+		-- > sum them up + use modulo operator to transform the final index into a valid range
+
+		(a/p/p/l/e 97/112/112/108/101)
+		97 + 112 + 112 + 108 + 101 = 530
+
+		// we have to normalize it with the size of the underlying array
+
 """
+
+class HashTable(object):
+
+	def __init__(self):
+		self.size = 10
+		self.keys = [None] * self.size
+		self.values = [None] * self.size
+
+	def put(self, key, data):
+
+		index = self.hashfunction(key)
+
+		while self.keys[index] is not None:
+			if self.keys[index] == key:
+				self.values[index] = data #update
+				return
+
+			# rehash try to find another slot
+			index = (index+1)%self.size
+
+		# insert
+		self.keys[index] = key
+		self.values[index] = data
+
+
+	def get(self, key):
+
+		index = self.hashfunction(key)
+
+		while self.keys[index] is not None:
+			if self.keys[index] == key:
+				return self.values[index]
+
+			index = (index+1) %self.size
+		# it means the key is not present in the associative array
+		return None
+
+
+	def hashfunction(self, key):
+		sum = 0
+		for pos in range(len(key)):
+			sum = sum + ord(key[pos])
+
+		return sum%self.size
+
+	if __name__ == "__main__":
+
+		table = HashTable()
+
+		table.put("apple", 10)
+		table.put("car", 20)
+		table.put("tomatoe", 30)
+		table.put("table", 40)
+
+		print(table.get("table"))
+
 
 
 """
