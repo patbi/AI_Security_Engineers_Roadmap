@@ -1568,6 +1568,8 @@ class HashTable(object):
 		self.keys = [None] * self.size
 		self.values = [None] * self.size
 
+	# Linear probing insert implementation in python
+
 	def put(self, key, data):
 
 		index = self.hashfunction(key)
@@ -1605,42 +1607,48 @@ class HashTable(object):
 
 		return sum%self.size
 
-	if __name__ == "__main__":
+# Linear probing retrieve implementation in python
+if __name__ == "__main__":
 
-		table = HashTable()
+	table = HashTable()
 
-		table.put("apple", 10)
-		table.put("car", 20)
-		table.put("tomatoe", 30)
-		table.put("table", 40)
+	table.put("apple", 10)
+	table.put("car", 20)
+	table.put("tomatoe", 30)
+	table.put("table", 40)
 
-		print(table.get("table"))
-
-
-
-"""
-* Associated array in python
-"""
-
-
-"""
-* Linear probing insert implementation in python
-"""
+	print(table.get("table"))
 
 
 
-"""
-* Linear probing retrieve implementation in python
-"""
 
 
-"""
-* Dictionary in python
-"""
+# Dictionary in python
+dict = {'Joe':14, 'Patbi':25, 'Emily':23}
+
+#print(dict['Joe']) #O(1)
+
+dict['Joe'] = 18
+
+# print (dict['Joe'])
+
+# dict.clear()
+# del dict
+
+#print( dict.items() )
+#print( dict.keys() )
+
+print( dict.items() )
+
 
 
 """
 * Tries-ternary search tree in data structure
+"""
+
+
+"""
+* Associated array in python
 """
 
 
