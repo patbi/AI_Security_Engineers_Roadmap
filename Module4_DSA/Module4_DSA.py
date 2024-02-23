@@ -1644,6 +1644,26 @@ print( dict.items() )
 
 """
 * Tries-ternary search tree in data structure
+
+	- With the help of tries we can search and sort strings very very efficiently
+	- The problem is that tries consume a lot of memory, so we should use ternary search trees instead which stores less references and null objects
+	- TST stores characters or strings in nodes 
+	- Each node has 3 children: less (left child), equal (middle child) or greater (right child)
+	- Can we balance TST-s with rotations? Yes, but it does not worth the trouble
+	- It can be used instead of hashmap: it is as efficient as hashing
+	- Hashing need to examine the entire string key ...TST does not
+
+In general we have as many pointers / edges from every node as the number of characters in the alphabet
+
+We have to define an alphabet in advance + ALPHABET_SIZE
+	For example: in english alphabet there are 26 characters, so ALPHABET_SIZE = 26--> 26 pointers from every node
+
+
+	- TST supports sort operation
+	- So: TST is better than hashing --> especially for search misses + flexible than BST (usually there is no perfect hash function)
+
+	--- Conclusion: TST is faster than hashmap and more flexible than binary search trees
+
 """
 
 
