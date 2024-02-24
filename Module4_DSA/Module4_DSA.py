@@ -1667,25 +1667,79 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 """
 
 
-"""
-* Associated array in python
-"""
-
-
 
 """
 * Insertion in tries in data structure-python
+
+	- PUT: with this operation we would like to insert a new element into the ternary search tree with a given key
+		
+		-- if the character is smaller alphabetically: we go to the left
+		-- if the character is equal: we go to the middle child
+		-- if the character is greater alphabetically: go to the right
 """
 
 
 """
 * Searching in tries in data structure-python
+	
+	get: with this operation we would like to get an item from the ternary search tree with a given key
+
+	IMPORTANT:
+		- hashmap: we generate an index from the key with the hashfunction.
+			We use every single character of the key
+
+		- TST: we may come to the conclusion that there is no value with a given key 
+			without considering every character 
+			For example: we may return after the second character
+
+		Conclusion: for mismatch --> TST is faster !!!
+				For exemple: in LZW data compression there are several mismatches
+
 """
 
 
 
 """
 * Application in tries in data structure
+
+	- We should combine tries with TST
+	- At the root: it is a trie with many many children
+	- At lower levels it becomes a TST with 3 children only
+	- This combination is quite efficient
+
+-- TST vs hashing
+	
+	-- Hashing
+
+		- Need to examine the entire key (because that is the way the hash function works)
+		- Search hits and misses cost the same
+		- The running time and performance relies heavily on the hashfunction
+		- Does not support as many operations as TST (sorting)	
+
+	-- TST
+
+		- Works only for strings
+		- Only examines just enough key characters
+		- Search miss may only involve a few character
+		- Support more operations ( sorting )
+		- Faster than hashing ( for misses especially ) and more flexible than BST
+
+	-- How do hashfunctions work?
+		this is the key
+
+		We have to transform the key into an array index ~ we can use ASCII values for the characters: sum them up + use % modulo operator to avoid index out of bound error !!!
+
+	We Have To Examine Every character In The Key !!!
+
+	-- Applications:
+
+		- It can be used to implement the auto-complete feature very very efficiently
+		- Can be used for spell-checkers
+		- Near-neighbor searching ( of which a spell-check is a special case)
+		- For databases especially when indexing by several non-key fields is desirable
+		- Very important in package routing on WWW --> the router direct the packages in the direction of the longest prfix. It can be found very quickly with the hepl of TST-s
+		- Prefix matching ~ google search
+			- we can use DFS instead as well
 """
 
 
@@ -1991,4 +2045,20 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Radix sort in data structure
+"""
+
+
+"""
+* Associated array in python
+	
+	- Associative arrays / maps / dictionaries are abstract data types !!!
+	- Composed of a collection of key-value pairs where each key appears only once in the collection
+	- Most of the times we implement associative arrays with hashtables but binary search trees can be used as well
+	- The aim is to reach O(1) time complexity for most of the operations
+
+		Supported operations:
+			- Adding key-value pairs to the collection
+			- Removing key-value pairs from the collection 
+			- Update existing key-value pairs
+			- Lookup of value associated with a given key
 """
