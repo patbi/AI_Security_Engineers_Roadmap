@@ -2098,7 +2098,15 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 """
 * Counting sort in data structure
 
-	-- Radix sort:
+	
+
+"""
+
+
+"""
+* Radix sort in data structure
+
+-- Radix sort:
 
 		- Can be very efficient, because there are no comparisons
 		- So O(N) running time can be reached
@@ -2126,11 +2134,6 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 		- Solution: we should combine it with quicksort ... this is the 3-way radix quicksort
 
 
-"""
-
-
-"""
-* Radix sort in data structure
 """
 
 
