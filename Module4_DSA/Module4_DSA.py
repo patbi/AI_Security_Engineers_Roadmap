@@ -2027,12 +2027,69 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Hybrid sorting algorithms
+
+	- It combines more algorithms to solve a given problem
+	- It choses one algorithm depending on the data or switching between them over the course of the algorithm
+	- This is generally done to combine desired features of each, so that the overall algorithm is better than the individual components
+	- Important: hybrid algorithm does not refer to simply combining multiple algorithms to solve a different problem but only to combining algorithms
+		that solve the same problem --> but differ in other characteristics // such as performance
+	- The technique can be used when sorting
+	- Heapsort --> it has an advantage of a guaranteed running time O(N logN)
+	- Quicksort --> optimal implementations are outperform both mergesort and heapsort
+	- BUT quicksort can have quadratic running time when we keep choosing, bad" pivots
+	- Solution: let's combine the two algorithms
+	- Insertion sort: very efficient on small data(5-10 elements)
+	- Mergesort / quicksort: asymptotically optimal on large dataset, but the overhead becomes significant if applying them to small datasets
+	- Solution: let's combine the two algorithms
+	- Highly optimized hybrid algorithm: timsort
+
+		TIMSORT = INSERTION SORT + MERGESORT
+
+
+-- Introsort:
+	
+	- Also known as introspective sort 
+	- It is a hybrid sorting algorithm that provides both fast average performance and optimal worst-case performance
+	- It begins with quicksort and switches to heapsort when quicksort becomes too slow
+		INTROSORT = QUICkSORT + HEAPSORT 
+
+-- Timsort:
+
+	- Combines mergesort and insertion sort
+	- It is a stable sorting algorithm
+	- It was implemented by Tim Peters in 2002 for use in the Python programming language
+	- Best case running time: O(N)
+	- Worst case running time: O(N logN)
+	- Worst case space complexity: O(N)
+
 """
 
 
 
 """
 * Non comparison sorting
+
+	-- Comparison based sorting:
+
+		- What does comparison based sorting mean ?
+
+		if nums[i] > nums[j]
+
+				swap(i,j)
+
+		We keep comparing items ( strings, characters, double ...)
+
+			~ keep making decisions according to these comparisons
+
+		Result: we have to make at least lg n ! comparisons to sort an array
+	
+		stirling formula yields: Ω(N log N)
+			So this is a lower bound, we are not able to do any better !!!
+
+	Can we do better ? Yes, the solution is not to use comparisons
+
+		There are simpler algorithms that can sort a list using partial information about the kays
+			For example: radix sort, bucket sort
 """
 
 
@@ -2040,6 +2097,35 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Counting sort in data structure
+
+	-- Radix sort:
+
+		- Can be very efficient, because there are no comparisons
+		- So O(N) running time can be reached
+		- Running time: O(K*N) where K is the number of digits in the input number
+		- We sort the elements according to individual characters
+		- It is a stable sorting algorithm
+
+	-- LSD string sorting:
+
+		- Least-significant-digit-first string sorting
+		- Consider characters from right to left
+		- We can use it to fixed length strings or fixed length numbers for example integers
+		- Sort the characters at the last column...then keep going left and sort the columns independently
+		- Typical interview question: how to sort one million 32-bit integers
+
+	-- MSD string sort:
+
+		- Most-significant-digit-first string sorting
+		- Consider characters from left to right
+		- It is sensitive to ASCII and Unicode representations
+		- It has several advantages
+			- MSD examines just enough characters to sort the key
+			- CAN BE SUBLINEAR IN INPUT SIZE !!!
+		- MSD access memory randomly ... not so efficient
+		- Solution: we should combine it with quicksort ... this is the 3-way radix quicksort
+
+
 """
 
 
