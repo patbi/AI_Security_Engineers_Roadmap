@@ -2019,9 +2019,53 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 
 
-"""
-* Merge sort in python
-"""
+
+# Merge sort in python
+
+def merge_sort(nums):
+
+	if len(nums) == 1;
+		return
+
+	middle_index = len(nums) // 2
+
+	left_half = nums[:middle_index]
+	right_half = nums[middle_index:]
+
+	merge_sort(left_half)
+	merge_sort(right_half)
+
+	i = 0
+	j = 0
+	k = 0
+
+	while i<len(left_half) and j<len(right_half):
+		if left_half[i] < right_half[i]
+			nums[k] = left_half[i]
+			i = i + 1
+		else:
+			nums[k] = right_half[j]
+			j = j +1
+
+		k = k + 1
+
+
+	while i <len(left_half):
+		nums[k] = left_half[i]
+		k = k + 1
+		i = i + 1
+
+	while j < len(right_half):
+		nums[k] = right_half[j]
+		k = k + 1
+		j = j + 1
+
+if __name__ == "__main__":
+
+	nums = [1,2,3,4,-5]
+	merge_sort(nums)
+	print(nums)	
+
 
 
 
@@ -2098,7 +2142,66 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 """
 * Counting sort in data structure
 
-	
+	- It operates by counting the number of objects that have each distinct key value
+	- Integer sorting algorithm: we assume the values to be integers
+	- And using arithmetic on those counts to determine the positions of each key value in the output sequence
+	- It is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items
+	- It can be used as a subroutine in redix sort
+	- Because counting sort uses key values as indexes into an array --> it is not a comparison based sorting algorithm, so linearithmic running time can be reduced
+	- Running time: O(N+K)
+	- N --> number of items we want to sort
+	- K --> difference between the maximum and minimum key values,
+	basically the number of possible keys
+	- Conclusion: it is only suitable for direct use in situations where the variation in keys is not significantly greater than the number of items
+
+	1 4 1 7 1 7 10 3  Initial array we want to sort
+
+	Content value: 3
+	Index: 1
+	-----------
+	Meaning: we have 3 items with key 1 in out original array
+
+	Numerical ordering: 1,1,1,3,4,7,7,10
+
+	Overall running time: O(k) + O(N) = O(N+K)
+
+	Problem: k can be very very large, and the counting sort algorithm will be slow
+
+	Allocate memory --> for an array size k, we want to track and count that how many occurances are there in the the original array for the given key
+
+	1) Iterate through the original array O(N)
+	2) The value in the array will be the index of the temporary array: we increment the counter there
+	3) Traverse the array of counters ( array size k ) and print out the values O(k)
+	4) It is going to yield the numerical ordering
+
+
+
+
+Pseudocode:
+
+countingSort(array, max, min)
+
+	countArray = new array with size [max-min+1]
+
+	for i in array
+		increment countArray[i-min]
+	end
+	z = 0
+
+	for i in array
+		while countArray[i-min] > 0
+			array[z] = 1
+			z = z + 1
+			countArray[i-min] = countArray[i-min] - 1
+		end
+	end
+end
+
+Counting sort is not in place, we do need some additional memory
+
+max-min+1 going to determine the size of the array
+
+Thats why counting sort can get slow if this countArray is huge
 
 """
 
