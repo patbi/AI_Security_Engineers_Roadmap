@@ -2008,12 +2008,52 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Merge sort importance in data structure
+
+	- Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945
+	- Comparison based algorithm with running time complexity O(N logN)
+	- It is a stable sorting algorithm
+	- Not an in-place algorithm
+	- Although heapsort has the same time bounds as merge sort --> heapsort requires only O(1) auxiliary space instead of merge sort's O(N)
+	- Efficient quicksort implementations generally outperforms mergesort
+	- Mergesort is often the best choice for sorting a linked list: in this situation it is relatively easy to implement a merge sort in such a way that it requires only O(1) extra space
+
+
+
+			   Quicksort         Mergesort
+In place                    Yes                      No
+Stable                      No                       Yes
+Time complexity             Quadratic sometimes      O(N logN)
+
 """
 
 
 
 """
 * Merge sort in data structure
+	
+	3-5-6-10   1-4-8
+
+	So after the split operations: we have several distinct arrays that are already sorted: we have to merge these arrays into a single one
+
+	-- We start at the beginning of the subarrays: we keep comparing them, we insert the smaller into the result array
+	
+	result array: 1-3-4-5-6-8-10
+
+	Very important: we have to iterate through the left and right array if there are some more items left --> in this case the 10 in the left subarray
+
+
+	Pseudocode:
+
+	mergeSort(low,high)
+
+		if(low >= high) return
+		middle = (low + high) / 2
+
+		mergeSort(low, middle)
+		mergeSort(middle + 1, high)
+		mergeSort(low, middle, high)
+	end
+
 """
 
 
