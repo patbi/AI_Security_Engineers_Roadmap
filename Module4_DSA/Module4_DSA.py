@@ -2019,7 +2019,7 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 
 
-			   Quicksort         Mergesort
+			   Quicksort              Mergesort
 In place                    Yes                      No
 Stable                      No                       Yes
 Time complexity             Quadratic sometimes      O(N logN)
