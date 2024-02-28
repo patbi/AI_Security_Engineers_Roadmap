@@ -2001,6 +2001,43 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Quicksort in python
+
+de quick_sort(nums,low,high):
+
+	if low >= high:
+		return
+
+	pivot_index = partition(nums,low,high)
+	quick_sort(nums,low,pivot_index-1)
+	quick_sort(nums,pivot_index+1,high)
+
+def partition(nums,low,high):
+
+	pivot_index = (low+high) // 2
+	swap(nums,pivot_index,high)
+
+	i = low
+
+	for j in range(low,high,1):
+		if nums[j] <= nums[high]:
+			swap(nums,i,j)
+			i = i + 1
+
+	swap(nums,i,high)
+
+	return i
+
+def swap(nums,i,j):
+	temp = nums[i]
+	nums[i] = nums[j]
+	nums[j] = temp
+
+if __name__ == "__name__":
+
+	nums = [-2,-1,0,1,0,-1,-2]
+	quick_sort(nums,0,len(nums)-1)
+	print(nums)
+
 """
 
 
@@ -2023,6 +2060,16 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 In place                    Yes                      No
 Stable                      No                       Yes
 Time complexity             Quadratic sometimes      O(N logN)
+
+
+
+
+	1- divide the array into two subarrays recursively
+	2- sort these subarrays recursively with mergesort again
+	3- if the is only a single item left in the subarray --> we consider it to be sorted by definition
+	4- merge the subarrays to get the final sorted array
+
+
 
 """
 
