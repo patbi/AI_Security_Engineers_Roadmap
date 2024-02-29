@@ -1982,19 +1982,121 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Insertion sort in python
+
+def insertion_sort(nums):
+
+	for i in range(len(nums)):
+
+		j = i
+
+		while j > 0 and nums[j-1] > nums[j]:
+			swap(nums,j,j-1)
+			j = j- 1
+
+	return nums
+
+def swap(nums, i, j):
+	temp = nums[i]
+	nums[i] = nums[j]
+	nums[j] = temp
+
+if __name__ = "__main__":
+
+	nums = [1,5,3,8,10,100,4]
+	print(insertion_sort(nums))
+
 """
-
-
 
 
 """
 * Insertion sort in data structure
+
+	- It is a simple sorting algorithm that builds the final sorted array one item at a time
+	- It has quadratic running time O(N*N)
+	- On large datasets it is very inefficient but on arrays with 10-20 items it is quite good
+	- Simple implementation
+	- It is more efficient than other quadratic running time sorting procedures such as bubble sort or selection sort
+	- Adaptive algorithm --> speeds up when array is already substantially sorted
+	- Stable sort --> preserve the order of the items with equal keys
+	- In-place algorithm --> does not need any additional memory
+	- It is an online algorithm --> it can sort an array as it receives it for example downloading data from web
+	- Hybrid algorithms uses insertion sort if the subarray is small enough Insertion sort is faster for small subarrays than quicksort
+	- Variant of insertion sort is shell sort
+	- Sometimes selection sort is better: thay are very similar algorithms
+	- Insertion sort requires more writes because the inner loop can require shifting large sections of the sorted portion of the array
+	- In general, insertion sort will write to the array O(n*n) times while selection sort will write only O(n) times
+	- For this reason selection sort may be preferable in cases where writing to memory is significantly more expensive than reading --> for example flash memory
+
+
+insertionSort(array)
+	
+	for i=1 to length(array)
+		j = i
+
+		while j > 0 and array[j-1] > array[j]
+			swap(array,j,j-1)
+			j = j-1
+		end
+	end
+end
+
+
+---------
+While the previous item is greater than the given one,
+we keep swapping them
+
+~ that why there are so many shifts in insertion sort
+
+55|-2|34|10|0|2|-5|12
+----------------------
+-5|-2|0|2|10|12|34|55
+
+---------
+
 """
 
 
 
 """
 * Quicksort introduction-II
+	
+quicksort(array,low,high)
+
+	if low >= high return
+
+	pivot = partition(array,low,high)
+	quicksort(array,low,pivot-1)
+	quicksort(array,pivot+1,high)
+
+end
+
+
+partition(array,low,high)
+	
+	pivotIndex = (low+high) / 2
+	swap(pivotIndex,high)
+
+	i = low
+
+	for j=low to high
+		if array[j] <= array[high]
+			swap(i,j)
+			i++
+
+	swap(i,high)
+
+	return i
+
+end
+
+
+23|6|6|-1|0|12|8|3|1
+--------------------
+Sort right subarray recursively
+--------------------
+-1|0|1|3|4|6|8|12|23
+
+
 """
 
 
