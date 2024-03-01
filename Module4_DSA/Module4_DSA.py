@@ -1964,18 +1964,147 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Selection sort in data structure
+	
+	- Another O(N*N) running time sorting algorithm
+	- Selection sort is noted for its simplicity and it has performance advantages over more complicated algorithms
+	- Particularly useful where auxiliary memory is limited 
+	- The algorithm divides the input list into two parts:
+		- the subarray of items already sorted
+		- and the subarray of items remaining to be sorted that occupy the rest of the array
+
+	- The algorithm proceeds by finding the smallest element in the unsorted subarray
+	- Exchange / swap it with the leftmost unsorted element --> putting it in sorted order
+	- Moving the subarray boundaries one element to be right
+	- It is an in place algorithm --> no need for extra memory
+	- Selection sort almost always outperforms bubble sort
+	- Not a stable sort --> does not preserve the order of keys with equal values
+	- Quite counter-intuitive: selection sort insertion sort are both typically faster for small arrays // arrays with 10-20 items
+	- Usual optimization method --> recursive algorithms switch to insertion sort or selection sort for small subarrays
+	- Makes less writes than insertion sort --> this can be important if writes are significantly more expensive than reads,
+	- For example with EEPROM or flash memory where every write lessens the lifespan of the memory
+
+
+selectionSort(array)
+
+	for i in range array.length-1
+		index = i
+		
+		for j from i+1 to array.length
+			if array[j] < array[index]
+				index = j
+
+		if index not i
+			swap(array,index,i)
+
+end
+
+
+
+-3|4|1|88|3
+------------
+We find the minimum: for this we have to iterate through the whole array with Q(N) time complexity ~ linear search
+------------
+-3|1|3|4|88
+
 """
 
 
 
 """
 * Selection sort in python
+
+def selection_sort(nums):
+
+	for i in range(len(nums)-1):
+
+		index = i
+
+		for j in range(i+1,len(nums),1):
+			if nums[j] < nums[idex]:
+			index = j
+
+		if index != i:
+			swap(nums,index,i)
+	
+	return nums
+
+def swap(nums, i, j):
+	temp = nums[i]
+	nums[i] = nums[j]
+	nums[j] = temp
+
+if __name__ == "__main__":
+
+	nums = [5,2,1,7,6,8,8,0]
+
+	print(selection_sort(nums))
+
 """
 
 
 
 """
 * Quicksort introduction-I
+	
+	- It is an efficient sorting algorithm
+	- It was developed by Tony Hoare in 1959 // the same person who invented quickselect algorithm
+	- A well implemented quicksort can outperforms heapsort and mergesort --> the main competitors
+	- A comparison based algorithm --> not able to be faster than linearithmic time complexity
+	- The efficient implementation of quicksort is NOT stable --> does not keep the relative order of items with equal value
+	- It is in-place --> does not need any additional memory
+	- On average case it has O(N logN) running time
+	- But the worst case running time is quadratic O(N*N)
+	- It is widely used in programming languages 
+			- Primitive types --> usually quicksort is used
+			- Reference types / objects --> usually mergesort is used
+
+	It is a divide and conquer algorithm
+
+	- pick an element from the array: this is the pivot item
+	- partition phase: rearrange the array so that all elements with values less than the pivot come after it // equal values can go either way 
+	- recursively apply these steps on the subarrays
+
+		BASE CASE FOR RECURSION: arrays of size zero or one never need to be sorted
+
+	Choosing the pivot item
+		It is very important --> if we keep choosing bad pivots, the running time will be quadratic
+
+		1.) we can choose a pivot at random // usually it is working fine
+		2.) choose the middle index of the array as the pivot
+
+
+Pseudocode:
+
+quicksort(array,low,high)
+	
+	if low >= high return
+
+	pivot = partition(array,low,high)
+	quicksort(array,low,pivot-1)
+	quicksort(array,pivot+1,high)
+
+end
+
+
+partition(array,low,high)
+	
+	pivotIndex = (low+high) / 2
+	swap(pivotIndex,high)
+
+	i = low
+
+	for j = low to high
+		if array[j] <= array[high]
+			swap(i,j)
+			i++
+
+	swap(i,high)
+
+	return i
+
+end
+
+
 """
 
 
