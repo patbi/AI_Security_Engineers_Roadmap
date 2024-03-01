@@ -32,3 +32,6 @@ Compliance) + Feedback (Learn + Develop)
 
 
 ![Preview](https://github.com/patbi/100_Days_of_Data_Engineering_ML_AI/blob/main/Module_13_Data_science/DevOps_DataOps_MLOps_differ.gif)
+
+
+[Learn more: About Tools-for-data-science](https://learn.thenavigo.com/post/a-few-tools-for-data-science-with-python)
