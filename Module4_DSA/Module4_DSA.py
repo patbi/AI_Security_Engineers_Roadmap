@@ -1938,6 +1938,9 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Sorting algorithms in data structure
+	
+	
+
 """
 
 
@@ -1945,6 +1948,17 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Adaptive sorting algorithms
+	
+	- An adaptive algorithm is an algorithm that changes its behavior based on information available at runtime
+	- Adaptive sort --> it takes advantage of existing order in its input
+	- It benefits from local orders --> sometimes an unsorted array contains sequences that are sorted by default --> the algorithms will sort faster
+	- Most of the times: we just have to modify existing sorting algorithms in order to end up with an adaptive one
+	- Comparison based algorithms have optimal O(N logN) running time complexity
+	- Adaptive sort takes advantage of the existing order of the input to try to achieve better times:maybe O(N) could be reached
+	- The more presorted the input is, the faster it should be sorted 
+	- IMPORTANT: nearly sorted sequences are common in practice
+	- Heapsort,merge sort: not adaptive algorithms, do not take advantage of presorted sequences
+	- Shell sort: adaptive algorithm so performs better if the input is partially sorted
 """
 
 
@@ -1952,12 +1966,63 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Bubble sort in data structure
+	
+	- Repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order
+	- It is too slow and impratical for most problems even when compared to insertion sort
+	- Bubble sort has worst-case and average complexity both O(N*N)
+	- Bubble sort is not a pratical sorting algorithm
+	- It will not be efficient in the case of a reverse-ordered collection
+	- Stable sorting algorithm
+	- In place algorithm --> does not need any additional memory
+	- In computer graphics it is popular for its capability to detect a ery small error (like swap of just two elements) in almost-sorted arrays and fix it with just linear complexity O(N)
+	- For example, it is used in a polygon filling algorithm, where bounding lines are sorted by their x coordinates at a specific scan line (a line parallel to x axis) and with incrementing y their order change(two elements are swapped) only at intersections of two lines
+
+
+bubbleSort(array)
+
+	for i in range array.length-1
+		for j in range array.length-1-i
+			if array[j] > array[j+1]
+				swap(array,j,j+1)
+
+end
+
+------------
+-3|4|88|1|3
+-----------
+We keep considering fewer and fewer items, because on every iteration we consider one more item to be sorted
+
+On every iteration we bubble up the largest item
+-----------
+-3|1|3|4|88
+
+
 """
 
 
 
 """
 * Bubble sort in python
+	
+def bubble_sort(nums):
+
+	for i in range(len(nums)-1):
+		for j in range(0,len(nums)-1-i,1):
+			if nums[j] > nums[j+1]:
+				swap(nums,j,j+1)
+
+	return nums
+
+def swap(nums,i,j):
+	temp = nums[i]
+	nums[i] = nums[j]
+	nums[j] = temp
+
+if __name__== "__main__":
+
+	a = [1,5,3,2,4,8,7]
+	print(bubble_sort(a))
+
 """
 
 
