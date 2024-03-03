@@ -1932,6 +1932,31 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Application of spanning tree
+	
+--- 1) Optimizing road road / cable/pipe length
+
+	- We have N cities
+	- We have to make sure that every city can be reached of roads
+	- So the naive approach is to connect every city with every other city
+	- Not the optimal solution
+	- We have to find the minimum spanning tree: in order to connect all of the cities with the lowest cost possible (so the minimum length of roads)
+	- Same problems --> want to lead in internet to a region or electicity or building motorways
+
+--- 2) K-means clustering:
+	
+	- We want to classify similar items
+	- For example dots in the 2 dimensional plane
+	- The dots that are closer to reach other than to any other dots --> will be in the same cluster
+	- We construct a minimum spanning tree --> and remove the N-1 most expensive edges if we want to make N clusters
+	(kruskal algorithms: sort the edges in ascending order)
+
+--- 3) Routing in LAN:
+
+	- The spanning tree protocol (STP) ensures a loop-free topology for any bridged Ethernet local area network
+	- Each switch would infinitely duplicate the first broadcast --> because there's nothing to prevent loops
+	- The idea behind a spanning tree topology is that bridges can discover a subset of the topology that is loop-free: that's the tree
+	- STP also makes sure there is enough connectivity to reach every portion of the network by spanning the entire LAN
+
 """
 
 
@@ -1939,7 +1964,53 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 """
 * Sorting algorithms in data structure
 	
-	
+	- A sorting algorithm is an algorithm that puts elements of an array in a certain order
+	- Numbers --> numerical ordering
+	- Strings, characters --> alphabetical ordering
+	- Comparison based algorithms
+		~ bubble sort, insertion sort, selection sort, merge sort, quicksort
+	- Non-Comparison based sorting
+		~ radix sort, bucket sort
+	- Time complexity: O(N*N) or O(N log N) or O(N)
+	- In place: strictly an in-place sort needs only O(1) memory beyond the items being sorted
+		So an in place algorithm does not need any extra memory
+	- Recursive: some sorting algorithms are implemented in a recursive manner --> the divide and conquer ones especially
+			// merge sort and quicksort
+	- Stable: stable sorting algorithms maintain the relative order of records with equal values
+
+
+4|12|-3|32|16
+-------------
+An in place algorithm will not allocate any extra memory,
+	for example a temporary array in order to make the sorting
+	For merge sort --> we need some extra memory
+
+
+4|12|-3|32|16 --------------> -3|4|12|16|32 (IN-Place: For example: quicksort)
+
+
+Sometimes we have extra space when storing the numbers we want to sort --> not going to be in place
+
+Why is it good to have algorithm that are in-place ?
+	MEMORY EFFICIENT!!!
+
+
+before sorting
+--------------
+4|12|-3|12|16
+--------------
+after sorting
+--------------
+-3|4|12|12|16
+
+So the relative order of equal items remain the same The red 12 is after the yellow 12 even after sorting!!!
+	Merge sort: stable
+	Quick sort: unstable
+
+For sorting N items --> we have to make log N! comparisons With Stringling-formula it can be reduced to N logN
+	- so the Ω(N logN) time complexity is the lower bound for comparison based sorting algorithms
+	- ok but we can achieve O(N) running time as far as sorting is concernded, such as bucket sort or radix sort 
+		THESE ARE NOT COMPARISON BASED ALGORITHMS.
 
 """
 
