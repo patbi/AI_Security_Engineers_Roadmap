@@ -1933,7 +1933,7 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 """
 * Application of spanning tree
 	
---- 1) Optimizing road road / cable/pipe length
+--- 1) Optimizing road / cable/pipe length
 
 	- We have N cities
 	- We have to make sure that every city can be reached of roads
