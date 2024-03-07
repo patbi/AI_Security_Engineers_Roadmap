@@ -2005,8 +2005,50 @@ class KruskalAlgorithm(object):
 			print(edge.startVertex.name," - ", edge.targetVertex.name);	
 
 #Kruskal algorithms in python-4
+vertex1 = Vertex("a");
+vertex2 = Vertex("b");
+vertex3 = Vertex("c");
+vertex4 = Vertex("d");
+vertex5 = Vertex("e");
+vertex6 = Vertex("f");
+vertex7 = Vertex("g");
 
+edge1 = Edge(2, vertex1, vertex2);
+edge2 = Edge(6, vertex1, vertex3);
+edge3 = Edge(5, vertex1, vertex5);
+edge4 = Edge(10, vertex1, vertex6);
+edge5 = Edge(3, vertex2, vertex4);
+edge6 = Edge(3, vertex2, vertex5);
+edge7 = Edge(1, vertex3, vertex4);
+edge8 = Edge(2, vertex3, vertex6);
+edge9 = Edge(4, vertex4, vertex5);
+edge10 = Edge(5, vertex4, vertex7);
+edge11 = Edge(5, vertex6, vertex7);
 
+vertexList = [];
+vertexList.append(vertex1);
+vertexList.append(vertex2);
+vertexList.append(vertex3);
+vertexList.append(vertex4);
+vertexList.append(vertex5);
+vertexList.append(vertex6);
+vertexList.append(vertex7);
+
+edgeList = [];
+edgeList.append(edge1);
+edgeList.append(edge2);
+edgeList.append(edge3);
+edgeList.append(edge4);
+edgeList.append(edge5);
+edgeList.append(edge6);
+edgeList.append(edge7);
+edgeList.append(edge8);
+edgeList.append(edge9);
+edgeList.append(edge10);
+edgeList.append(edge11);
+
+algorithm = KruskalAlgorithm();
+algorithm.spanningTree(vertexList, edgeList)
 
 
 
