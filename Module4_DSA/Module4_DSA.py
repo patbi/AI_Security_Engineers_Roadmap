@@ -1884,12 +1884,41 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Union find data structure
+	
+	
+
 """
 
 
 
 """
 * Spanning tree in data structure
+
+	--- Spanning trees:
+
+		- A spanning tree of an undirected G graph is a subgraph that includes all the vertices og G
+		- In general, a tree may have several spanning trees
+		- We can assign a weight to each edge
+		- A minimum spanning tree is then a spanning tree with weight less than or equal to the weight of every other spanning tree
+		- Has lots of applications: in big data analysis, clustering algorithms, finding minimum cost for a telecommunications company laying cable to a new neighborhood
+		- Standard algorithms: Prim's-Jarmik, Kruskal --> greedy algorithms
+
+	--- Kruskal-algorithm:
+
+		- We start edges according to their edge weights
+		- It can be done in O(N*logN) with mergesort or quicksort
+		- Union find data structure: "disjoint set"
+
+			- We start adding edges to the MST and we want to make sure there will be no cycles in the spanning tree. It can be done in O(logV) with the help of union find data structure
+			- We Vould use a a heap instead sorting the edges in the beginning but the running time would be the same. So sometimes Kruskal's algorithm is implemented with priority queues
+			- Worst case running time: O(E*logE), so we can use it for huge graphs too
+			- If the edges are sorted: the algorithm will be quasi-linear
+			- If we multiply the weights with a constant or add a constant to the edge weights: the result will be the same
+				// in physics, an invariant is a property of the system that remains unchanged under some transformation
+
+				In Kruskal algorithm, spanning trees are invariant under the transformation of these weights (addition, multiplication)
+	
+	--- 
 """
 
 
