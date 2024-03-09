@@ -1878,6 +1878,8 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Shortest path algorithms
+
+
 """
 
 
@@ -1885,7 +1887,68 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 """
 * Union find data structure
 	
+	- Also known as union-find data structures
+	- Data structure to keep track of a set of elements partitioned into a number of disjoint (non everlapping) subsets
+	- Three main operations: union and find makeSet
+	- Disjoint sets can be represented with the help of linked lists but usually we implemented as a tree like structure
+	- In kruskal algorithm it will be useful: with disjoint sets we can decide in approximately O(1) time whether two vertexes are in the same set or not
+
+--- makeSet
+
+function makeSet(x)
+	x.parent = x
+
+So the make sets operation is uite easy to implement ~ we set the parent of the given node to be itself
+	Basically we create a district set to all the items/nodes
+
+--- find
+
+function find(x)
+	if x.parent == x
+		return x
+	else
+		return find(x.parent)
+
+Several items can belong to the same set --> we usually represent the set with one of its items "representative of the set"
+	When we search for an item with find() then the operation is going to return with the representative
+
+--- union
+
+function union(x,y)
+	xRoot = find(x)
+	yRoot = find(y)
+
+	xRoot.parent = yRoot
+
+The union operation is merge two disjoint sets together by connecting them according to the representatives
 	
+	PROBLEM: this tree like structure can become unbalanced
+
+		1. union by rank --> always attach the smaller tree to the root of larger one
+			The tree will become more balanced: faster
+		2. path compression --> flattening the structure of the tree 
+			We set every visited node to be connected to the root directly
+
+--- rank: basically the depth of the tree
+
+	The rank of the set is eual to the rank of the representative // ~ the root node
+
+	We attack the smaller tree to the larger one --> it means we attack the tree with smallest rank to the tree with highest rank
+
+--- pathCompression
+
+function find(x)
+	if x.parent!=x
+		x.parent = find(x.parent)
+	return x.parent
+
+
+--- Applications
+
+	- It is used mostly in Kruskal-algorithm implementation
+	- We have to check whether adding a given edge to the MST would form a cycle or not
+	- For checking this --> union-find data structure is extremly hepful
+	- We can check whether a cycle is present --> in asymtotically O(1) constant time complexity
 
 """
 
