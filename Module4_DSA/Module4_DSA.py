@@ -1859,25 +1859,87 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 
 
-"""
-* Bellman ford algorithms in python-1
-"""
+
+# Bellman ford algorithms in python-1
+import sys;
+
+class Node(object):
+
+	def __init__(self, name):
+		self.name = name;
+		self.visited = False;
+		self.predecessor = None;
+		self.adjacenciesList = [];
+		self.minDistance = sys.maxsize;
+
+class Edge(object):
+
+	def __init__(self, weight, startVertex, targetVertex):
+		self.weight = weight;
+		self.startVertex = startVertex;
+		self.targetVertex = targetVertex;
+
+class BellmanFord(object):
+
+# Bellman ford algorithms in python-2
 
 
 
 
-"""
-* Bellman ford algorithms in python-2
-"""
+# Bellman ford algorithms in python-3
 
-
-"""
-* Bellman ford algorithms in python-3
-"""
 
 
 """
 * Shortest path algorithms
+
+	--- DAG shortest path
+
+		- If the graph is a DAG, so there is no directed cycles, it is easier to find shortest path
+		- We sort the vertices into topological order: we iterate throught the topological order relaxing all edges from the actual vertex
+		- Topological sort algorithm computers shortest path tree in any edge weighted (can be negative) DAG in time O(E+V)
+		- It is much faster than Bellman-Ford or Dijstra
+		- Applications: solving knapsack-problem
+		- GPS, vehecule routing and navigation
+		- Detecting arbitrage situations in FX
+		- RIP "Routing Information Protocol"
+		- This is a distributed algorithm
+			- Each node calculates the distances between itself and all other nodes and stores this information as a table
+			- Each node sends its table to all adjacent nodes
+			- When a node receives distance tables from its neighbors, it calculates the shortest routes to all other nodes and updates its own table to reflect any changes
+
+	--- Avidan-Shamir method
+
+		- When we want to shrink an image for example in the browser or on a smartphone without distortion
+		- We want to make sure the image will not deform
+		- We have to eliminate the least significant bit strings
+		- We set up an "energy function": and remove the connected string of pixels containing the least energy
+		- Photoshop, GIMP use it
+		- We build a huge graph: vertices are the pixels and the edges are pointing from every vertex to its downward 3 neighbours
+		- The energy function determines what the edge weights will be
+		- It's acyclic: we can use topological order shortest path to find the string of pixels to be removed
+
+	
+	--- Longest path problem
+
+		- Problem of finding a simple path of maximum length in a given graph
+		- No polynomial time algorithm !!! NP-hard problem
+		- It has a linear time solution for directed acyclic graphs (DAG) which has important applications in finding the critical path in scheduling problems
+		- We just have to negate the edge weights and run shortest path algorithm
+		- We have to use Bellman-Ford algorithm because negative edges can occur
+		- Application: Parallel job scheduling problem
+		- Given a set of jobs with durations and precedence constraints, schedule the jobs - by finding a start time to each - so as ta achive the minimum completion time, while respecting the constraints
+	
+
+	--- CPM: critical path method
+		
+		- The method was first used between 1940 and 1943 in the Manhattan project
+		- Problem formulation: we want an algorithm for scheduling a set of project activities so that the total running time will be as minimal as possible
+		- The algorithms needs
+		- A list of all activities reuired to complete the project
+		- The time (duration) that each activity will take to complete
+		- The dependencies between the activities
+
 
 
 """
