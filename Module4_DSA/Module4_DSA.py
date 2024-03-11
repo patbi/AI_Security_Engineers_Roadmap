@@ -1883,10 +1883,48 @@ class BellmanFord(object):
 
 # Bellman ford algorithms in python-2
 
+	HAS_CYCLE = False;
 
+	def calculatesNortestPath(self, vertexList, edgeList, startVertex):
+		startVertex.minDistance = 0;
 
+	for i in range(0, len(vertexList)-1):
+		for edge in edgeList:
+			u = edge.startVertex;
+			v = edge.targetVertex;
+
+			newDistance = u.minDistance + edge.weight;
+
+			if newDistance < v.minDistance:
+				v.minDistance = newDistance;
+				v.predecessor = u;
+
+	for edge in edgeList:
+		if self.hasCycle(edge):
+			print("Nagative cycle detected...");
+			BellmanFord.HAS_CYCLE = True;
+			return;
+
+def hasCycle(self, edge):
+	if (edge.startVertex.minDistance + edge.weight) < edge.targetVertex.minDistance:
+		return True;
+	else:
+		return False;
+
+def getShortestPathTo(self, targetVertex):
+
+	if not BellmanFord.HAS_CYCLE:
+		print("Shortest  path exists with value: ", targetVertex.minDistance);
+
+		node = targetVertex;
+
+		while node is not None:
+			node = node.predecessor;
+	else:
+		print("Negative cycle detected...");
 
 # Bellman ford algorithms in python-3
+
 
 
 
