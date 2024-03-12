@@ -1825,6 +1825,16 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Dijkstra algorithms in data structure
+
+	- Shortest path problem: finding a path between two vertices in a graph such that the sum of the weights of its edges is minimized
+	- Dijkstra algorithm
+	- Bellman-Ford algorithm
+	- A*search
+	- Floyd-Warshall algorithm
+	- It was constructed by computer scientist Edsger Dijkstra in 1956
+	- Dijkstra can handle positive edge weights // Bellman-Ford algorithm can have negative weights as well
+	- 
+
 """
 
 
@@ -1855,6 +1865,25 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Bellman ford algorithms in data structure
+	
+	- Invented in 1958 by Bellman and Ford independently
+	- Slower than Dijkstra but more robust: it can handle negative edge weights too
+	- Dijkstra algorithm choose the edge greedely, with the lowest cost: Bellman-Ford relaxes all edges at the same time for V-1 iteration
+	- Running time is O(V*E)
+	- Does V-1 iteration + 1 to detect cycles: if cost decreases in the V-th iteration, than there is a negative cycle, because all the paths are traversen up to the V-1 iteration
+
+--- 1970: Yen optimization:
+
+	- Yen algorithm: it is the Bellman-Ford algorithm with some optimization.
+	- We can terminate the algorithm if there is no change in the distances between two iterations.
+	- We use the same technique in bubble sort
+
+--- Applications:
+	
+	- Cycle detection can prove to be very important
+	- Negative cycles as well --> we have to run the Bellman-Ford algorithm that can handle negative edge weights by default
+	- On the FOREX market it can detect arbitrage situations
+
 """
 
 
