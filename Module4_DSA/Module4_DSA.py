@@ -1833,13 +1833,48 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 	- Floyd-Warshall algorithm
 	- It was constructed by computer scientist Edsger Dijkstra in 1956
 	- Dijkstra can handle positive edge weights // Bellman-Ford algorithm can have negative weights as well
-	- 
+	- Several variants: it can find the shortest path from A to B, but it is able to construct a shortest path tree as well --> defines the shortest paths from a source to all the other nodes
+	- This is asymtotically the fastest known single-source shortest-path algorithm for arbitrary directed graphs with unbounded non-negative weights
+	- Dijkstra's algorithm time complexity: O(V*logV + E)
+	- Dijkstra's algorithm is a greedy one: it tries to find the global optimum with the help of local minimum --> it turns out to be good
+	- It is greedy --> on every iteration we want to find the minimum distance to the next vertex possible --> appropriate data structure
+		heaps (binary or Fibonacci) or in general a priority queue
 
 """
 
 
 """
 * Dijkstra algorithms logic in data structure
+
+	-- Dijkstra algorithm: Pseudocode
+
+class Node
+	name
+	min_distance
+	Node predecessor
+
+
+function DijkstraAlgorithm(Graph, source)
+	
+	distance[source] = 0
+	create vertex queue Q
+
+	for v in Graph
+		distance[v] = inf
+		predecessor[v] = undefined // previous node in the shortest path
+		add v to Q
+
+	while Q not empty
+		u = vertex in Q with min distance // this is why to use heaps
+		remove v from Q
+
+		for each neighbor v of v
+			tempDist = distance[u] + distBetween(u,v)
+			if tempDist < distance[v]
+				distance[v] = tempDist
+				predecessor[v] = u
+
+	return distance[] // contains the shortest distances from source to other nodes
 """
 
 
