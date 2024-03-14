@@ -1880,21 +1880,11 @@ function DijkstraAlgorithm(Graph, source)
 
 """
 * Dijkstra algorithms real time example
-"""
+	
+	Learn more here:
 
+		https://builtin.com/software-engineering-perspectives/dijkstras-algorithm
 
-"""
-* Dijkstra algorithms in python-1
-"""
-
-
-"""
-* Dijkstra algorithms in python-2
-"""
-
-
-"""
-* Dijkstra algorithms in python-3
 """
 
 
