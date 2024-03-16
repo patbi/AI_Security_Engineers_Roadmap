@@ -1789,6 +1789,44 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Graph in data structure
+	
+	- Graphs G(V,E) are mathematical structures to model pairwise relations between given objects
+	- A graph is made up of vertices/nodes and edges
+	- There are two types of graphs: directed and undirected graphs
+
+We know what are graphs First of all how to model them in programming languages ?
+	
+	- adjacency matrixes
+	- edge list representation
+
+1.) adjacency matrixes
+	
+	We have an A matrix constructed out of the vertices of the graph:
+
+		--> the A(i,j) value in the matrix is 1 if there is a connection between node i and node j
+		--> otherwise A(i,j) is 0
+
+2.) edge list representation
+	
+	We create a Vertex class
+
+		- it stores the neigbors accordingly
+
+			class Vertex 
+
+				vertexName;
+				visited;
+				Vertex[]neigbors;
+
+	Graphs Applications:
+
+		- shortest path algorithm (GPS, high frequency trading ...)
+		- graph traversing: web crawlers for Google
+		- spanning trees
+		- maximum flow problem: lots of problems can be reduced to maximum flow
+		- because there are two representations for graphs: we can handle these problems with matrixes as well
+			// thats why most Google's algorithms have something to do with matrix relatedoperations although they are graph algorithms
+			
 """
 
 
