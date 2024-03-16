@@ -1810,13 +1810,13 @@ We know what are graphs First of all how to model them in programming languages 
 	
 	We create a Vertex class
 
-		- it stores the neigbors accordingly
+		- it stores the neighbors accordingly
 
 			class Vertex 
 
 				vertexName;
 				visited;
-				Vertex[]neigbors;
+				Vertex[]neighbors;
 
 	Graphs Applications:
 
@@ -1826,21 +1826,60 @@ We know what are graphs First of all how to model them in programming languages 
 		- maximum flow problem: lots of problems can be reduced to maximum flow
 		- because there are two representations for graphs: we can handle these problems with matrixes as well
 			// thats why most Google's algorithms have something to do with matrix relatedoperations although they are graph algorithms
-			
-"""
-
-
 
 """
-* Breadth first search in data structure
-"""
-
 
 
 
 """
-* Breadth first search implementation in python
+* Breadth-first search in data structure
+
+	- What is it good for ?
+	- We have a graph and we want to visit every node --> we can do it with BFS
+	- We visit the neighbors then neighbors of these new vertices and so on
+	- We visit every vertex exactly once
+	- Running time complexity: O(V+E)
+	- Memory complexity is not good: we have to store lots of references
+	- Thats why DFS is usually preferred
+	- BUT it constructs a shortest path: Dijkstra algorithm does a BFS if all the edge weights are equal to 1
+
+
+we have an empty queue at the beginning and we keep checking whether we have visited the given node or not
+	~ keep iterating until queue is not empty
+
+bfs(vertex)
+
+	Queue queue
+	vertex set visited true
+	queue.enqueue(vertex)
+
+	while queue not empty
+		actual = queue.dequeue()
+
+		for v in actual neighbors
+			if v is not visited
+				v set visited true
+				queue.enqueue(v)
+
+
+		  ITERATION
+
+--- Applications:
+
+	- In artificial intelligence / machine learning it can prove to be very important: robots can discover the surrounding more easily with BFS than DFS
+	- It is also very important in maximum flow: Edmonds-karp algorithm uses BFS for finding augmenting paths
+	- Cheyen's algorithm in garbage collection --> it help to maintain active references on the heap memory
+	- It uses BFS to detect all the references on the heap
+	- Serialization / deserialization of a tree like structure (for example when order does matter) --> it allows the tree to be reconstructed in an efficient manner !!!
+
 """
+
+
+
+# Breadth first search implementation in python
+
+class Node(object):
+
 
 
 
