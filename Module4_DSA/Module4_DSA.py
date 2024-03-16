@@ -1820,6 +1820,14 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * BFS vs DFS in data structure
+
+	- Memory complexity: BFS vs DFS
+
+		Breadth-first search: O(N)
+		Depth-first search: O(logN)
+
+	That's why depth-first search is preferred most of the times Ok, there may be some situations where BFS is better ~ artificial intelligence, robot movements ....
+
 """
 
 
