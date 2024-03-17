@@ -1922,13 +1922,93 @@ bfs.bfs(node1);
 
 """
 * Depth first search in data structure
+
+	- Depth-first search is a widely used graph traversal algorithm besides breadth-first search
+	- It was investigated as strategy for solving mazes by Trémaux in the 19th century
+	- It explores as far possible along each branch before backtracking // BFS was a layer-by-layer algorithm
+	- Time complexity of traversing a graph a graph with DFS: O(V+E)
+	- Memory complexity: a bit better than that of BFS
+
+RECURSION
+-----------
+dfs(vertex)
+
+	vertex set visited true
+	print vertex
+
+	for v in vertex neighbors
+		if v is not visited
+			if v is not visited
+			dfs(v)
+
+
+ITERATION
+-----------
+dfs(vertex)
+	
+	Stack stack
+	vertex set visited true
+	stack.push(vertex)
+
+
+	while stack not empty
+		actual = stack.pop()
+
+		for v in actual neighbors
+			if v is not visited
+				v set visited true
+				stack.push(v)
+
+
+----Applications
+
+	- Topological ordering
+	- Kosaraju algorithm for finding strongly connected components in a graph which can be proved to be very important in recommendation systems (Youtube)
+	- Detecting cycles (checking whether a graph is a DAG or not )
+	- Generating mazes OR finding way out of a maze
+
+----Symmetry in DFS:
+
+We can go to the opposite direction,
+it is going to be a valid DFS as well !!!
+
 """
 
 
 
-"""
-* Depth first search implementation in python
-"""
+
+# Depth first search implementation in python
+class Node(object):
+	def __init__(self, name):
+		self.name = name;
+		self.adjacenciesList = [];
+		slef.visited = False;
+		self.predecessor = None;
+
+class DepthFirstSearch(object):
+
+	def dfs(self, node):
+
+		node.visited = True;
+		print("%s " % node.name);
+
+		for n in node.node.adjacenciesList:
+			if not n.visited:
+				self.dfs(n);
+
+node1 = Node("A");
+node2 = Node("B");
+node3 = Node("C");
+node4 = Node("D");
+node5 = Node("E");
+
+node1.adjacenciesList.append(node2);
+node1.adjacenciesList.append(node3);
+node2.adjacenciesList.append(node4);
+node4.adjacenciesList.append(node5);
+
+dfs = DepthFirstSearch();
+dfs.dfs(node1);
 
 
 
