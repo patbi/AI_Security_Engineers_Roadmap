@@ -1750,6 +1750,8 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Red black tree rotations-1 in data structure
+	
+	- 
 """
 
 
@@ -1982,7 +1984,7 @@ class Node(object):
 	def __init__(self, name):
 		self.name = name;
 		self.adjacenciesList = [];
-		slef.visited = False;
+		self.visited = False;
 		self.predecessor = None;
 
 class DepthFirstSearch(object):
