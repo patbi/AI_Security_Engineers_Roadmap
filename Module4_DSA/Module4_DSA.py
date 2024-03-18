@@ -1745,46 +1745,27 @@ We have to define an alphabet in advance + ALPHABET_SIZE
 
 """
 * Implementation of tries in python
+
+	1 - https://towardsdatascience.com/implementing-a-trie-data-structure-in-python-in-less-than-100-lines-of-code-a877ea23c1a1
 """
-
-
-"""
-* Red black tree rotations-1 in data structure
-	
-	- 
-"""
-
-
-"""
-* Red black tree rotations-2 in data structure
-"""
-
-
-"""
-* Red black tree rotations-3 in data structure
-"""
-
-
-
-"""
-* Red black tree rotations-4 in data structure
-"""
-
 
 
 
 """
 * Red black tree example in data structure
+
+	https://www.askpython.com/python/examples/red-black-tree-in-python
 """
 
 
-"""
-* Red black tree example-2 in data structure
-"""
 
 
 """
 * Red black tree vs AVL in data structure
+	
+	1 - https://www.baeldung.com/cs/red-black-tree-vs-avl-tree
+
+	2 - https://www.formosa1544.com/2021/07/02/build-the-forest-in-python-series-avl-tree-vs-red-black-tree
 """
 
 
