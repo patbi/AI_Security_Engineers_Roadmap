@@ -101,7 +101,43 @@
 
 8. [Module 8: Advanced]()
 
-	 - step8
+	 - Pip in python
+	 - What is PYTHONPATH
+	 - Enumeration | Enumerate in python
+	 - Deep Copy and Shallow Copy in python
+	 - What is Python environments | What is the Need of Python Virtual Environments
+	 - Python Virtual Environment | How to Create Python Virtual Environment
+	 - List Comprehansion in Python | List Comprehension Python
+	 - List Comprehension in Python | Chaining in python | If-Else in List Comprehension Python
+	 - Dictionary Comprehension in Python 
+	 - List Comprehension in Python | if-elif-else in List Comprehension
+	 - How to Install Pycharm on Windows 10
+	 - Function in Python 
+	 - How to Create Function in Python
+	 - Advantages of Functions
+	 - Difference Between Parameters and Arguments
+	 - Local Variables in Python
+	 - Global Variables in Python
+	 - Everything about global keyword and UnboundLocalError in Python
+	 - return Statement in Python | Returning Value From Function
+	 - Positional Arguments in Python | Types of Arguments
+	 - Keyword Arguments in Python | Default Arguments in Python
+	 - Variable Length Arguments in Python | Types of Arguments in Python
+	 - Lambda Function in Python | Anonymous Function in Python
+	 - Nested Lambda Function in Python
+	 - IIFE Function in Python
+	 - First Class Functions in Python
+	 - Function as Parameter | Function as Argument
+	 - Returning Function from Function in Python | How to return function
+	 - Globals function in python | globals() in python
+	 - Filter() in python | Higher Order functions in python
+	 - Filter() in python Using Lambda() | Higher Order() in python
+	 - Filter() example | filter() in python
+	 - Map() in python | Higher Order() in python
+	 - Reduce() | Higher Order() in python
+	 - Recursion in python | What is recursion 
+	 - Recursion in python | Factorial Program using recursion
+	 - 
 
 
 9. [Module 9: Databases]()
