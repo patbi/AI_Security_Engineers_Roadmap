@@ -137,7 +137,30 @@
 	 - Reduce() | Higher Order() in python
 	 - Recursion in python | What is recursion 
 	 - Recursion in python | Factorial Program using recursion
-	 - 
+	 - Recursion in python | What is Direct revursion in python | Types of recursion
+	 - Fibonacci Series using recursion
+	 - Namespace in python | What is that
+	 - Nonlocal variable in python | nonlocal keyword in python
+	 - Closures in python | what is that
+	 - Decorator in python | Multiple Decorators on a () | 
+	 - Smart division using decorator
+	 - If__name__=='__main__'|__main__Usage in Python
+	 - Exception Handling in python | Try-Except block
+	 - Exception Handling in python | Printing Exception information in output
+	 - Exception Hierarchy in python
+	 - Raise keyword in python | raise Statement in python
+	 - Creating user-defined exceptions in python
+	 - User defined exception example
+	 - Use exception Handling
+	 - Excepthook in python
+	 - Exception Handling best practices
+	 - Pickling and Unpickling in Python
+	 - What is JSON Data Format | JSON in python | Working With JSON in python
+	 - JSON to python dictionary conversion
+	 - HAndling constants in python projects
+	 - Memory management in python | Stack vs Dynamic Memory
+	 - Reference counting in python
+	 - Multithreading in python | Types of Multi Tasking
 
 
 9. [Module 9: Databases]()
