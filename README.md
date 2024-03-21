@@ -161,6 +161,61 @@
 	 - Memory management in python | Stack vs Dynamic Memory
 	 - Reference counting in python
 	 - Multithreading in python | Types of Multi Tasking
+	 - What is Main Thread in python
+	 - How to create threads in python
+	 - Creating threads for methods
+	 - Create threads by extending thread class | run() method
+	 - Thread Names, id's | Threading in python
+	 - Built in functions in multithreading
+	 - Join method in multithreading
+	 - Why to use multithreading
+	 - Race condition in python | What is that ?
+	 - Locking mechanism in multithreading - python
+	 - Rlock in multithreading | thread synchronization
+	 - Need of Rlock in python
+	 - Semaphore in python | Bounded semaphore in python
+	 - Exception in multithreading python
+	 - Lifecycle of thread in python
+	 - Thread communication in python | condition object | queue object
+	 - What is daemon thread in python
+	 - Timer object in python 
+	 - Barrier object in multithreading
+	 -  What is Logging in python 
+	 - Logging levels | How to Log messages in python
+	 - How to format log messages
+	 - Creating Logger Object
+	 - Logging Exception details in python
+	 - Iterator in python 
+	 - Generators in python
+	 - Fibonacci series using Generators
+	 - Chaining Generators in python
+	 - Python - MySQL | How to install MySQL Connector
+	 - How to Create Connection to MySQL Using python
+	 - Check Connection Between python and MySQL | Close Connection
+	 - Execute Method in python | Cursor Object in python
+	 - Show Databases using python
+	 - Python Databases Connectivity
+	 - Commit and Rollback in python - MySQL | Insert Records into MySQL Table using python Script
+	 - MySQL - Update Table data - Python
+	 - Fetchone and fetchmany method in python
+	 - Python MySQL Execute Parameterized Query using Prepared Statement
+	 - Python MySQL Execute Parameterized Query Example
+	 - Python MySQL Execute Parameterized Query for Dynamic Program
+	 - Insert JSON Data Into MySQL Table
+	 - Difference Between MVT and MVC | How Django Works | MVT vs MVC
+	 - Mutable Default Arguments in python
+	 - Time module in python
+	 - Datetime module in python
+	 - Timedelta in python
+	 - __all__in Python | Importing Module in Python
+	 - __init__.py in Python | Python Packages
+	 - What is Regex and Applications
+	 - Regex in Python | Compile() Function | Searching Function 
+	 - Character classes in regex
+	 - Mixing Different Types of Arguments in Python
+	 - Use of Lambda () | Lambda() with sorted()
+	 - Implementing IIFE() in Python
+	 - Top 21 Special Methods and Attributes in Python
 
 
 9. [Module 9: Databases]()
