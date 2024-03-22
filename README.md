@@ -262,7 +262,7 @@
 	
 	- Professional Project
 
-		- Build GenAI For See-Docs & Thenavigo, LLC
+		- [Build GenAI For See-Docs & Thenavigo, LLC](https://ai.thenavigo.com)
 
 	- Personal Projects (Repository)
 
