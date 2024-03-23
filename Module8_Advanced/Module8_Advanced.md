@@ -1,0 +1,5 @@
+- What is PIP & why it is needed ?
+- What is Pypi ?
+- How to manage third party packages ?
+- ALL PIP commands
+- How pip works ?
