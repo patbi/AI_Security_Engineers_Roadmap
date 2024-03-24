@@ -1,4 +1,7 @@
-- What is PIP & why it is needed ?
+- Pip in python
+
+
+---What is PIP & why it is needed ?
 
 Standard distribution: (modules, packages, libraries)
 
@@ -116,3 +119,7 @@ Benefits:-
 3 - allows you to easy share and distribute dependencies
 
 ---pip show requests | pip check | pip inspect | pip debug | import numpy as np
+
+
+
+- What is PYTHONPATH
