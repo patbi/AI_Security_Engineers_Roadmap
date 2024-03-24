@@ -24,24 +24,19 @@ Now, PIP is distributed with python unless you use older versions.
 
 ---Verify pip is installed or not
 
-pip --version
-pip -V
-py -m pip --version
-pip (usage)
+pip --version | pip -V | py -m pip --version | pip (usage)
 
 
 
 ---Python programs
 
-modules
-scripts (standalone programs)
+modules & scripts (standalone programs)
 
 
 
 ---Executing python programs
 
-Modules:- py modulename.py
-Scripts:- py -m modulename
+Modules:- py modulename.py | Scripts:- py -m modulename
 
 1 - create file example.py
 
