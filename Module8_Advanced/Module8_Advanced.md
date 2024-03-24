@@ -49,8 +49,7 @@ Modules:- py modulename.py | Scripts:- py -m modulename
 
 ---How to update pip ?
 
-pip install --upgrade pip
-py -m pip install --upgrade pip
+pip install --upgrade pip | py -m pip install --upgrade pip
 
 
 
@@ -62,9 +61,9 @@ pip help | pip help install
 
 ---Installing packages with pip:-
 
-pip install [packagename/module]
+1 - pip install [packagename/module]
 
-py -m pip install [packagename/module]
+2 - py -m pip install [packagename/module]
 
 ***There are two sources
 
