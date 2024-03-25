@@ -92,12 +92,13 @@
 	 - GUI Automation
 	 - Network Automation
 
-7. [Module 7: Testing]()
+7. [Module 7: Types of Testing]()
 
 	 - Unit Testing
 	 - Integration Testing
 	 - End-to-end testing
 	 - Load Testing
+	 	- With Locust
 
 8. [Module 8: Advanced](-)
 
