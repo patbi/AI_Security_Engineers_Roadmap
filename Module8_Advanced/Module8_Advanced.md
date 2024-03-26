@@ -122,4 +122,31 @@ Benefits:-
 
 
 
-- What is PYTHONPATH
+- What is PYTHONPATH ?
+
+The "Python Path" refers to the list of directories that Python uses to search for modules, packages and other files when executing a script or importing modules.
+
+	- How Python search for imported module/package ?
+
+		* Current Directory
+		* PYTHONPATH Environment Variables
+		* Standard Library
+		* Site-packages
+
+	- How to check python search path ?
+			
+			* create python file example.py
+			* insert this code
+
+		import sys
+
+		print(sys.path)
+
+			* run 
+
+		py example.py
+
+We can add but we should prefer other way (Graphic method).
+
+
+- Enumeration | Enumerate in python
