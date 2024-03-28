@@ -173,11 +173,11 @@ We can add but we should prefer other way (Graphic method).
 Todays agenda:
 
 
-1 - Why we need python virtual environments ?
-2 - What is Python Virtual environment ?
-3 - When and where to use a virtual environment?
-3 - How to Create Python Virtual environment ?
-4 - Activating a Virtual Environment in Python
+1- Why we need python virtual environments ?
+2- What is Python Virtual environment ?
+3- When and where to use a virtual environment?
+3- How to Create Python Virtual environment ?
+4- Activating a Virtual Environment in Python
 
 
 
