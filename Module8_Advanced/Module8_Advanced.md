@@ -169,7 +169,7 @@ We can add but we should prefer other way (Graphic method).
 
 
 
-Todays agenda:
+*Todays agenda:*
 
 1- [Why we need python virtual environments ?]()
 2- [What is Python Virtual environment ?]()
