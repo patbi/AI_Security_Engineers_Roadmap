@@ -163,7 +163,7 @@ We can add but we should prefer other way (Graphic method).
 
 
 
-- What is Python environments | What is the Need of Python Virtual Environments
+- What is Python environments | What is the Need of Python Virtual Environments | How to Create Python Virtual Environment
 
 	As soon as you start writing more complexe Python scripts, it becomes really important to properly manage your dependencies. You're going to use a bunch of other libraries and packages, and you want to make sure that you have the versions right. Commonly used tool to handle dependencies is Poetry, which is what I use for most of my Python projects. And next to handling dependencies.
 
@@ -171,28 +171,13 @@ We can add but we should prefer other way (Graphic method).
 
 *Todays agenda:*
 
-1. [Why we need python virtual environments ?]() 👇
+1. [Why we need python virtual environments ?](https://learn.thenavigo.com/post/python-virtual-environment) 
 
-2. [What is Python Virtual environment ?]() 👇
+2. [What is Python Virtual environment ?](https://learn.thenavigo.com/post/python-virtual-environment) 
 
-3. [When and where to use a virtual environment?]() 👇
+3. [When and where to use a virtual environment?](https://learn.thenavigo.com/post/python-virtual-environment) 
 
 4. [How to Create Python Virtual environment ?]() 👇
 
 5. [Activating a Virtual Environment in Python]() 👇
-
- 
-
-
-
-- Python Virtual Environment | How to Create Python Virtual Environment
-
-
-
-
-
-
-
-
-
 
