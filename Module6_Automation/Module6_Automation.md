@@ -19,3 +19,18 @@ Function format
 
 
 - Web Scraping
+
+
+```bash
+
+	 First step: Install packages
+
+	 pip install beautifulsoup4
+
+	 pip install lxml
+
+	 pip install html5lib
+
+	 pip install requests
+
+```
