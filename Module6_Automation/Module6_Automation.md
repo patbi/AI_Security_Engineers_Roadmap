@@ -34,6 +34,12 @@ See in the create_folder.py
 
 How to remove a folder from its directory ?
 
+```bash
+
+See in the remove_folder.py
+
+```
+
 How to handle program errors ?
 
 Print formatting
