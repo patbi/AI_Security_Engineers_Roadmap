@@ -18,6 +18,12 @@ See in the file rename_file.py
 
 How to remove a file from your system
 
+```bash
+
+See in the remove_file .py
+
+```
+
 How to create a folder ?
 
 How to remove a folder from its directory ?
