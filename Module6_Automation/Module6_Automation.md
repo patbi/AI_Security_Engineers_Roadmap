@@ -26,6 +26,12 @@ See in the remove_file .py
 
 How to create a folder ?
 
+```bash
+
+See in the create_folder.py
+
+```
+
 How to remove a folder from its directory ?
 
 How to handle program errors ?
