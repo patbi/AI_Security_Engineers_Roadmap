@@ -2,7 +2,18 @@
 
 How to write to file ?
 
+```bash
+
+See in the file write.py
+
+```
+
 How to rename a file ?
+
+```bash
+
+
+```
 
 How to remove a file from your system
 
