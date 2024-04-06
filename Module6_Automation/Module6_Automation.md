@@ -42,6 +42,12 @@ See in the remove_folder.py
 
 How to handle program errors ?
 
+```bash
+
+See in the handling_program_err.py
+
+```
+
 Print formatting
 
 Function format 
