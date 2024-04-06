@@ -4,7 +4,7 @@ How to write to file ?
 
 ```bash
 
-See in the file write.py
+See in the file write_to_a_file.py
 
 ```
 
@@ -49,6 +49,12 @@ See in the handling_program_err.py
 ```
 
 Print formatting
+
+```bash
+
+See in the print_formatting.py
+
+```
 
 Function format 
 
