@@ -70,6 +70,8 @@ See in the function_format.py
 
 ```bash
 
+	Example1: ( Offline )
+
 	 First step: Install packages
 
 	 pip install beautifulsoup4
@@ -80,4 +82,6 @@ See in the function_format.py
 
 	 pip install requests
 
+
+	 See in the example_scrape.py
 ```
