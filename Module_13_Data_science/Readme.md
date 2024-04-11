@@ -28,7 +28,7 @@ MLOps ensures that M models are effectively deployed and maintained in productio
 
 𝗙𝗼𝗿𝗺𝘂𝗹𝗮:Develop (Data + Model) + Cl (Train + Validate) + CD (Deploy) +
 Operate (Monitor + Retrain) + Maintain (Scale + Optimize) + Govern (Manage +
-Compliance) + Feedback (Learn + Develop)
+Compliance) + Feedback (Learn + Develop).
 
 
 ![Preview](https://github.com/patbi/100_Days_of_Data_Engineering_ML_AI/blob/main/Module_13_Data_science/DevOps_DataOps_MLOps_differ.gif)
