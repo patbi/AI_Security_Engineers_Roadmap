@@ -35,3 +35,5 @@ Compliance) + Feedback (Learn + Develop)
 
 
 [Learn more: about a few Tools-for-data-science](https://learn.thenavigo.com/post/a-few-tools-for-data-science-with-python)
+
+![Preview](https://github.com/patbi/100_Days_of_Data_Engineering_ML_AI/blob/main/Module_13_Data_science/data.jpg)
