@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 
-source = requests.get('http://twitter.com').text
+source = requests.get('https://twitter.com').text
 
 soup = BeautifulSoup(source, 'lxml')
 
