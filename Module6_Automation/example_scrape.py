@@ -1,11 +1,16 @@
 from bs4 import BeautifulSoup
 import requests
 
-source = requests.get('https://open.spotify.com/').text
+source = requests.get('http://twitter.com').text
 
 soup = BeautifulSoup(source, 'lxml')
 
-print(soup.prettify())
+html = soup.find('html')
+
+# print(soup.prettify())
+
+summary = html.find('div', class_='errorContainer').h1.text
+print(summary)
 
 # with open('example.html') as html_file:
 # 	soup = BeautifulSoup(html_file, 'lxml')
