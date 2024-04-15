@@ -7,13 +7,16 @@ soup = BeautifulSoup(source, 'lxml')
 
 html = soup.find('html')
 
-print(soup.prettify())
+# print(soup.prettify())
 
 # summary = html.find('div', class_='errorContainer').h1.text
 # print(summary)
 
-# vid_src = html.find('img', alt='Twitter')['src']
+vid_src = html.find('div', class_='errorContainer').img['srcset']
 # print(vid_src)
+
+vid_id = vid_src.split('/')
+print(vid_id)
 
 # Value = soup.find_all("p", {"class": "errorButton"})
 # print(Value)
@@ -24,8 +27,8 @@ print(soup.prettify())
 # team = [img.get('alt') for img in imgs]
 # print(team)
 
-Team = [html.find('img').get('alt') for html in soup.find_all("html", {"class": ""}) if html.find('img')]
-print(Team)
+# Team = [html.find('img').get('alt') for html in soup.find_all("html", {"class": ""}) if html.find('img')]
+# print(Team)
 
 # with open('example.html') as html_file:
 # 	soup = BeautifulSoup(html_file, 'lxml')
