@@ -5,18 +5,26 @@ source = requests.get('https://twitter.com').text
 
 soup = BeautifulSoup(source, 'lxml')
 
-html = soup.find('html')
+for html in soup.find_all('html'):
+	headline = html.find('div', class_='errorContainer').p.text
+	print(headline)
 
-# print(soup.prettify())
+	summary = html.find('div', class_='errorContainer').h1.text
+	print(summary)	
 
-# summary = html.find('div', class_='errorContainer').h1.text
-# print(summary)
+	try:
+		vid_src = html.find('div', class_='errorContainer').img['srcset']
 
-vid_src = html.find('div', class_='errorContainer').img['srcset']
-# print(vid_src)
+		vid_id = vid_src.split('/')[4]
+		vid_id = vid_id.split('?')[0]
 
-vid_id = vid_src.split('/')
-print(vid_id)
+		yt_link = f'https://youtube.com/watch?v={vid_id}'
+	except Exception as e:
+		yt_link = None
+
+	print(yt_link)
+
+	print()
 
 # Value = soup.find_all("p", {"class": "errorButton"})
 # print(Value)
