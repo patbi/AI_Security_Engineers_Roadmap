@@ -1,9 +1,15 @@
 from bs4 import BeautifulSoup
 import requests
+import csv
 
 source = requests.get('https://twitter.com').text
 
 soup = BeautifulSoup(source, 'lxml')
+
+csv_file = open('cms_scrape.csv', 'w')
+
+csv_writer = csv.writer(csv_file)
+csv_writer.writerow(['headline', 'summary', 'yt_link'])
 
 for html in soup.find_all('html'):
 	headline = html.find('div', class_='errorContainer').p.text
@@ -25,6 +31,10 @@ for html in soup.find_all('html'):
 	print(yt_link)
 
 	print()
+
+	csv_writer.writerow([headline, summary, yt_link])
+
+csv_file.close()
 
 # Value = soup.find_all("p", {"class": "errorButton"})
 # print(Value)
