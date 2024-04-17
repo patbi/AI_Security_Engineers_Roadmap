@@ -6,9 +6,12 @@ source = requests.get('https://twitter.com').text
 
 soup = BeautifulSoup(source, 'lxml')
 
-csv_file = open('cms_scrape.csv', 'w')
+# open new file for writing - will erase file if it already exists -
+csv_file = open('cms_scrape.csv', 'w', newline='', encoding='utf-8')
 
+# make a new variable - c - for Python's CSV writer object -
 csv_writer = csv.writer(csv_file)
+# write a column headings row - do this only once -
 csv_writer.writerow(['headline', 'summary', 'yt_link'])
 
 for html in soup.find_all('html'):
@@ -31,9 +34,10 @@ for html in soup.find_all('html'):
 	print(yt_link)
 
 	print()
-
+	# write a column headings row - do this only once -
 	csv_writer.writerow([headline, summary, yt_link])
 
+# save and close the file
 csv_file.close()
 
 # Value = soup.find_all("p", {"class": "errorButton"})
