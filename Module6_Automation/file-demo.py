@@ -12,7 +12,7 @@ with open('venv.jpg', 'rb') as rf:
 
 
 # with open('file-demo.txt', 'r') as rf:
-# 	with open('file-demo-copy', 'w') as wf:
+# 	with open('file-demo-copy.txt', 'w') as wf:
 # 		for line in rf:
 # 			wf.write(line)
 
