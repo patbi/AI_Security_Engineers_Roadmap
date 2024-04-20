@@ -1,9 +1,9 @@
 
 try:
 	# f = open('testfiles.txt')
-	f = open('currupt_file.txt')
+	# f = open('currupt_file.txt')
 	# if f.name == 'currupt_file':
-	# 	raise Exception
+		raise Exception
 	# var = bad_var
 # except Exception:
 # except FileNotFoundError:
