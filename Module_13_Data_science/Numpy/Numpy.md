@@ -23,3 +23,36 @@
 	 	- Eigenvalues
 	 	- Solving Linear Systems
 	 - Loading Data from csv
+
+
+
+"""
+* NUMPY
+
+
+	- Core Library for scientific computing in Python
+
+		- Data Science, Machine Learning, Deep Learning
+		- Scikit-learn, matplotlib, pandas...
+
+	- High Performance multidimensional array -> FAST
+	- Mathematical operations with arrays
+	- A lot of code written in C
+	
+"""
+
+
+"""
+* NUMPY USECASES
+
+
+	- Array/Matrix operations - Linear Algebra
+	- Dot product
+	- Matrix multiplications 
+	- Linear systems
+	- Inverse, determinant
+	- Eigenvectors
+	- Random numbers
+	- Working with images represented as array
+	
+"""
