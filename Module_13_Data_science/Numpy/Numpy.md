@@ -37,8 +37,7 @@
 
 	- High Performance multidimensional array -> FAST
 	- Mathematical operations with arrays
-	- A lot of code written in C
-	
+	- A lot of code written in C	
 """
 
 
@@ -53,6 +52,5 @@
 	- Inverse, determinant
 	- Eigenvectors
 	- Random numbers
-	- Working with images represented as array
-	
+	- Working with images represented as array	
 """
