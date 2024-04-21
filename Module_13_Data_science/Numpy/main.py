@@ -1,4 +1,5 @@
 # python.exe -m pip install --upgrade pip
+# pip install numpy
 import numpy as np
 # print(np.__version__)
 
