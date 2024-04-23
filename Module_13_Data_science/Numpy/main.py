@@ -5,29 +5,60 @@ import numpy as np
 
 from timeit import default_timer as timer
 
+a = np.random.randn(1000)
+b = np.random.randn(1000)
 
-l1 = [1,2,3]
-l2 = [4,5,6]
+A = list(a)
+B = list(b)
+
+T = 1000
+
+def dot1():
+	dot = 0
+	for i in range(len(A)):
+		dot += A[i]*B[i]
+	return dot
+
+def dot2():
+	return np.dot(a,b)
+
+start = timer()
+for t in range(T):
+	dot1()
+end = timer()
+t1 = end-start
+
+start = timer()
+for t in range(T):
+	dot2()
+end = timer()
+t2 = end-start
+
+print('list calculation', t1)
+print('np.dot', t2)
+print('ratio', t1/t2)
+# l1 = [1,2,3]
+# l2 = [4,5,6]
 # a = np.array([1,2,3])
-a1 = np.array(l1)
-a2 = np.array(l2)
+# a1 = np.array(l1)
+# a2 = np.array(l2)
 
 # dot product
-dot = np.dot(a1,a2)
-print(dot)
+# dot = np.dot(a1,a2)
+# print(dot)
 
-sum1 = a1 * a2
+# sum1 = a1 * a2
 # dot = np.sum(sum1)
-dot = (a1 * a2).sum()
-print(dot)
+# dot = (a1 * a2).sum()
+# print(dot)
 
-dot = a1 @ a2
-print(dot)
+# dot = a1 @ a2
+# print(dot)
 
-dot = 0
-for i in range(len(l1)):
-	dot += l1[i] * l2[i]
-print(dot)
+# dot = 0
+# for i in range(len(l1)):
+# 	dot += l1[i] * l2[i]
+# print(dot)
 
 
 
