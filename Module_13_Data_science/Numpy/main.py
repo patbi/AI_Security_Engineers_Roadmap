@@ -3,40 +3,65 @@
 import numpy as np
 # print(np.__version__)
 
-from timeit import default_timer as timer
+# from timeit import default_timer as timer
 
-a = np.random.randn(1000)
-b = np.random.randn(1000)
+# a = np.array([[1,2], [3,4]])
+# a = np.array([[1,2,6], [3,4,8]])
+a = np.array([[1,2], [3,4]])
+print(a)
+print(a.shape)
 
-A = list(a)
-B = list(b)
+# print(a[0])
+# print(a[0][0])
+# print(a[0,0])
+# print(a[:,0])
+# print(a[0,:])
+# print(a.T)
+# print(np.linalg.inv(a))
+# print(np.linalg.det(a))
+# print(np.diag(a))
+c = np.diag(a)
+print(np.diag(c))
+# print(a[1,2])
+# print(a[1][2])
 
-T = 1000
 
-def dot1():
-	dot = 0
-	for i in range(len(A)):
-		dot += A[i]*B[i]
-	return dot
 
-def dot2():
-	return np.dot(a,b)
 
-start = timer()
-for t in range(T):
-	dot1()
-end = timer()
-t1 = end-start
+# a = np.random.randn(1000)
+# b = np.random.randn(1000)
 
-start = timer()
-for t in range(T):
-	dot2()
-end = timer()
-t2 = end-start
+# A = list(a)
+# B = list(b)
 
-print('list calculation', t1)
-print('np.dot', t2)
-print('ratio', t1/t2)
+# T = 1000
+
+# def dot1():
+# 	dot = 0
+# 	for i in range(len(A)):
+# 		dot += A[i]*B[i]
+# 	return dot
+
+# def dot2():
+# 	return np.dot(a,b)
+
+# start = timer()
+# for t in range(T):
+# 	dot1()
+# end = timer()
+# t1 = end-start
+
+# start = timer()
+# for t in range(T):
+# 	dot2()
+# end = timer()
+# t2 = end-start
+
+# print('list calculation', t1)
+# print('np.dot', t2)
+# print('ratio', t1/t2)
+
+
 # l1 = [1,2,3]
 # l2 = [4,5,6]
 # a = np.array([1,2,3])
