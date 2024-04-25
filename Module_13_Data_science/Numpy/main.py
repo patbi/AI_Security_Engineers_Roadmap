@@ -5,11 +5,38 @@ import numpy as np
 
 # from timeit import default_timer as timer
 
+# a = np.array([10,19,30,41,50,61])
+
+
+
+a = np.array([[1,2], [3,4], [5,6]])
+print(a)
+
+# bool_idx = a > 2
+# print(bool_idx)
+# print(a[bool_idx])
+print(a[a > 2])
+
+b = np.where(a>2, a, -1)
+print(b)
+
+# a = np.array([[1,2,3,4], [5,6,7,8]])
+# print(a)
+
+# b = a[0,1]
+# b = a[0,:]
+# b = a[0,1:3]
+# b = a[:,1]
+# b = a[-1,-1]
+# b = a[-1,-2]
+# print(b)
+
+
 # a = np.array([[1,2], [3,4]])
 # a = np.array([[1,2,6], [3,4,8]])
-a = np.array([[1,2], [3,4]])
-print(a)
-print(a.shape)
+# a = np.array([[1,2], [3,4]])
+# print(a)
+# print(a.shape)
 
 # print(a[0])
 # print(a[0][0])
@@ -20,8 +47,8 @@ print(a.shape)
 # print(np.linalg.inv(a))
 # print(np.linalg.det(a))
 # print(np.diag(a))
-c = np.diag(a)
-print(np.diag(c))
+# c = np.diag(a)
+# print(np.diag(c))
 # print(a[1,2])
 # print(a[1][2])
 
