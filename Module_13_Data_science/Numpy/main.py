@@ -5,20 +5,41 @@ import numpy as np
 
 # from timeit import default_timer as timer
 
-# a = np.array([10,19,30,41,50,61])
-
-
-
-a = np.array([[1,2], [3,4], [5,6]])
+a = np.array([[1,2], [3,4]])
 print(a)
+b = np.array([[5,6]])
+c = np.concatenate((a,b))
+print(c)
+
+# a = np.arange(1,7)
+# print(a)
+# print(a.shape)
+# b = a.reshape((3,2))
+# print(b)
+# print(b.shape)
+# u = a[np.newaxis, :]
+# u = a[:, np.newaxis]
+# print(u.shape)
+# print(u)
+
+# a = np.array([10,19,30,41,50,61])
+# print(a)
+# b = [1,3,5]
+# print(a[b])
+# even = np.argwhere(a%2==0).flatten()
+# print(a[even])
+
+
+# a = np.array([[1,2], [3,4], [5,6]])
+# print(a)
 
 # bool_idx = a > 2
 # print(bool_idx)
 # print(a[bool_idx])
-print(a[a > 2])
+# print(a[a > 2])
 
-b = np.where(a>2, a, -1)
-print(b)
+# b = np.where(a>2, a, -1)
+# print(b)
 
 # a = np.array([[1,2,3,4], [5,6,7,8]])
 # print(a)
