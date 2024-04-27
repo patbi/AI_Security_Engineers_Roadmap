@@ -5,11 +5,40 @@ import numpy as np
 
 # from timeit import default_timer as timer
 
-a = np.array([[1,2], [3,4]])
+a = np.array([[7,8,9,10,11,12,13], [17,18,19,20,21,22,23]])
 print(a)
-b = np.array([[5,6]])
-c = np.concatenate((a,b))
-print(c)
+print(a.sum(axis=None))
+# print(a.sum(axis=0))
+# print(a.sum(axis=1))
+# print(a.mean(axis=1))
+# print(a.mean(axis=0))
+# print(a.mean(axis=None))
+
+
+# x = np.array([[1,2,3], [4,5,6], [1,2,3], [4,5,6]])
+# a = np.array([1,0,1])
+# y = x + a
+# print(y)
+
+
+
+# a = np.array([1,2,3,4])
+# b = np.array([5,6,7,8])
+# hstack, vstack
+# c = np.hstack((a,b))
+# c = np.vstack((a,b))
+# print(c)
+
+
+
+
+# a = np.array([[1,2], [3,4]])
+# print(a)
+# b = np.array([[5,6]])
+# c = np.concatenate((a,b), axis=None)
+# c = np.concatenate((a,b.T), axis=1)
+# print(c)
+
 
 # a = np.arange(1,7)
 # print(a)
