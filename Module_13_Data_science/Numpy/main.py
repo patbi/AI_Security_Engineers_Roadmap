@@ -5,9 +5,49 @@ import numpy as np
 
 # from timeit import default_timer as timer
 
-a = np.array([[7,8,9,10,11,12,13], [17,18,19,20,21,22,23]])
+a = np.zeros((2,3))
 print(a)
-print(a.sum(axis=None))
+
+a = np.ones((2,3))
+print(a)
+
+a = np.full((2,3), 5.0)
+print(a)
+
+a = np.eye(3)
+print(a)
+
+a = np.arange(20)
+print(a)
+
+# a = np.array([1,2,3])
+# b = a
+# b = a.copy()
+# b[0] = 42
+# print(b)
+# print(a)
+
+
+# x = np.array([1,2])
+# x = np.array([1.0,2.0], dtype=np.float16)
+# print(x)
+# print(x.dtype)
+
+
+# a = np.array([[7,8,9,10,11,12,13], [17,18,19,20,21,22,23]])
+# print(a)
+# print(a.sum(axis=None))
+# print(a.sum(axis=1))
+# print(a.mean(axis=1))
+# print(a.mean(axis=0))
+# print(a.mean(axis=None))
+# print(a.var(axis=None))
+# print(a.std(axis=None))
+# print(np.std(a, axis=None))
+# print(a.min(axis=None))
+# print(np.max(a, axis=None))
+
+
 # print(a.sum(axis=0))
 # print(a.sum(axis=1))
 # print(a.mean(axis=1))
