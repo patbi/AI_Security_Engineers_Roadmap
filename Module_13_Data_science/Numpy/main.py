@@ -5,20 +5,61 @@ import numpy as np
 
 # from timeit import default_timer as timer
 
-a = np.zeros((2,3))
-print(a)
+a = np.array([[1,2], [3,4]])
+eigenvalues, eigenvectors = np.linalg.eig(a)
 
-a = np.ones((2,3))
-print(a)
+print(eigenvalues)
+print(eigenvectors) # column vector
 
-a = np.full((2,3), 5.0)
-print(a)
+# e_vec * e_val = A * e_vec
+b = eigenvectors[:,0] * eigenvalues[0]
+print(b)
 
-a = np.eye(3)
-print(a)
+c = eigenvectors[:,0] @ a
+print(c)
 
-a = np.arange(20)
-print(a)
+d = a @ eigenvectors[:,0]
+print(d)
+
+print(b==c)
+print(b==d)
+print(np.allclose(b,d))
+
+# a = np.random.random((3,2)) # 0-1
+# print(a)
+
+# b = np.random.randn(3,2)
+# print(b)
+
+# c = np.random.randn(1000) # normal/Gaussian
+# print(c.mean(), c.var())
+
+# d = np.random.randint(3,10,size=(3,3))
+# print(d)
+
+# e = np.random.choice(5, size=10)
+# print(e)
+
+# f = np.random.choice([-8,-7,-6], size=10)
+# print(f)
+
+# a = np.zeros((2,3))
+# print(a)
+
+# a = np.ones((2,3))
+# print(a)
+
+# a = np.full((2,3), 5.0)
+# print(a)
+
+# a = np.eye(3)
+# print(a)
+
+# a = np.arange(20)
+# print(a)
+
+# a = np.linspace(0,10,5)
+# print(a)
 
 # a = np.array([1,2,3])
 # b = a
