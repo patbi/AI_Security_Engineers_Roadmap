@@ -1,26 +1,30 @@
-*Setup Pandas:*
+```python
+import pandas as pd
 
-We are going to use Jupyter.
+x = [3,4,5,6]
 
-```bash
-Data analysis is a process of inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.
+ser = pd.Series(x,index=['a','s','d','f'],dtype="float")
+
+print(ser)
+print(type(ser))
+print(ser.iloc[2])
 ```
 
-![Preview](https://github.com/patbi/100_Days_of_Data_Engineering_ML_AI/blob/main/Module_13_Data_science/Pandas/Jupyter1.PNG)
+    a    3.0
+    s    4.0
+    d    5.0
+    f    6.0
+    dtype: float64
+    <class 'pandas.core.series.Series'>
+    5.0
+    
 
 
-```bash
-What is Pandas ?
+```python
 
-The name Pandas has a reference to both panel data, and python data analysis and was created by Wes Mckinney in 2008.
-
-Pandas is a python library used for working with data sets.
-
-It has functions for analyzing, cleaning, exploring and manipulating data.
-
-Read and write data structures and different format: csv, XML, JSON, ZIP etc.
 ```
 
 
+```python
 
-![Preview](https://github.com/patbi/100_Days_of_Data_Engineering_ML_AI/blob/main/Module_13_Data_science/Pandas/Jupyter2.PNG)
+```
