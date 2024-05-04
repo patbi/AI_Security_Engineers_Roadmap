@@ -24,3 +24,19 @@ Read and write data structures and different format: csv, XML, JSON, ZIP etc.
 
 
 ![Preview](https://github.com/patbi/100_Days_of_Data_Engineering_ML_AI/blob/main/Module_13_Data_science/Pandas/Jupyter2.PNG)
+
+
+
+```bash
+Series: It is defined as a one-dimensional array that is capable of storing various data types.
+
+import pandas as pd
+
+a = pd.Series()
+
+print(a)
+
+DATAFRAMES DATA STRUCTURES IN Python PANDAS
+	
+
+```
