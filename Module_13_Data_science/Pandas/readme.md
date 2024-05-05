@@ -28,6 +28,15 @@ Read and write data structures and different format: csv, XML, JSON, ZIP etc.
 
 
 ```bash
+
+We are going to Learn:
+
+1 - Data Structure IN Python Pandas
+
+The Pandas provides two data structures for processing the data.
+
+Series & DataFrame and Panel.
+
 Series: It is defined as a one-dimensional array that is capable of storing various data types.
 
 import pandas as pd
@@ -36,7 +45,13 @@ a = pd.Series()
 
 print(a)
 
-DATAFRAMES DATA STRUCTURES IN Python PANDAS
+
+2 - DATAFRAMES IN Python PANDAS
+
+
+3 - Aritmetic Operators In Python Pandas
+
+
 	
 
 ```
