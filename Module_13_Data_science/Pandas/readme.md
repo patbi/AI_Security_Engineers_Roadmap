@@ -48,10 +48,10 @@ print(a)
 
 2 - DATAFRAMES IN Python PANDAS
 
-
 3 - Aritmetic Operators In Python Pandas
 
+4 - Delete AND Insert Data(Functions) IN Python Pandas
 
-	
+5 - Write CSV Using Pandas (Create A CSV File)
 
 ```

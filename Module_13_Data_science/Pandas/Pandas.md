@@ -552,6 +552,7 @@ var1
 
 ```python
 var1["Python"] = var1["A"] <= 20
+var1["python_1"] = var1["B"] >= 16
 
 var1
 ```
@@ -580,6 +581,7 @@ var1
       <th>A</th>
       <th>B</th>
       <th>Python</th>
+      <th>python_1</th>
     </tr>
   </thead>
   <tbody>
@@ -588,11 +590,13 @@ var1
       <td>10</td>
       <td>15</td>
       <td>True</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>1</th>
       <td>20</td>
       <td>16</td>
+      <td>True</td>
       <td>True</td>
     </tr>
     <tr>
@@ -600,18 +604,427 @@ var1
       <td>30</td>
       <td>17</td>
       <td>False</td>
+      <td>True</td>
     </tr>
     <tr>
       <th>3</th>
       <td>40</td>
       <td>18</td>
       <td>False</td>
+      <td>True</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 
+
+
+```python
+#Insert
+import pandas as pd
+
+var = pd.DataFrame({"A":[1,2,3,4,5],"B":[9,8,7,6,5],"C":[11,12,13,14,15]})
+
+var
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>9</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>8</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>7</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>6</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>5</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+var.insert(2,"E",var["A"])
+
+var
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>D</th>
+      <th>E</th>
+      <th>C</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11</td>
+      <td>1</td>
+      <td>1</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12</td>
+      <td>2</td>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13</td>
+      <td>3</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>14</td>
+      <td>4</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>15</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+var["f"] = var["A"][:3]
+
+var
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>D</th>
+      <th>E</th>
+      <th>C</th>
+      <th>B</th>
+      <th>f</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11</td>
+      <td>1</td>
+      <td>1</td>
+      <td>9</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12</td>
+      <td>2</td>
+      <td>2</td>
+      <td>8</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13</td>
+      <td>3</td>
+      <td>3</td>
+      <td>7</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>14</td>
+      <td>4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>15</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+var1 = var.pop("B")
+
+var1
+```
+
+
+
+
+    0    9
+    1    8
+    2    7
+    3    6
+    4    5
+    Name: B, dtype: int64
+
+
+
+
+```python
+var
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+del var["A"]
+
+var
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>14</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#Write csv
+
+import pandas as pd
+
+dis = {"a":[1,2,3,4,5,6],"s":[1,2,3,4,5,6],"d":[1,2,3,4,5,6]}
+
+d = pd.DataFrame(dis)
+
+print(d)
+
+d.to_csv("Test_new.csv")
+```
+
+       a  s  d
+    0  1  1  1
+    1  2  2  2
+    2  3  3  3
+    3  4  4  4
+    4  5  5  5
+    5  6  6  6
+    
 
 
 ```python
