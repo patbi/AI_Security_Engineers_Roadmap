@@ -54,4 +54,21 @@ print(a)
 
 5 - Write CSV Using Pandas (Create A CSV File)
 
+Difference between CSV and XLS (excel) file formats:
+
+-- CSV format is a plain text format in which values are separated by commas (commas separated values).
+
+-- XLS file format is an Excel Sheets binary file format which holds information about all the worksheets in a file, including both content and formatting.
+
+
+6 - Read CSV Using Pandas.
+CSV Files:
+
+-- A simple way to store big data sets is to use CSV files (comma separated files).
+
+-- CSV files contains plain text and is a well know format that can be read by everyone including Pandas.
+
+ 
+
+
 ```
