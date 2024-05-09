@@ -68,7 +68,9 @@ CSV Files:
 
 -- CSV files contains plain text and is a well know format that can be read by everyone including Pandas.
 
- 
+
+7 - CSV FILE FUNCTION USING PANDAS.
+
 
 
 ```
