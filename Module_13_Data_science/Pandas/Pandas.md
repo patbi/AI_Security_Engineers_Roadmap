@@ -3746,7 +3746,129 @@ csv_13
 
 
 ```python
-csv_13.dropna()
+csv_13.dropna(axis=1)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Symbol</th>
+      <th>Security</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>classes</td>
+      <td>entrepreise 1.llc</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>teachers</td>
+      <td>entreprise 2.inc</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>doctors</td>
+      <td>entreprise 3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>kids</td>
+      <td>company4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gadgets</td>
+      <td>company5</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>offices</td>
+      <td>company6</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>laptops</td>
+      <td>company7</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>books</td>
+      <td>company8</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>roommates</td>
+      <td>company9</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>colleges</td>
+      <td>company10</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>chef</td>
+      <td>startup11</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>architect</td>
+      <td>startup12</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>police officer</td>
+      <td>startup13</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>actor</td>
+      <td>startup14</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>electrician</td>
+      <td>org15</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>firefighter</td>
+      <td>org16</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>waitress</td>
+      <td>org17</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+csv_13.dropna(how="any")
 ```
 
 
@@ -3882,8 +4004,971 @@ csv_13.dropna()
 
 
 ```python
-
+csv_13.dropna(subset=["change"])
 ```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Symbol</th>
+      <th>Security</th>
+      <th>Today - Volume</th>
+      <th>AVG -volume</th>
+      <th>change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>classes</td>
+      <td>entrepreise 1.llc</td>
+      <td>7.654450e+05</td>
+      <td>43216.0</td>
+      <td>90.097650</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>doctors</td>
+      <td>entreprise 3</td>
+      <td>4.563200e+04</td>
+      <td>7689543.0</td>
+      <td>70.562780</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>kids</td>
+      <td>company4</td>
+      <td>8.769432e+06</td>
+      <td>675432.0</td>
+      <td>69.724536</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gadgets</td>
+      <td>company5</td>
+      <td>1.234570e+08</td>
+      <td>1234.0</td>
+      <td>65.897654</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>laptops</td>
+      <td>company7</td>
+      <td>4.532000e+03</td>
+      <td>65432.0</td>
+      <td>62.098765</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>books</td>
+      <td>company8</td>
+      <td>9.876540e+05</td>
+      <td>34543.0</td>
+      <td>60.534289</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>roommates</td>
+      <td>company9</td>
+      <td>2.245679e+09</td>
+      <td>4567.0</td>
+      <td>50.625438</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>colleges</td>
+      <td>company10</td>
+      <td>NaN</td>
+      <td>9876.0</td>
+      <td>49.324567</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>chef</td>
+      <td>startup11</td>
+      <td>7.865409e+06</td>
+      <td>56437.0</td>
+      <td>48.765431</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>architect</td>
+      <td>startup12</td>
+      <td>3.453210e+05</td>
+      <td>NaN</td>
+      <td>45.876101</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>police officer</td>
+      <td>startup13</td>
+      <td>5.643457e+07</td>
+      <td>34567.0</td>
+      <td>44.765413</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>actor</td>
+      <td>startup14</td>
+      <td>2.345654e+07</td>
+      <td>897654.0</td>
+      <td>43.651433</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>electrician</td>
+      <td>org15</td>
+      <td>NaN</td>
+      <td>6754.0</td>
+      <td>40.765190</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>firefighter</td>
+      <td>org16</td>
+      <td>6.543210e+05</td>
+      <td>56432.0</td>
+      <td>40.690165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>waitress</td>
+      <td>org17</td>
+      <td>6.547890e+06</td>
+      <td>67543.0</td>
+      <td>40.509818</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+csv_13.dropna(inplace=True)
+
+csv_13
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Symbol</th>
+      <th>Security</th>
+      <th>Today - Volume</th>
+      <th>AVG -volume</th>
+      <th>change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>classes</td>
+      <td>entrepreise 1.llc</td>
+      <td>7.654450e+05</td>
+      <td>43216.0</td>
+      <td>90.097650</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>doctors</td>
+      <td>entreprise 3</td>
+      <td>4.563200e+04</td>
+      <td>7689543.0</td>
+      <td>70.562780</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>kids</td>
+      <td>company4</td>
+      <td>8.769432e+06</td>
+      <td>675432.0</td>
+      <td>69.724536</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gadgets</td>
+      <td>company5</td>
+      <td>1.234570e+08</td>
+      <td>1234.0</td>
+      <td>65.897654</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>laptops</td>
+      <td>company7</td>
+      <td>4.532000e+03</td>
+      <td>65432.0</td>
+      <td>62.098765</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>books</td>
+      <td>company8</td>
+      <td>9.876540e+05</td>
+      <td>34543.0</td>
+      <td>60.534289</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>roommates</td>
+      <td>company9</td>
+      <td>2.245679e+09</td>
+      <td>4567.0</td>
+      <td>50.625438</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>chef</td>
+      <td>startup11</td>
+      <td>7.865409e+06</td>
+      <td>56437.0</td>
+      <td>48.765431</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>police officer</td>
+      <td>startup13</td>
+      <td>5.643457e+07</td>
+      <td>34567.0</td>
+      <td>44.765413</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>actor</td>
+      <td>startup14</td>
+      <td>2.345654e+07</td>
+      <td>897654.0</td>
+      <td>43.651433</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>firefighter</td>
+      <td>org16</td>
+      <td>6.543210e+05</td>
+      <td>56432.0</td>
+      <td>40.690165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>waitress</td>
+      <td>org17</td>
+      <td>6.547890e+06</td>
+      <td>67543.0</td>
+      <td>40.509818</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+csv_13.dropna(thresh = 1)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Symbol</th>
+      <th>Security</th>
+      <th>Today - Volume</th>
+      <th>AVG -volume</th>
+      <th>change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>classes</td>
+      <td>entrepreise 1.llc</td>
+      <td>7.654450e+05</td>
+      <td>43216.0</td>
+      <td>90.097650</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>doctors</td>
+      <td>entreprise 3</td>
+      <td>4.563200e+04</td>
+      <td>7689543.0</td>
+      <td>70.562780</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>kids</td>
+      <td>company4</td>
+      <td>8.769432e+06</td>
+      <td>675432.0</td>
+      <td>69.724536</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gadgets</td>
+      <td>company5</td>
+      <td>1.234570e+08</td>
+      <td>1234.0</td>
+      <td>65.897654</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>laptops</td>
+      <td>company7</td>
+      <td>4.532000e+03</td>
+      <td>65432.0</td>
+      <td>62.098765</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>books</td>
+      <td>company8</td>
+      <td>9.876540e+05</td>
+      <td>34543.0</td>
+      <td>60.534289</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>roommates</td>
+      <td>company9</td>
+      <td>2.245679e+09</td>
+      <td>4567.0</td>
+      <td>50.625438</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>chef</td>
+      <td>startup11</td>
+      <td>7.865409e+06</td>
+      <td>56437.0</td>
+      <td>48.765431</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>police officer</td>
+      <td>startup13</td>
+      <td>5.643457e+07</td>
+      <td>34567.0</td>
+      <td>44.765413</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>actor</td>
+      <td>startup14</td>
+      <td>2.345654e+07</td>
+      <td>897654.0</td>
+      <td>43.651433</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>firefighter</td>
+      <td>org16</td>
+      <td>6.543210e+05</td>
+      <td>56432.0</td>
+      <td>40.690165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>waitress</td>
+      <td>org17</td>
+      <td>6.547890e+06</td>
+      <td>67543.0</td>
+      <td>40.509818</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+# #Handling Missing Values
+
+import pandas as pd
+
+csv_14 = pd.read_excel(r"C:\Users\ASUS\\pandas\test.xlsx")
+
+csv_14
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Symbol</th>
+      <th>Security</th>
+      <th>Today - Volume</th>
+      <th>AVG -volume</th>
+      <th>change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>classes</td>
+      <td>entrepreise 1.llc</td>
+      <td>7.654450e+05</td>
+      <td>43216.0</td>
+      <td>90.097650</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>teachers</td>
+      <td>entreprise 2.inc</td>
+      <td>NaN</td>
+      <td>980007.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>doctors</td>
+      <td>entreprise 3</td>
+      <td>4.563200e+04</td>
+      <td>7689543.0</td>
+      <td>70.562780</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>kids</td>
+      <td>company4</td>
+      <td>8.769432e+06</td>
+      <td>675432.0</td>
+      <td>69.724536</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gadgets</td>
+      <td>company5</td>
+      <td>1.234570e+08</td>
+      <td>1234.0</td>
+      <td>65.897654</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>offices</td>
+      <td>company6</td>
+      <td>5.643800e+04</td>
+      <td>9870.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>laptops</td>
+      <td>company7</td>
+      <td>4.532000e+03</td>
+      <td>65432.0</td>
+      <td>62.098765</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>books</td>
+      <td>company8</td>
+      <td>9.876540e+05</td>
+      <td>34543.0</td>
+      <td>60.534289</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>roommates</td>
+      <td>company9</td>
+      <td>2.245679e+09</td>
+      <td>4567.0</td>
+      <td>50.625438</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>colleges</td>
+      <td>company10</td>
+      <td>NaN</td>
+      <td>9876.0</td>
+      <td>49.324567</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>chef</td>
+      <td>startup11</td>
+      <td>7.865409e+06</td>
+      <td>56437.0</td>
+      <td>48.765431</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>architect</td>
+      <td>startup12</td>
+      <td>3.453210e+05</td>
+      <td>NaN</td>
+      <td>45.876101</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>police officer</td>
+      <td>startup13</td>
+      <td>5.643457e+07</td>
+      <td>34567.0</td>
+      <td>44.765413</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>actor</td>
+      <td>startup14</td>
+      <td>2.345654e+07</td>
+      <td>897654.0</td>
+      <td>43.651433</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>electrician</td>
+      <td>org15</td>
+      <td>NaN</td>
+      <td>6754.0</td>
+      <td>40.765190</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>firefighter</td>
+      <td>org16</td>
+      <td>6.543210e+05</td>
+      <td>56432.0</td>
+      <td>40.690165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>waitress</td>
+      <td>org17</td>
+      <td>6.547890e+06</td>
+      <td>67543.0</td>
+      <td>40.509818</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+csv_14.fillna("python")
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Symbol</th>
+      <th>Security</th>
+      <th>Today - Volume</th>
+      <th>AVG -volume</th>
+      <th>change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>classes</td>
+      <td>entrepreise 1.llc</td>
+      <td>765445.0</td>
+      <td>43216.0</td>
+      <td>90.09765</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>teachers</td>
+      <td>entreprise 2.inc</td>
+      <td>python</td>
+      <td>980007.0</td>
+      <td>python</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>doctors</td>
+      <td>entreprise 3</td>
+      <td>45632.0</td>
+      <td>7689543.0</td>
+      <td>70.56278</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>kids</td>
+      <td>company4</td>
+      <td>8769432.0</td>
+      <td>675432.0</td>
+      <td>69.724536</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gadgets</td>
+      <td>company5</td>
+      <td>123456987.0</td>
+      <td>1234.0</td>
+      <td>65.897654</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>offices</td>
+      <td>company6</td>
+      <td>56438.0</td>
+      <td>9870.0</td>
+      <td>python</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>laptops</td>
+      <td>company7</td>
+      <td>4532.0</td>
+      <td>65432.0</td>
+      <td>62.098765</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>books</td>
+      <td>company8</td>
+      <td>987654.0</td>
+      <td>34543.0</td>
+      <td>60.534289</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>roommates</td>
+      <td>company9</td>
+      <td>2245678987.0</td>
+      <td>4567.0</td>
+      <td>50.625438</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>colleges</td>
+      <td>company10</td>
+      <td>python</td>
+      <td>9876.0</td>
+      <td>49.324567</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>chef</td>
+      <td>startup11</td>
+      <td>7865409.0</td>
+      <td>56437.0</td>
+      <td>48.765431</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>architect</td>
+      <td>startup12</td>
+      <td>345321.0</td>
+      <td>python</td>
+      <td>45.876101</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>police officer</td>
+      <td>startup13</td>
+      <td>56434567.0</td>
+      <td>34567.0</td>
+      <td>44.765413</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>actor</td>
+      <td>startup14</td>
+      <td>23456543.0</td>
+      <td>897654.0</td>
+      <td>43.651433</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>electrician</td>
+      <td>org15</td>
+      <td>python</td>
+      <td>6754.0</td>
+      <td>40.76519</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>firefighter</td>
+      <td>org16</td>
+      <td>654321.0</td>
+      <td>56432.0</td>
+      <td>40.690165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>waitress</td>
+      <td>org17</td>
+      <td>6547890.0</td>
+      <td>67543.0</td>
+      <td>40.509818</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+csv_14.fillna({"Today - Volume":"javascript","AVG -volume":"python","change":"c"})
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Symbol</th>
+      <th>Security</th>
+      <th>Today - Volume</th>
+      <th>AVG -volume</th>
+      <th>change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>classes</td>
+      <td>entrepreise 1.llc</td>
+      <td>765445.0</td>
+      <td>43216.0</td>
+      <td>90.09765</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>teachers</td>
+      <td>entreprise 2.inc</td>
+      <td>javascript</td>
+      <td>980007.0</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>doctors</td>
+      <td>entreprise 3</td>
+      <td>45632.0</td>
+      <td>7689543.0</td>
+      <td>70.56278</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>kids</td>
+      <td>company4</td>
+      <td>8769432.0</td>
+      <td>675432.0</td>
+      <td>69.724536</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>gadgets</td>
+      <td>company5</td>
+      <td>123456987.0</td>
+      <td>1234.0</td>
+      <td>65.897654</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>offices</td>
+      <td>company6</td>
+      <td>56438.0</td>
+      <td>9870.0</td>
+      <td>c</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>laptops</td>
+      <td>company7</td>
+      <td>4532.0</td>
+      <td>65432.0</td>
+      <td>62.098765</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>books</td>
+      <td>company8</td>
+      <td>987654.0</td>
+      <td>34543.0</td>
+      <td>60.534289</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>roommates</td>
+      <td>company9</td>
+      <td>2245678987.0</td>
+      <td>4567.0</td>
+      <td>50.625438</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>colleges</td>
+      <td>company10</td>
+      <td>javascript</td>
+      <td>9876.0</td>
+      <td>49.324567</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>chef</td>
+      <td>startup11</td>
+      <td>7865409.0</td>
+      <td>56437.0</td>
+      <td>48.765431</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>architect</td>
+      <td>startup12</td>
+      <td>345321.0</td>
+      <td>python</td>
+      <td>45.876101</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>police officer</td>
+      <td>startup13</td>
+      <td>56434567.0</td>
+      <td>34567.0</td>
+      <td>44.765413</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>actor</td>
+      <td>startup14</td>
+      <td>23456543.0</td>
+      <td>897654.0</td>
+      <td>43.651433</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>electrician</td>
+      <td>org15</td>
+      <td>javascript</td>
+      <td>6754.0</td>
+      <td>40.76519</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>firefighter</td>
+      <td>org16</td>
+      <td>654321.0</td>
+      <td>56432.0</td>
+      <td>40.690165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>waitress</td>
+      <td>org17</td>
+      <td>6547890.0</td>
+      <td>67543.0</td>
+      <td>40.509818</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 
 ```python
