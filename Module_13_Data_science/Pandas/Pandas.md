@@ -5355,6 +5355,7 @@ csv_15
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>N°</th>
       <th>Symbol</th>
       <th>Security</th>
       <th>Today - Volume</th>
@@ -5365,138 +5366,155 @@ csv_15
   <tbody>
     <tr>
       <th>0</th>
+      <td>1</td>
       <td>classes</td>
       <td>entrepreise 1.llc</td>
       <td>765445.0</td>
-      <td>43216.0</td>
+      <td>43216</td>
       <td>90.097650</td>
     </tr>
     <tr>
       <th>1</th>
+      <td>2</td>
       <td>teachers</td>
       <td>entreprise 2.inc</td>
       <td>NaN</td>
-      <td>980007.0</td>
-      <td>NaN</td>
+      <td>980007</td>
+      <td>80.780000</td>
     </tr>
     <tr>
       <th>2</th>
+      <td>3</td>
       <td>doctors</td>
       <td>entreprise 3</td>
       <td>45632.0</td>
-      <td>7689543.0</td>
+      <td>7689543</td>
       <td>70.562780</td>
     </tr>
     <tr>
       <th>3</th>
+      <td>4</td>
       <td>kids</td>
       <td>company4</td>
       <td>8769432.0</td>
-      <td>675432.0</td>
+      <td>675432</td>
       <td>69.724536</td>
     </tr>
     <tr>
       <th>4</th>
+      <td>5</td>
       <td>gadgets</td>
       <td>company5</td>
       <td>123456987.0</td>
-      <td>1234.0</td>
+      <td>1234</td>
       <td>65.897654</td>
     </tr>
     <tr>
       <th>5</th>
+      <td>6</td>
       <td>offices</td>
       <td>company6</td>
       <td>56438.0</td>
-      <td>9870.0</td>
-      <td>NaN</td>
+      <td>9870</td>
+      <td>64.760000</td>
     </tr>
     <tr>
       <th>6</th>
+      <td>7</td>
       <td>laptops</td>
       <td>company7</td>
       <td>1.0</td>
-      <td>65432.0</td>
+      <td>65432</td>
       <td>62.098765</td>
     </tr>
     <tr>
       <th>7</th>
+      <td>8</td>
       <td>books</td>
       <td>company8</td>
       <td>1.0</td>
-      <td>34543.0</td>
+      <td>34543</td>
       <td>60.534289</td>
     </tr>
     <tr>
       <th>8</th>
+      <td>9</td>
       <td>roommates</td>
       <td>company9</td>
       <td>1.0</td>
-      <td>4567.0</td>
+      <td>4567</td>
       <td>50.625438</td>
     </tr>
     <tr>
       <th>9</th>
+      <td>10</td>
       <td>colleges</td>
       <td>company10</td>
       <td>1.0</td>
-      <td>9876.0</td>
+      <td>9876</td>
       <td>49.324567</td>
     </tr>
     <tr>
       <th>10</th>
+      <td>11</td>
       <td>chef</td>
       <td>startup11</td>
       <td>1.0</td>
-      <td>56437.0</td>
+      <td>56437</td>
       <td>48.765431</td>
     </tr>
     <tr>
       <th>11</th>
+      <td>12</td>
       <td>architect</td>
       <td>startup12</td>
       <td>1.0</td>
-      <td>NaN</td>
+      <td>900008</td>
       <td>45.876101</td>
     </tr>
     <tr>
       <th>12</th>
+      <td>13</td>
       <td>police officer</td>
       <td>startup13</td>
       <td>1.0</td>
-      <td>34567.0</td>
+      <td>34567</td>
       <td>44.765413</td>
     </tr>
     <tr>
       <th>13</th>
+      <td>14</td>
       <td>actor</td>
       <td>startup14</td>
       <td>1.0</td>
-      <td>897654.0</td>
+      <td>897654</td>
       <td>43.651433</td>
     </tr>
     <tr>
       <th>14</th>
+      <td>15</td>
       <td>electrician</td>
       <td>org15</td>
       <td>1.0</td>
-      <td>6754.0</td>
+      <td>6754</td>
       <td>40.765190</td>
     </tr>
     <tr>
       <th>15</th>
+      <td>16</td>
       <td>firefighter</td>
       <td>org16</td>
       <td>654321.0</td>
-      <td>56432.0</td>
+      <td>56432</td>
       <td>40.690165</td>
     </tr>
     <tr>
       <th>16</th>
+      <td>17</td>
       <td>waitress</td>
       <td>org17</td>
       <td>6547890.0</td>
-      <td>67543.0</td>
+      <td>67543</td>
       <td>40.509818</td>
     </tr>
   </tbody>
@@ -5531,6 +5549,7 @@ csv_15.replace(to_replace=1,value=22)
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>N°</th>
       <th>Symbol</th>
       <th>Security</th>
       <th>Today - Volume</th>
@@ -5541,138 +5560,155 @@ csv_15.replace(to_replace=1,value=22)
   <tbody>
     <tr>
       <th>0</th>
+      <td>22</td>
       <td>classes</td>
       <td>entrepreise 1.llc</td>
       <td>765445.0</td>
-      <td>43216.0</td>
+      <td>43216</td>
       <td>90.097650</td>
     </tr>
     <tr>
       <th>1</th>
+      <td>2</td>
       <td>teachers</td>
       <td>entreprise 2.inc</td>
       <td>NaN</td>
-      <td>980007.0</td>
-      <td>NaN</td>
+      <td>980007</td>
+      <td>80.780000</td>
     </tr>
     <tr>
       <th>2</th>
+      <td>3</td>
       <td>doctors</td>
       <td>entreprise 3</td>
       <td>45632.0</td>
-      <td>7689543.0</td>
+      <td>7689543</td>
       <td>70.562780</td>
     </tr>
     <tr>
       <th>3</th>
+      <td>4</td>
       <td>kids</td>
       <td>company4</td>
       <td>8769432.0</td>
-      <td>675432.0</td>
+      <td>675432</td>
       <td>69.724536</td>
     </tr>
     <tr>
       <th>4</th>
+      <td>5</td>
       <td>gadgets</td>
       <td>company5</td>
       <td>123456987.0</td>
-      <td>1234.0</td>
+      <td>1234</td>
       <td>65.897654</td>
     </tr>
     <tr>
       <th>5</th>
+      <td>6</td>
       <td>offices</td>
       <td>company6</td>
       <td>56438.0</td>
-      <td>9870.0</td>
-      <td>NaN</td>
+      <td>9870</td>
+      <td>64.760000</td>
     </tr>
     <tr>
       <th>6</th>
+      <td>7</td>
       <td>laptops</td>
       <td>company7</td>
       <td>22.0</td>
-      <td>65432.0</td>
+      <td>65432</td>
       <td>62.098765</td>
     </tr>
     <tr>
       <th>7</th>
+      <td>8</td>
       <td>books</td>
       <td>company8</td>
       <td>22.0</td>
-      <td>34543.0</td>
+      <td>34543</td>
       <td>60.534289</td>
     </tr>
     <tr>
       <th>8</th>
+      <td>9</td>
       <td>roommates</td>
       <td>company9</td>
       <td>22.0</td>
-      <td>4567.0</td>
+      <td>4567</td>
       <td>50.625438</td>
     </tr>
     <tr>
       <th>9</th>
+      <td>10</td>
       <td>colleges</td>
       <td>company10</td>
       <td>22.0</td>
-      <td>9876.0</td>
+      <td>9876</td>
       <td>49.324567</td>
     </tr>
     <tr>
       <th>10</th>
+      <td>11</td>
       <td>chef</td>
       <td>startup11</td>
       <td>22.0</td>
-      <td>56437.0</td>
+      <td>56437</td>
       <td>48.765431</td>
     </tr>
     <tr>
       <th>11</th>
+      <td>12</td>
       <td>architect</td>
       <td>startup12</td>
       <td>22.0</td>
-      <td>NaN</td>
+      <td>900008</td>
       <td>45.876101</td>
     </tr>
     <tr>
       <th>12</th>
+      <td>13</td>
       <td>police officer</td>
       <td>startup13</td>
       <td>22.0</td>
-      <td>34567.0</td>
+      <td>34567</td>
       <td>44.765413</td>
     </tr>
     <tr>
       <th>13</th>
+      <td>14</td>
       <td>actor</td>
       <td>startup14</td>
       <td>22.0</td>
-      <td>897654.0</td>
+      <td>897654</td>
       <td>43.651433</td>
     </tr>
     <tr>
       <th>14</th>
+      <td>15</td>
       <td>electrician</td>
       <td>org15</td>
       <td>22.0</td>
-      <td>6754.0</td>
+      <td>6754</td>
       <td>40.765190</td>
     </tr>
     <tr>
       <th>15</th>
+      <td>16</td>
       <td>firefighter</td>
       <td>org16</td>
       <td>654321.0</td>
-      <td>56432.0</td>
+      <td>56432</td>
       <td>40.690165</td>
     </tr>
     <tr>
       <th>16</th>
+      <td>17</td>
       <td>waitress</td>
       <td>org17</td>
       <td>6547890.0</td>
-      <td>67543.0</td>
+      <td>67543</td>
       <td>40.509818</td>
     </tr>
   </tbody>
@@ -5859,6 +5895,396 @@ csv_15.replace(to_replace="company4", value="python")
 
 
 ```python
+csv_15.replace([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],22)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>N°</th>
+      <th>Symbol</th>
+      <th>Security</th>
+      <th>Today - Volume</th>
+      <th>AVG -volume</th>
+      <th>change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>22</td>
+      <td>classes</td>
+      <td>entrepreise 1.llc</td>
+      <td>765445.0</td>
+      <td>43216</td>
+      <td>90.097650</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>22</td>
+      <td>teachers</td>
+      <td>entreprise 2.inc</td>
+      <td>NaN</td>
+      <td>980007</td>
+      <td>80.780000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>22</td>
+      <td>doctors</td>
+      <td>entreprise 3</td>
+      <td>45632.0</td>
+      <td>7689543</td>
+      <td>70.562780</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>22</td>
+      <td>kids</td>
+      <td>company4</td>
+      <td>8769432.0</td>
+      <td>675432</td>
+      <td>69.724536</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>22</td>
+      <td>gadgets</td>
+      <td>company5</td>
+      <td>123456987.0</td>
+      <td>1234</td>
+      <td>65.897654</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>22</td>
+      <td>offices</td>
+      <td>company6</td>
+      <td>56438.0</td>
+      <td>9870</td>
+      <td>64.760000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>22</td>
+      <td>laptops</td>
+      <td>company7</td>
+      <td>22.0</td>
+      <td>65432</td>
+      <td>62.098765</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>22</td>
+      <td>books</td>
+      <td>company8</td>
+      <td>22.0</td>
+      <td>34543</td>
+      <td>60.534289</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>22</td>
+      <td>roommates</td>
+      <td>company9</td>
+      <td>22.0</td>
+      <td>4567</td>
+      <td>50.625438</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>22</td>
+      <td>colleges</td>
+      <td>company10</td>
+      <td>22.0</td>
+      <td>9876</td>
+      <td>49.324567</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>22</td>
+      <td>chef</td>
+      <td>startup11</td>
+      <td>22.0</td>
+      <td>56437</td>
+      <td>48.765431</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>22</td>
+      <td>architect</td>
+      <td>startup12</td>
+      <td>22.0</td>
+      <td>900008</td>
+      <td>45.876101</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>22</td>
+      <td>police officer</td>
+      <td>startup13</td>
+      <td>22.0</td>
+      <td>34567</td>
+      <td>44.765413</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>22</td>
+      <td>actor</td>
+      <td>startup14</td>
+      <td>22.0</td>
+      <td>897654</td>
+      <td>43.651433</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>22</td>
+      <td>electrician</td>
+      <td>org15</td>
+      <td>22.0</td>
+      <td>6754</td>
+      <td>40.765190</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>22</td>
+      <td>firefighter</td>
+      <td>org16</td>
+      <td>654321.0</td>
+      <td>56432</td>
+      <td>40.690165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>22</td>
+      <td>waitress</td>
+      <td>org17</td>
+      <td>6547890.0</td>
+      <td>67543</td>
+      <td>40.509818</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+csv_15.replace("[A-Za-z]","python",regex=True)
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>N°</th>
+      <th>Symbol</th>
+      <th>Security</th>
+      <th>Today - Volume</th>
+      <th>AVG -volume</th>
+      <th>change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>pythonpythonpythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpyth...</td>
+      <td>765445.0</td>
+      <td>43216</td>
+      <td>90.097650</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpyth...</td>
+      <td>NaN</td>
+      <td>980007</td>
+      <td>80.780000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>pythonpythonpythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpyth...</td>
+      <td>45632.0</td>
+      <td>7689543</td>
+      <td>70.562780</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>pythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpython4</td>
+      <td>8769432.0</td>
+      <td>675432</td>
+      <td>69.724536</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>pythonpythonpythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpython5</td>
+      <td>123456987.0</td>
+      <td>1234</td>
+      <td>65.897654</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>pythonpythonpythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpython6</td>
+      <td>56438.0</td>
+      <td>9870</td>
+      <td>64.760000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>pythonpythonpythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpython7</td>
+      <td>1.0</td>
+      <td>65432</td>
+      <td>62.098765</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>pythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpython8</td>
+      <td>1.0</td>
+      <td>34543</td>
+      <td>60.534289</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpyth...</td>
+      <td>pythonpythonpythonpythonpythonpythonpython9</td>
+      <td>1.0</td>
+      <td>4567</td>
+      <td>50.625438</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpython10</td>
+      <td>1.0</td>
+      <td>9876</td>
+      <td>49.324567</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+      <td>pythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpython11</td>
+      <td>1.0</td>
+      <td>56437</td>
+      <td>48.765431</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpyth...</td>
+      <td>pythonpythonpythonpythonpythonpythonpython12</td>
+      <td>1.0</td>
+      <td>900008</td>
+      <td>45.876101</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>13</td>
+      <td>pythonpythonpythonpythonpythonpython pythonpyt...</td>
+      <td>pythonpythonpythonpythonpythonpythonpython13</td>
+      <td>1.0</td>
+      <td>34567</td>
+      <td>44.765413</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14</td>
+      <td>pythonpythonpythonpythonpython</td>
+      <td>pythonpythonpythonpythonpythonpythonpython14</td>
+      <td>1.0</td>
+      <td>897654</td>
+      <td>43.651433</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>15</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpyth...</td>
+      <td>pythonpythonpython15</td>
+      <td>1.0</td>
+      <td>6754</td>
+      <td>40.765190</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>16</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpyth...</td>
+      <td>pythonpythonpython16</td>
+      <td>654321.0</td>
+      <td>56432</td>
+      <td>40.690165</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17</td>
+      <td>pythonpythonpythonpythonpythonpythonpythonpython</td>
+      <td>pythonpythonpython17</td>
+      <td>6547890.0</td>
+      <td>67543</td>
+      <td>40.509818</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#Interpolate
+
 
 ```
 
