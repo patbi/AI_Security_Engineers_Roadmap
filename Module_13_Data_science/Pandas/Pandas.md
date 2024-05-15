@@ -6283,10 +6283,580 @@ csv_15.replace("[A-Za-z]","python",regex=True)
 
 
 ```python
-#Interpolate
+#MEARNING AND CONCAT - MERGE
 
+import pandas as pd
+
+csv_17 = pd.DataFrame({"A":[1,2,3,4],"B":[11,12,13,14]})
+csv_18 = pd.DataFrame({"A":[1,2,3,4],"C":[21,22,23,24]})
+
+pd.merge(csv_17,csv_18,on="A")
 
 ```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>14</td>
+      <td>24</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#MEARNING AND CONCAT - MERGE
+
+import pandas as pd
+
+csv_17 = pd.DataFrame({"A":[1,2,3,4],"B":[11,12,13,14]})
+csv_18 = pd.DataFrame({"A":[1,2,3,4],"C":[21,22,23,24]})
+
+pd.merge(csv_18,csv_17,on="A")
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>C</th>
+      <th>B</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>21</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>22</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>23</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>24</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#MEARNING AND CONCAT - MERGE
+
+import pandas as pd
+
+csv_17 = pd.DataFrame({"A":[1,2,3,4],"B":[11,12,13,14]})
+csv_18 = pd.DataFrame({"A":[1,2,3,5],"C":[21,22,23,24]})
+
+pd.merge(csv_17,csv_18,how ="inner")
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13</td>
+      <td>23</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#MEARNING AND CONCAT - MERGE
+
+import pandas as pd
+
+csv_17 = pd.DataFrame({"A":[1,2,3,4],"B":[11,12,13,14]})
+csv_18 = pd.DataFrame({"A":[1,2,3,5],"C":[21,22,23,24]})
+
+pd.merge(csv_17,csv_18, how ="left")
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11</td>
+      <td>21.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12</td>
+      <td>22.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>14</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#MEARNING AND CONCAT - MERGE
+
+import pandas as pd
+
+csv_17 = pd.DataFrame({"A":[1,2,3,4],"B":[11,12,13,14]})
+csv_18 = pd.DataFrame({"A":[1,2,3,5],"C":[21,22,23,24]})
+
+pd.merge(csv_17,csv_18, how ="right")
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11.0</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12.0</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13.0</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>5</td>
+      <td>NaN</td>
+      <td>24</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#MEARNING AND CONCAT - MERGE
+
+import pandas as pd
+
+csv_17 = pd.DataFrame({"A":[1,2,3,4],"B":[11,12,13,14]})
+csv_18 = pd.DataFrame({"A":[1,2,3,5],"C":[21,22,23,24]})
+
+pd.merge(csv_17,csv_18,how ="outer")
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11.0</td>
+      <td>21.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12.0</td>
+      <td>22.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13.0</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>14.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>NaN</td>
+      <td>24.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#MEARNING AND CONCAT - MERGE
+
+import pandas as pd
+
+csv_17 = pd.DataFrame({"A":[1,2,3,4],"B":[11,12,13,14]})
+csv_18 = pd.DataFrame({"A":[1,2,3,5],"C":[21,22,23,24]})
+
+pd.merge(csv_17,csv_18, how ="outer", indicator = True)
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>_merge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11.0</td>
+      <td>21.0</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12.0</td>
+      <td>22.0</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13.0</td>
+      <td>23.0</td>
+      <td>both</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>14.0</td>
+      <td>NaN</td>
+      <td>left_only</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>NaN</td>
+      <td>24.0</td>
+      <td>right_only</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+#MEARNING AND CONCAT - MERGE
+
+import pandas as pd
+
+csv_17 = pd.DataFrame({"A":[1,2,3,4],"B":[11,12,13,14]})
+csv_18 = pd.DataFrame({"A":[1,2,3,5],"B":[21,22,23,24]})
+
+pd.merge(csv_17,csv_18, left_index = True, right_index = True)
+
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A_x</th>
+      <th>B_x</th>
+      <th>A_y</th>
+      <th>B_y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>11</td>
+      <td>1</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>12</td>
+      <td>2</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>13</td>
+      <td>3</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>14</td>
+      <td>5</td>
+      <td>24</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 
 ```python
