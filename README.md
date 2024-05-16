@@ -261,7 +261,7 @@
 
 14. [Module 14: Personal /Professional Projects]()
 	
-	- Professional Project
+	- Professional Project (In Progress)
 
 		- [Build GenAI For See-Docs & Thenavigo, LLC](https://ai.thenavigo.com)
 
