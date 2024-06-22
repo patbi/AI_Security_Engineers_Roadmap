@@ -2,7 +2,7 @@
 
 *Best Roadmap To Learn Python Programming*
 
-# Table of Contents.
+# Table of Contents
 
 1. [Module 1: Python Basics]()
 
