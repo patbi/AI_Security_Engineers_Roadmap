@@ -330,7 +330,7 @@
 
 
 
-15. [Module 15: Deep learning (DL) & Neural Networks (NN)]()
+15. [Module 15: Deep Learning (DL) & Neural Networks (NN)]()
 	
 	- TRANSFORMERS...	
 
