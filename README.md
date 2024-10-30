@@ -2,7 +2,7 @@
 
 *Best Roadmap To Learn Python Programming*
 
-# Table of Contents.
+# Table of Contents
 
 1. [Module 1: Python Basics]()
 
@@ -259,7 +259,76 @@
 	 - Seaborn
 	 - Scikit-Learn
 
-14. [Module 14: Personal /Professional Projects]()
+14. [Module 14: Machine Learning, Choosing The Right Algorithms]()
+
+	 - 𝗦𝘂𝗽𝗲𝗿𝘃𝗶𝘀𝗲𝗱 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴
+	 	- (Data With Label)
+	 		- Classification
+	 			- Logistic Regression
+	 			- Naive Bayes Classifier
+	 			- K-Nearest Neighbour (KNN)
+	 			- Support Vector Machine (SVM)
+	 			- Random Forest
+	 			- Decision Tree
+	 				- Examples:
+	 					- Email Spam detection
+	 					- Speech recognition
+	 		- Regression
+	 			- Linear Regression
+	 			- Ridge Regression
+	 			- Ordinary least Squares Regression
+	 			- Stepwise Regression
+	 				- Examples:
+	 					- Stock Market prediction
+	 					- Rainfall Prediction
+	 - 𝗨𝗻𝘀𝘂𝗽𝗲𝗿𝘃𝗶𝘀𝗲𝗱 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 
+	 	- (Data without Label)
+	 		- Clustering
+	 			- K-means clustering
+	 			- K-median
+	 			- Hierarchical clustering
+	 			- Expectation Maximization
+	 				- Examples:
+	 					- Identifying fake news
+	 					- Document analysis
+	 		- Association Analysis
+	 			- APRIORI Algorithm
+	 			- Eclat
+	 			- FP-Growth (Frequent Pattern growth)
+	 				- Examples:
+	 					- Market Basket Analysis
+	 		- Dimensionality Reduction
+	 			- Feature Extraction
+	 				- Principal Component Analysis
+	 			- Feature Selection
+	 				- Wrapper, Filter & Embedded Method
+	 					- Examples:
+	 						- Analysis of written texts and DNA Method microarray data
+	 		- Anomaly Detection
+	 			- Z-score Algorithm
+	 			- Isolation Forest Algorithm
+	 - 𝗦𝗲𝗺𝗶-𝗦𝘂𝗽𝗲𝗿𝘃𝗶𝘀𝗲𝗱 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴
+	 	- Classification
+	 		- Self-Training
+	 	- Regression
+	 		- Co-Training
+	 - 𝗥𝗲𝗶𝗻𝗳𝗼𝗿𝗰𝗲𝗺𝗲𝗻𝘁 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴
+	 	- (Sate and Action)
+		 	- Model-Free
+		 		- Q-Learning
+		 		- Hybrid
+		 		- Policy optimisation
+		 	- Model-Based 
+		 		- Learn the Model
+		 		- Given the Model
+		 			- Examples:
+		 				- Multi-agent System
+		 				- Motion Planning
+		 				- Navigation 
+	 	
+
+
+15. [Module 14: Personal /Professional Projects]()
 	
 	- Professional Project (In Progress)
 
@@ -267,7 +336,7 @@
 
 	- Personal Projects (Repository)
 
-15. [Module 15: Bonus: Robotics ]()
+16. [Module 15: Bonus: Robotics ]()
 	
 	- Robotics
 
