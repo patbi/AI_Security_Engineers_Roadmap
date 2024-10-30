@@ -328,7 +328,61 @@
 	 	
 
 
-15. [Module 15: Personal /Professional Projects]()
+
+
+15. [Module 15: Deep learning (DL) & Neural Networks (NN)]()
+	
+	- TRANSFORMERS...	
+
+16. [Module 16: The Backbone of Computer Vision]()
+	
+	- KEY LIBRARIES
+		- OpenCV
+			-Load image
+			- Show image
+			- Convert to Grayscale
+		- Pillow (PIL) : simple image manipulation
+			- Open image
+		- TensorFlow PyTorch: Deep Learning frameworks for classification, detection, segmentation 
+
+	- PREPROCESSING TECHNIQUES
+		- Resizing: 
+		- Normalization
+		- Blurring
+			- Global
+			- Adaptive
+		- Edge Detection
+			- Canny
+
+	- FEATURE DETECTION
+		- SIFT/ORB: keypoints & descriptors for matching
+		- HOG: Histogram of Oriented Gradients (used for detecting objects like people)
+
+	- SEGMENTATION
+		- Contours
+		- Watershed
+
+	- OBJECT DETECTION
+		- Haar Cascades: Pre-trained classifiers (e.g., for faces)
+		- YOLO: Real-time object detection
+		- SSD: Efficient, single-shot object detection
+
+	- NEURAL NETWORKS
+		- CNNs (Convolutional Neural Networks)
+			- Used for image classification and object recognition
+			- key layers: Convolution, Pooling, Fully Connected
+		- Pre-trained models
+			- Fine-tune VGG, ResNet, or Inception for your task
+
+	- OBJECT TRACKING
+		- MeanShift: Moves window to highest pixel density
+		- CamShift: Adjusts window size dynamically for tracking
+
+	- IMAGE AUGMENTATION
+		- Increase dataset size by applying transformations
+		- Rotation, Flipping, Scaling, Cropping (to improve robustness)
+
+17. [Module 17: Personal /Professional Projects]()
 	
 	- Professional Project (In Progress)
 		- How to push Machine Learning Models into Production
@@ -346,7 +400,7 @@
 
 	- Personal Projects (Repository)
 
-16. [Module 16: Bonus: Robotics ]()
+18. [Module 18: Bonus: Robotics ]()
 	
 	- Robotics
 
