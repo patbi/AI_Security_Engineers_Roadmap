@@ -332,15 +332,15 @@
 	
 	- Professional Project (In Progress)
 		- How to push Machine Learning Models into Production
-			🔹 𝗧𝗿𝗮𝗶𝗻 / 𝗧𝗲𝘀𝘁 𝗗𝗮𝘁𝗮𝘀𝗲𝘁 - Ensure Test is representative of Online data
-			🔹 𝗙𝗲𝗮𝘁𝘂𝗿𝗲 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗣𝗶𝗽𝗲𝗹𝗶𝗻𝗲 - Generate features in real-time
-			🔹 𝗠𝗼𝗱𝗲𝗹 𝗢𝗯𝗷𝗲𝗰𝘁 - Trained SkLearn or Tensorflow Model
-			🔹 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗖𝗼𝗱𝗲 𝗥𝗲𝗽𝗼 - Save model project code to Github
-			🔹 𝗔𝗣𝗜 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸 - Use FastAPI or Flask to build a model API
-			🔹 𝗗𝗼𝗰𝗸𝗲𝗿 - Containerize the ML model API
-			🔹 𝗥𝗲𝗺𝗼𝘁𝗲 𝗦𝗲𝗿𝘃𝗲𝗿 - Choose a cloud service; e.g. AWS sagemaker
-			🔹 𝗨𝗻𝗶𝘁 𝗧𝗲𝘀𝘁𝘀 - Test inputs & outputs of functions and APIs
-			🔹 𝗠𝗼𝗱𝗲𝗹 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 - Evidently AI, a simple, open-source for ML monitoring
+			- 𝗧𝗿𝗮𝗶𝗻 / 𝗧𝗲𝘀𝘁 𝗗𝗮𝘁𝗮𝘀𝗲𝘁 - Ensure Test is representative of Online data
+			- 𝗙𝗲𝗮𝘁𝘂𝗿𝗲 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗣𝗶𝗽𝗲𝗹𝗶𝗻𝗲 - Generate features in real-time
+			- 𝗠𝗼𝗱𝗲𝗹 𝗢𝗯𝗷𝗲𝗰𝘁 - Trained SkLearn or Tensorflow Model
+			- 𝗣𝗿𝗼𝗷𝗲𝗰𝘁 𝗖𝗼𝗱𝗲 𝗥𝗲𝗽𝗼 - Save model project code to Github
+			- 𝗔𝗣𝗜 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸 - Use FastAPI or Flask to build a model API
+			- 𝗗𝗼𝗰𝗸𝗲𝗿 - Containerize the ML model API
+			- 𝗥𝗲𝗺𝗼𝘁𝗲 𝗦𝗲𝗿𝘃𝗲𝗿 - Choose a cloud service; e.g. AWS sagemaker
+			- 𝗨𝗻𝗶𝘁 𝗧𝗲𝘀𝘁𝘀 - Test inputs & outputs of functions and APIs
+			- 𝗠𝗼𝗱𝗲𝗹 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 - Evidently AI, a simple, open-source for ML monitoring
 
 		- [Build Solid AI Systems For See-Docs & Thenavigo, LLC](https://ai.thenavigo.com)
 
