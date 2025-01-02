@@ -396,7 +396,7 @@
 			- 𝗨𝗻𝗶𝘁 𝗧𝗲𝘀𝘁𝘀 - Test inputs & outputs of functions and APIs
 			- 𝗠𝗼𝗱𝗲𝗹 𝗠𝗼𝗻𝗶𝘁𝗼𝗿𝗶𝗻𝗴 - Evidently AI, a simple, open-source for ML monitoring
 
-		- [Build SOPHISTICATED (ADVANCED) AI SYSTEMS For See-Docs & Thenavigo, LLC](https://ai.thenavigo.com)
+		- [Build SOPHISTICATED (ADVANCED) AI SYSTEMS For See-Docs & Thenavigo, LLC](https://oasisai.thenavigo.com)
 
 	- Personal Projects (Repository)
 
