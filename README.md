@@ -380,7 +380,7 @@
 		- Rotation, Flipping, Scaling, Cropping (to improve robustness)
 
 
-17. [Module 17: Documentation before / LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
+17. [Module 17: Documentation Before / LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
 
 
 18. [Module 18: All About LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
