@@ -403,3 +403,14 @@
 	
 	- Security
 	- Innovation and more
+
+
+## Author
+
+	- Patrick Biyaga
+
+## Looking for support
+
+For questions and support please [join our platform](https://www.thenavigo.com/).
+
+
