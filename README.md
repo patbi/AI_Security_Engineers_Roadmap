@@ -461,7 +461,7 @@ Measure with perplexity, ROUGE, F1, and human evaluations. Automate benchmarks t
 https://lnkd.in/dP_NJXg9
 
 
-## Others Resources
+## Other Resources
 
 MCP with Anthropic: https://tinyurl.com/2tjtatkc
 
