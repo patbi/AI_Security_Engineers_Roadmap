@@ -396,6 +396,7 @@ AI Agents are basically [90% Software engineering and only 10% AI](https://www.l
    - What you can do about [AI 2027](https://blog.ai-futures.org/p/what-you-can-do-about-ai-2027)
    - The New Skill in AI is Not Prompting, [It's Context Engineering](https://medium.com/@adnanmasood/context-engineering-elevating-ai-strategy-from-prompt-crafting-to-enterprise-competence-b036d3f7f76f)
    - Context Engineering For Agents [context-engineering-for-agents](https://blog.langchain.com/context-engineering-for-agents/)
+   - Generative AI Models [generative-ai-models](https://www.xenonstack.com/blog/generative-ai-models)
 
 
 18. [Module 18: All About LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
