@@ -462,7 +462,7 @@ https://lnkd.in/dP_NJXg9
 
 ## Others Resources
 
-MCP with Anthropic: tinyurl.com/2tjtatkc
+MCP with Anthropic: [MCP with Anthropic ](tinyurl.com/2tjtatkc) 
 
 Building Vector Databases with Pinecone: tinyurl.com/mra8tpda
 
