@@ -257,11 +257,11 @@
 
 	 - Numpy
 	 - Pandas
-	 - Tensorflow
-	 - Pytorch
+	 - Tensorflow [Master your path](https://www.tensorflow.org/resources/learn-ml)
+	 - Pytorch [Learn PyTorch for Deep Learning: Zero to Mastery book](https://www.learnpytorch.io/) 
 	 - Matplotlib
 	 - Seaborn
-	 - Scikit-Learn
+	 - Scikit-Learn [User Guide](https://scikit-learn.org/stable/user_guide.html)
 
 14. [Module 14: Machine Learning - Choosing The Right Algorithms]()
 
