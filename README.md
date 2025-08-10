@@ -44,6 +44,7 @@
 
 	 - Pip
 	 - Conda
+	 - UV
 
 4. [Module 4: DSA]()
 
