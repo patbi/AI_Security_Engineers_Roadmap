@@ -460,6 +460,39 @@ Measure with perplexity, ROUGE, F1, and human evaluations. Automate benchmarks t
 https://lnkd.in/dP_NJXg9
 
 
+## Others Resources
+
+MCP with Anthropic: tinyurl.com/2tjtatkc
+
+Building Vector Databases with Pinecone: tinyurl.com/mra8tpda
+
+Vector Databases: tinyurl.com/56bjv6yw
+
+Agent Memory: tinyurl.com/mk9rdefz
+
+Deep Learning AI's RAG course: tinyurl.com/2s4bs3fd
+
+Building and Evaluating RAG apps: tinyurl.com/mryh4bez
+
+Building Browser Agents: tinyurl.com/5mtrk33t
+
+Evaluating AI Agents: tinyurl.com/2kb6h3wz
+
+Computer Use with Anthropic: tinyurl.com/5n6jsrhy
+
+Multi-Agent Use: tinyurl.com/5n756x9k
+
+Improving LLM Accuracy: tinyurl.com/43be9h9p
+
+Agent Design Patterns: tinyurl.com/mrxx7f6h
+
+Multi Agent Systems: tinyurl.com/2s37f3sn
+
+Berkeley Agent MOOC: tinyurl.com/4fwbj3n5
+
+Berkeley Advanced Agents MOOC: tinyurl.com/3em94nyw
+
+
 19. [Module 19: Personal /Professional Projects]()
 	
 	- Professional Project (In Progress)
