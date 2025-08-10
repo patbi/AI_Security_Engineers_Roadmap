@@ -401,9 +401,11 @@
 
 21. [Module 21: Security ]()
 	
-	- Python For Security
-	- Security
-	- Innovation and more
+	- Python For Security [Security is not a feature](https://www.slideshare.net/slideshow/security-is-not-a-feature/34971477#17) 
+	- Cyber Security Expert [Step by step guide to becoming a Cyber Security Expert in 2025](https://roadmap.sh/cyber-security)
+	- What is Offensive Security? [The Complete Guide](https://mindgard.ai/blog/what-is-offensive-security)
+	- Offensive Security 101: [Everything You Need to Know](https://strobes.co/blog/offensive-security-101-everything-you-need-to-know/)
+	- Python Books for Security [Python-Books-for-Security](https://github.com/ManhNho/Python-Books-for-Security)
 
 
 ## Author
