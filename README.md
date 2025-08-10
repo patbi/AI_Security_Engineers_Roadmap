@@ -391,7 +391,11 @@ AI Agents are basically [90% Software engineering and only 10% AI](https://www.l
 
 ![Preview](https://github.com/patbi/AI_Security_Engineers_Roadmap/blob/main/AIAgents.gif)
 
-   - Professional Project (In Progress)
+   - My response to AI 2027 [Vitalik.eth](https://vitalik.eth.limo/general/2025/07/10/2027.html)
+   - AI 2027 [Timelines Forecast](https://ai-2027.com/research/timelines-forecast#2025-may-7-update)
+   - What you can do about [AI 2027](https://blog.ai-futures.org/p/what-you-can-do-about-ai-2027)
+   - The New Skill in AI is Not Prompting, [It's Context Engineering](https://medium.com/@adnanmasood/context-engineering-elevating-ai-strategy-from-prompt-crafting-to-enterprise-competence-b036d3f7f76f)
+   - Context Engineering For Agents [context-engineering-for-agents](https://blog.langchain.com/context-engineering-for-agents/)
 
 
 18. [Module 18: All About LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
