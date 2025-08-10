@@ -235,6 +235,8 @@
 	 	- [Quickstart](https://flask.palletsprojects.com/en/3.0.x/quickstart/)
 	 - FastAPI
 	 	- [First Steps](https://fastapi.tiangolo.com/tutorial/first-steps/)
+	 - FastAPI vs. Flask
+	 	- [FastAPI vs. Flask feature comparison](https://www.contentful.com/blog/fastapi-vs-flask/)
 
 11. [Module 11: Data Modeling & Pipelines]()
 
