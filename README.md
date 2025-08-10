@@ -406,6 +406,7 @@
 	- What is Offensive Security? [The Complete Guide](https://mindgard.ai/blog/what-is-offensive-security)
 	- Offensive Security 101: [Everything You Need to Know](https://strobes.co/blog/offensive-security-101-everything-you-need-to-know/)
 	- Tackling cybersecurity vulnerabilities [through Secure by Design](https://blog.google/technology/safety-security/tackling-cybersecurity-vulnerabilities-through-secure-by-design/)
+	- Secure-by-design is not the same [as safe-by-design](https://www.controlglobal.com/blogs/unfettered/blog/55041612/secure-by-design-is-not-the-same-as-safe-by-design-and-people-are-being-hurt)
 	- Python Books for Security - [Python-Books-for-Security](https://github.com/ManhNho/Python-Books-for-Security)
 
 
