@@ -333,7 +333,8 @@
 
 15. [Module 15: Deep Learning (DL) & Neural Networks (NN)]()
 	
-	- TRANSFORMERS...	
+	- TRANSFORMERS...[Transformers from Scratch](https://www.brandonrohrer.com/transformers)	
+	- Mixture-of-Recursions [Mixture-of-Recursions](https://huggingface.co/papers/date/2025-08-08)	
 
 16. [Module 16: The Backbone of Computer Vision]()
 	
