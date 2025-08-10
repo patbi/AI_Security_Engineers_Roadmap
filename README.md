@@ -401,6 +401,64 @@ AI Agents are basically [90% Software engineering and only 10% AI](https://www.l
 
 18. [Module 18: All About LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
 
+	- HuggingFace just released [9 elite-level AI courses for free](https://x.com/ChrisLaubAI/status/1953393671786893475)
+	- MCP with Anthropic [MCP with Anthropic](https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/)
+
+
+1️⃣ LoRA & qLoRA fine-tuning
+Learn low-rank adaptation to fine-tune massive models while keeping GPU and memory usage in check.
+https://lnkd.in/dxAfNJjP
+https://lnkd.in/dcfhk4YB
+
+2️⃣ Reinforcement Learning from Human Feedback (RLHF)
+Understand how to align model behavior with human expectations using curated reward signals.
+https://lnkd.in/da4qf5JV
+https://lnkd.in/drEbQ4x2
+
+3️⃣ Reinforcement Learning from Verifiable Rewards (RLVR)
+Use simulated or programmatic reward models when human feedback is too expensive.
+https://lnkd.in/dFBgDAyd
+
+4️⃣ RAG Fundamentals
+Learn how to build Retrieval-Augmented Generation systems- ingest documents, create embeddings, stitch context, and prompt LLMs.
+https://lnkd.in/dFkgD6RQ
+https://lnkd.in/d7v6DzEG
+
+5️⃣ Advanced RAG Architectures
+Master multi-hop retrieval, hybrid sparse-dense search, and complex reranking for multi-document use cases.
+https://lnkd.in/dUrAz2D3
+
+6️⃣ Embedding Models & Vector Databases
+Benchmark sentence encoders, tune indexes (FAISS/Pinecone), and understand latency vs recall trade-offs.
+https://lnkd.in/d8zeWbmn
+https://learn.pinecone.io/
+
+7️⃣ Prompt Engineering & Chain-of-Thought
+Design prompts that guide reasoning step-by-step, manage templates, and dynamically inject context.
+https://lnkd.in/djbJD578
+https://lnkd.in/d9M75H_i
+
+8️⃣ MCP & Agent-to-Agent Integration
+Use Model Context Protocol (MCP) to coordinate LLMs with APIs and other agents for seamless A2A handoffs.
+https://lnkd.in/dfjvxhvP
+https://lnkd.in/dJ5NWuaK
+
+9️⃣ Long-Context Window Strategies
+Handle 100k+ token sequences using smart chunking, hierarchical retrieval, and memory-augmented architectures.
+https://lnkd.in/djgkXGaZ
+
+🔟 Model Efficiency: Quantization & Distillation
+Shrink models with post-training quantization (4/8-bit), pruning, and knowledge distillation for faster, cheaper inference.
+https://lnkd.in/d2iurEyv
+
+1️⃣1️⃣ LLMOps & Model Monitoring
+Build CI/CD pipelines for LLM deployment, track drift, monitor hallucinations, and set up alerting for cost or performance issues.
+https://lnkd.in/dxik45e6
+
+1️⃣2️⃣ Evaluation & Benchmarking
+Measure with perplexity, ROUGE, F1, and human evaluations. Automate benchmarks to compare models at scale.
+https://lnkd.in/dP_NJXg9
+
 
 19. [Module 19: Personal /Professional Projects]()
 	
