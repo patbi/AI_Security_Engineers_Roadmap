@@ -240,7 +240,8 @@
 
 11. [Module 11: Data Modeling & Pipelines]()
 
-	 - Step11
+	 - What is a Data Pipeline? [event-driven-architecture/data-pipeline](https://hazelcast.com/foundations/event-driven-architecture/data-pipeline/)
+	 - The Path to Insights: [Data Models and Pipelines](https://www.coursera.org/learn/the-path-to-insights-data-models-and-pipelines)
 
 
 12. [Module 12: Data/ML/AI/IoT Tools & Best Practices Overview]()
