@@ -387,6 +387,10 @@
 
 17. [Module 17: Documentation Before / LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
 
+AI Agents are basically [90% Software engineering and only 10% AI](https://www.linkedin.com/posts/suleiman-najim-87457a211_ai-agents-are-basically-90-software-engineering-activity-7359363735615864833-Mig9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAp7_84BY1wxyP-mktUQz-CYd-NFoN8O3rU)
+
+![Preview](https://github.com/patbi/AI_Security_Engineers_Roadmap/blob/main/AIAgents.gif)
+
 
 18. [Module 18: All About LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
 
