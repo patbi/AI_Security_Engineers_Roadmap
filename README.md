@@ -246,10 +246,11 @@
 
 12. [Module 12: Data/ML/AI/IoT Tools & Best Practices Overview]()
 
-	 - Mastery Airflow
-	 - Mastery Databricks 
-	 - Mastery SNOWFLAKE
-	 - Mastery Iguazio
+	 - Mastery Airflow    [Apache Airflow](https://airflow.apache.org/)
+	 - Mastery Databricks [Learning Library](https://www.databricks.com/training/catalog)
+	 - Mastery SNOWFLAKE  [Explore Snowflake's Resource Library](https://www.snowflake.com/en/resources/)
+	 - Mastery Iguazio    [Bringing AI to Life](https://www.iguazio.com/)
+	 - Mastery HuggingFace    [Bringing AI to Life](https://huggingface.co/)
 
 
 13. [Module 13: Data science]()
