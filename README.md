@@ -100,7 +100,7 @@
 	 - Load Testing
 	 	- With Locust
 
-8. [Module 8: Advanced]()
+8. [Module 8: Advanced/pythonbooks](https://pythonbooks.org/free-books/)
 
 	 - Pip in python
 	 - What is PYTHONPATH
