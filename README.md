@@ -391,6 +391,8 @@ AI Agents are basically [90% Software engineering and only 10% AI](https://www.l
 
 ![Preview](https://github.com/patbi/AI_Security_Engineers_Roadmap/blob/main/AIAgents.gif)
 
+	- Professional Project (In Progress)
+
 
 18. [Module 18: All About LLM - Generative AI - AI Agents - Agentic AI - Agentic RAG...]()
 
